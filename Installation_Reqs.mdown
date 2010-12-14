@@ -1,0 +1,50 @@
+## Software Requirements ##
+
+For those Data Bootcamp participants that wish to follow along with the instructors there are several software tools that you will need to have pre-installed.  If you do not wish to practice during the session then it is not necessary to have these tools installed prior to bootcamp, but you will need them to replicate the methods described on your own.
+
+For those running a UNIX distribution or Mac OS X all of the base tools (bash, Python, and R) are already installed, so you will only need to make sure that you have the supporting packages listed below.  For Windows users you will need to install the tools separately from binaries, which you can download at the following sites:
+
+ - To use these command-line tools we recommend you install [[Cygwin to emulate a UNIX-like environment](http://www.cygwin.com/).
+ - Python: http://www.python.org/download/windows/
+ - R: http://cran.r-project.org/bin/windows/base/
+
+### UNIX bash ###
+
+A large part of analyzing data is dealing with structured and unstructured text.  As such, there are several command-line tools that allow for "quick and dirty" handling of this data.  For this tutorial we will rely on the following set, which come with any UNIX-like distribution:
+
+ - sed
+ - awk
+ - grep
+
+### Python ###
+
+Python is a powerful high-level scripting language that is well suited for manipulating and analyzing data of all kinds.  There are a number of Python libraries for analyzing data, but for this tutorial we will focus on the following:
+
+ - [email](http://docs.python.org/library/email.parser.html): For parsing email data
+ - [Natural Language Toolkit](http://www.nltk.org/download) (NLTK):  Powerful set of tools for performing natural language processing on text
+ - [NumPy](http://numpy.scipy.org/), [SciPy](http://www.scipy.org/), [matplotlib](http://matplotlib.sourceforge.net/): A trio of scientific computing libraries in Python that provide data types and functions for numeric and statistical analysis, as well as visualization
+ - [Python Image Library](http://pypi.python.org/pypi/PIL) (PIL): For the statistical analysis of image data
+ - [NetworkX](http://networkx.lanl.gov/): For the creation, manipulation, and study of the structure, dynamics, and functions of complex networks
+ 
+There are a few ways to install Python packages, but we recommend either of the following.  In you [Python setuptools](http://pypi.python.org/pypi/setuptools) installed you can download and install all of the above libraries with the following command:
+
+    $ easy_instal {package_name}
+    
+For example, to install NetworkX simply type:
+
+    $ easy_install networkx
+    
+You can also install packages from source by downloading the source files at the sites referenced above.  Simply unarchive the source code, navigate to the folder where the source code is located, and use the following command:
+
+    $ python setup.py install
+ 
+### R ###
+
+The R statistical programming language has become the de facto *lingua franca* for statistical analysis.  There are thousands of R packages available on [CRAN](http://cran.r-project.org/) to perform any number of analyses.  For the purposes of this tutorial we will use the extremely powerful [ggplot2](http://had.co.nz/ggplot2/) package by Hadley Wickham for data visualization.
+
+To install packages in R we use the ``install.packages`` command:
+
+    > install.packages("ggplot2", dependencies=TRUE)
+    
+Note, ggplot2 requires several other packages, so if you are running a new R installation this may take a few minutes.
+ 
