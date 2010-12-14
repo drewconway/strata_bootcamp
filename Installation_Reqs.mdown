@@ -5,8 +5,8 @@ For those Data Bootcamp participants that wish to follow along with the instruct
 For those running a UNIX distribution or Mac OS X all of the base tools (bash, Python, and R) are already installed, so you will only need to make sure that you have the supporting packages listed below.  For Windows users you will need to install the tools separately from binaries, which you can download at the following sites:
 
  - To use these command-line tools we recommend you install [Cygwin to emulate a UNIX-like environment](http://www.cygwin.com/).
- - Python: http://www.python.org/download/windows/
- - R: http://cran.r-project.org/bin/windows/base/
+ - Python: [http://www.python.org/download/windows/](http://www.python.org/download/windows/)
+ - R: [http://cran.r-project.org/bin/windows/base/](http://cran.r-project.org/bin/windows/base/)
 
 ### UNIX bash ###
 
