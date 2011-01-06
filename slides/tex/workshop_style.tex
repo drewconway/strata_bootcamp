@@ -1,0 +1,51 @@
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{color}
+\usepackage{pdfsync}
+\usepackage{chancery}
+\usepackage{movie15}
+\usepackage{pgfpages}
+\usepackage{fancyvrb}
+\usepackage{colortbl}
+\usepackage{multirow}
+
+\usepackage{graphicx}
+\graphicspath{{../../images/figures/}{../../images/logos/}{../../images/graphs/}/}
+
+\usepackage{beamerthemesplit}
+\usetheme{Copenhagen}
+\definecolor{title}{RGB}{128,148,182}
+\usecolortheme[named=title]{structure} 
+\setbeamertemplate{headline}{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[triangle]
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{footline}[page number]{}
+%\setbeameroption{show notes on second screen}
+
+
+\usepackage{listings}
+%\usepackage{listings,arev}
+\definecolor{keywords}{RGB}{128,148,182}
+\definecolor{comments}{RGB}{60,179,113}
+\lstset{numbers=left,
+        showstringspaces=false,
+        numberstyle=\tiny,
+        %frame=leftline,
+        numbersep=4.5pt,
+  keywordstyle=\color{keywords}\bfseries,
+  commentstyle=\color{YellowOrange}\emph
+}
+
+\newenvironment{code}{\begin{semiverbatim} \begin{footnotesize}}
+{\end{footnotesize}\end{semiverbatim}}
+
+
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\d}{\mathsf{d}}
+\newcommand{\dd}{\partial}
+\newcommand{\E}{\mathsf{E}}
+\newcommand{\bb}{\mathbf}
