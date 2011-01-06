@@ -1,3 +1,9 @@
+# README #
+
+All code, slides and notes in support of "Data Bootcamp" tutorial at O'Reilly's Strata Conference 2011.
+
+For more information on the tutorial see, http://strataconf.com/strata2011/public/schedule/detail/17164
+
 ## Software Requirements ##
 
 For those Data Bootcamp participants that wish to follow along with the instructors there are several software tools that you will need to have pre-installed.  If you do not wish to practice during the session then it is not necessary to have these tools installed prior to bootcamp, but you will need them to replicate the methods described on your own.
