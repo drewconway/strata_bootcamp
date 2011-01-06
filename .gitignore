@@ -1,0 +1,9 @@
+# LaTeX auxiliary file types
+*.log
+*.aux
+*.nav
+*.out
+*.pdfsync
+*.snm
+*.toc
+*.vrb
