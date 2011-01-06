@@ -4,6 +4,14 @@ All code, slides and notes in support of "Data Bootcamp" tutorial at O'Reilly's 
 
 For more information on the tutorial see, [http://strataconf.com/strata2011/public/schedule/detail/17164](http://strataconf.com/strata2011/public/schedule/detail/17164)
 
+## License Information ##
+
+**Note**: The workshop source code and lecture materials are distributed under different licenses. 
+
+All source code is licensed under the Simplified BSD License: [http://www.opensource.org/licenses/bsd-license.php](http://www.opensource.org/licenses/bsd-license.php).  
+
+All workshop material other than source code (slides, handouts, etc.) are licensed under the Creative Commons Attribution-Share Alike 3.0 United States License: [http://creativecommons.org/licenses/by-sa/3.0/us/](http://creativecommons.org/licenses/by-sa/3.0/us/).
+
 ## Software Requirements ##
 
 For those Data Bootcamp participants that wish to follow along with the instructors there are several software tools that you will need to have pre-installed.  If you do not wish to practice during the session then it is not necessary to have these tools installed prior to bootcamp, but you will need them to replicate the methods described on your own.
