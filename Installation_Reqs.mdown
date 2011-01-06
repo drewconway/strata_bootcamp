@@ -47,4 +47,8 @@ To install packages in R we use the ``install.packages`` command:
     > install.packages("ggplot2", dependencies=TRUE)
     
 Note, ggplot2 requires several other packages, so if you are running a new R installation this may take a few minutes.
+
+### Additional Software ###
+
+During the tutorial there will be opportunity to visualize network relationships.  A very useful tool for visualizing networks in [Gephi](http://gephi.org/), which is a standalone application.  If you wish to follow along with this portion of the tutorial please [download and install Gephi](http://gephi.org/users/download/).
  
