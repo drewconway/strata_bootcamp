@@ -4,6 +4,13 @@ All code, slides and notes in support of "Data Bootcamp" tutorial at O'Reilly's 
 
 For more information on the tutorial see, [http://strataconf.com/strata2011/public/schedule/detail/17164](http://strataconf.com/strata2011/public/schedule/detail/17164)
 
+Authors
+
+ - [Joseph Adler](http://www.oreillynet.com/pub/au/2033)
+ - [Drew Conway](http://www.drewconway.com)
+ - [Jake Hofman](http://jakehofman.com/)
+ - [Hilary Mason](http://www.hilarymason.com/)
+
 ## License Information ##
 
 **Note**: The workshop source code and lecture materials are distributed under different licenses. 
