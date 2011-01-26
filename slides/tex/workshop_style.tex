@@ -15,6 +15,12 @@
 \usepackage{graphicx}
 \graphicspath{{../../images/figures/}{../../images/logos/}{../../images/graphs/}/}
 
+\ifpdf
+\DeclareGraphicsExtensions{.pdf, .jpg, .tif, .gif, .png}
+\else
+\DeclareGraphicsExtensions{.eps, .jpg, .gif}
+\fi
+
 \usepackage{beamerthemesplit}
 \usetheme{Copenhagen}
 \definecolor{title}{RGB}{128,148,182}
@@ -23,24 +29,33 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{itemize items}[triangle]
 \setbeamertemplate{enumerate items}[default]
-\setbeamertemplate{footline}[page number]{}
+%\setbeamertemplate{footline}[page number]{}
 %\setbeameroption{show notes on second screen}
 
-
 \usepackage{listings}
-%\usepackage{listings,arev}
-\definecolor{keywords}{RGB}{128,148,182}
+\definecolor{keywords}{RGB}{0,0,110}
 \definecolor{comments}{RGB}{60,179,113}
-\lstset{numbers=left,
+\lstset{basicstyle=\ttfamily,
+        %numbers=left,
         showstringspaces=false,
-        numberstyle=\tiny,
+        %numberstyle=\tiny,
         %frame=leftline,
-        numbersep=4.5pt,
-  keywordstyle=\color{keywords}\bfseries,
-  commentstyle=\color{YellowOrange}\emph
+        %numbersep=4.5pt,
+  keywordstyle=\color{keywords}\textbf,
+  commentstyle=\color{comments}\emph
 }
 
 \newenvironment{code}{\begin{semiverbatim} \begin{footnotesize}}
 {\end{footnotesize}\end{semiverbatim}}
 
-\input{aliases.tex}
+\newenvironment<>{varblock}[2][\textwidth]{%
+  \setlength{\textwidth}{#1}
+  \begin{actionenv}{#3}%
+    \def\insertblocktitle{#2}%
+    \par%
+    \usebeamertemplate{block begin}}
+  {\par%
+    \usebeamertemplate{block end}%
+  \end{actionenv}}
+
+\input{../tex/aliases.tex}
