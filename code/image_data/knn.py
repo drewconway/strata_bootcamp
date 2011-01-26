@@ -10,6 +10,9 @@ class KNN():
         self.y = y
         self.X = X
 
+    def train(self):
+        return
+    
     def predict(self, X, k=1):
         X = sp.array(X, ndmin=2)
         N = X.shape[0]
@@ -18,10 +21,31 @@ class KNN():
         D = spat.distance.cdist(X, self.X, 'euclidean')
         for i in range(N):
             ndx = D[i,:].argsort()[:k]
-
+            
             yhat[i] = self.y[ndx].mean()
 
         return yhat
+
+class KNNKDTree():
+
+    def __init__(self, y, X):
+        self.y = y
+        self.X = X
+
+    def train(self):
+        self.kdtree = spat.KDTree(X)
+        
+    def predict(self, X, k=1):
+        X = sp.array(X, ndmin=2)
+        N = X.shape[0]
+
+        yhat = sp.zeros(N)
+        D, ndx = self.kdtree.query(X, k=k)
+        for i in range(N):
+            yhat[i] = self.y[ndx[i]].mean()
+
+        return yhat
+
 
 if __name__=='__main__':
     
@@ -38,8 +62,10 @@ if __name__=='__main__':
     ndx, ig = sp.where(y == 1)
     plt.plot(X[ndx,0], X[ndx,1], 'bo', alpha=0.25)
 
-    classifier = KNN(y, X)
+    classifier = KNNKDTree(y, X)
 
+    classifier.train()
+    
     Xtest = sp.array([[1.5, 1],
                       [-1.5, -1]])
     ytest = classifier.predict(Xtest, k=3)
