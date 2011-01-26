@@ -9,3 +9,6 @@
 *.vrb
 *.blg
 *.bbl
+
+# R file types
+.Rhistory
