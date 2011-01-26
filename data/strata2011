@@ -1,0 +1,1020 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link href="/stylesheets/general.css?1294426979" media="screen" rel="Stylesheet" type="text/css" />
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js">                                                                                                  
+	</script>
+		
+	
+	<script src="/javascripts/application.js?1294426979" type="text/javascript"></script>
+<script src="/javascripts/ui/minified/jquery.ui.all.min.js?1294426979" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.bgiframe.min.js?1294426979" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.stars.pack.js?1294426979" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.dimensions.js?1294426979" type="text/javascript"></script>
+<script src="/javascripts/ext/jquery.form.min.js?1294426979" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+<!--
+
+      $(document).ready(function () {
+        $('#en_openid_minilogin').hide(); $('#en_email_minilogin').show();
+        $('#en_minilogin_openid_go').click(function (){
+          $('#en_email_minilogin').fadeOut(function () {
+            $('#en_openid_minilogin').show();
+          });
+        });
+        $('#en_minilogin_email_go').click(function (){
+          $('#en_openid_minilogin').fadeOut(function () {
+            $('#en_email_minilogin').show();
+          });
+        });
+      });
+
+//-->
+</script>	
+			<link href="/strata2011/public/template/css/220/1294857753"
+		 	media="screen" rel="Stylesheet" type="text/css" />
+	
+	
+			<script src="/strata2011/public/template/js/220/1294857753"
+			type="text/javascript"></script>
+	
+	<title>
+  
+  
+  
+  
+
+Strata 2011 - O'Reilly Conferences, February 01 - 03, 2011, Santa Clara, CA
+</title>
+
+
+  
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="O'Reilly Conferences: Strata 2011" href="http://feeds2.feedburner.com/OreillyConferencesStrata" />
+
+<link href="http://assets.en.oreilly.com/1/eventprovider/1/2011v1_css.css?121710" media="screen" rel="Stylesheet" type="text/css" />
+<link href="http://assets.en.oreilly.com/1/event/55/strata2011_css_v2_new.css?1511" media="screen" rel="Stylesheet" type="text/css" />
+
+
+<link href="http://strataconf.com/strata2011/public/template/css/220/1294269914" media="screen" rel="Stylesheet" type="text/css" />
+
+<style type="text/css">
+#en_content.updated .live_module_set div.more a:before {content:" ";}
+</style>
+
+
+
+<!--[if IE 6]>
+<style type="text/css">
+#widgets .whatis img {display:none;}
+</style>
+<![endif]-->
+
+
+
+
+ 
+<script type="text/javascript">
+$(function() {
+
+
+
+  var $group = $("#en_header .slideshow .grouping"), x =  $group.length, rnd = (Math.floor(Math.random()*x)), $gSlideshow = $group.eq(rnd).children();
+
+
+
+  $gSlideshow.eq(0).show();
+  $gSlideshow.eq(1).css({"opacity": 0, "z-index": 5, "display": "inline"});
+  setTimeout(function() {$gSlideshow.eq(1).fadeTo(3000, 1);}, 4000);
+
+});
+</script>
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+<link rel="apple-touch-icon" href="http://assets.en.oreilly.com/1/eventprovider/1/orm-iphone-icon.png" type="image/png" />
+<link href="http://assets.en.oreilly.com/1/eventprovider/1/print_css.css" media="print" rel="Stylesheet" type="text/css" />
+
+<meta name="description" content="We're in the midst of an industrial revolution of data, the result of new data processing technologies, ubiquitous computing, and next-generation interfaces. We can mine petabytes of information, filter millions of messages, and link disparate databases in the blink of an eye. We're harvesting billions of mouse clicks, credit card swipes, and GPS coordinates. The resulting data is available to companies, governments, and citizens.	" />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2011-02-01" />
+
+
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+</head>
+<body class='en_c_content en_a_index' id='en_content_index'>
+<div id="en_content" class="updated">
+<div id="en_main_parts" class=" home home">
+<div id="en_header"><!-- -->
+
+<div id="stay_connected">
+  <a href="#" class="title"></a>
+  <div class="content">
+    <div class="items">
+      <a href="http://twitter.com/strataconf" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-twitter-trans.png" width="29" height="18" alt="Strata on Twitter"/>Follow Us on Twitter</a>
+      <a href="http://strataconf.com/go/strata_fb" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-facebook-trans.png" width="29" height="18" alt="Strata on Facebook"/>Strata Facebook Group</a>  
+      <a href="http://strataconf.com/go/strata_li" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-linkedin-trans.png" alt="Strata LinkedIn Group"/>Strata LinkedIn Group</a> 
+      <a href="http://elists.oreilly.com/#conferences" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-newsletter-trans.png" width="29" height="18" alt="Sign up for the Strata Bulletin"/>Sign up for the Bulletin</a>
+      <a href="http://radar.oreilly.com/data/" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-blog-trans.png" width="29" height="18" alt="Data on the O'Reilly Radar"/>Data on the O'Reilly Radar</a> 
+
+
+
+    </div><!-- /items -->
+  </div><!-- /content -->
+</div><!-- /stay_connected -->
+
+
+
+<div id="top_level_nav">
+  <ul id="nav">
+      <li><a href="/strata2011" class="level_one">Home</a></li> 
+
+<li><a href="/strata2011/public/register" class="level_one">Register <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/register" class="level_two">Info &amp; Registration</a></li>
+ <li><a href="/strata2011/public/content/all-access" class="level_two">All Access Pass to Strata
+</a></li>
+
+
+    <li><a href="/strata2011/public/content/media" class="level_two">Media Registration</a></li>
+    <li><a href="/strata2011/public/content/hotel" class="level_two">Hotel &amp; Travel</a></li>
+    <li><a href="/strata2011/public/content/restaurants" class="level_two">Local Eats</a></li>
+   </ul>
+</li>
+
+<li><a href="/strata2011/public/schedule/grid" class="level_one">Program <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/schedule/grid" class="level_two">Schedule</a></li>
+    <li><a href="/strata2011/public/schedule/full" class="level_two">Sessions</a>
+      <ul class="level_three">
+        <li><a href="/strata2011/public/schedule/topic/The+Data+Business" class="level_two">The Data Business</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Disruption+&amp;+Opportunity" class="level_two">Disruption &amp; Opportunity</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Interfaces" class="level_two">Interfaces</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Practitioner" class="level_two">Practitioner</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Real+World" class="level_two">Real World</a></li>
+      </ul>
+    </li>
+    <li><a href="/strata2011/public/schedule/stype/Tutorial" class="level_two">Tutorials</a></li>
+    <li><a href="/strata2011/public/schedule/stype/keynote" class="level_two">Keynotes</a></li>
+    <li><a href="http://strataconf.com/strata2011/public/schedule/detail/17165" class="level_two">Executive Summit</a></li>
+    <li><a href="/strata2011/public/schedule/speakers" class="level_two">Speakers</a></li>
+    <li><a href="/strata2011/public/schedule/stype/Event" class="level_two">Events</a></li>
+    <li><a href="/strata2011/public/cfp/148" class="level_two">Startup Showcase</a></li>
+    <li><a href="/strata2011/public/schedule/detail/17840" class="level_two">Science Fair</a></li>
+    
+    
+  </ul>
+</li>
+
+
+<li><a href="/strata2011/public/content/about" class="level_one">About</a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/content/about" class="level_two">About O'Reilly Strata</a></li>
+    <li><a href="/strata2011/public/content/about#committee" class="level_two">Program Committee</a></li>
+    <li><a href="/strata2011/blog" class="level_two">Strata Blog</a></li>
+    <li><a href="/strata2011/public/content/related" class="level_two">Related Content</a></li>
+    <li><a href="/strata2011/public/content/attractions" class="level_two">Santa Clara Attractions</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://conferences.oreilly.com" class="level_two" target="_blank">O'Reilly Conferences</a></li>
+    <li><a href="http://www.oreilly.com" class="level_two" target="_blank">O'Reilly Media</a></li>
+    <li><a href="http://conferences.oreilly.com/diversity.csp" class="level_two" target="_blank">Conference Diversity</a></li>
+  </ul>
+</li>
+
+<li><a href="/strata2011/public/content/exhibitors" class="level_one">Sponsor Pavilion</a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/strata2011/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/strata2011/public/content/media-partners" class="level_two">Media Partners</a></li>
+   </ul>
+</li>
+
+<li><a href="/strata2011/public/content/contact" class="level_one">Connect <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two bigger">
+    <li><a href="/strata2011/public/content/contact" class="level_two">Contact Us</a></li>
+    <li><a href="/strata2011/public/content/news-coverage" class="level_two">News &amp; Coverage</a></li>
+    <li><a href="/strata2011/public/content/promote" class="level_two">Promote Strata</a></li>
+    <li><a href="/strata2011/public/content/networking-tips" class="level_two">Networking Tips</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://elists.oreilly.com/#conferences" class="level_two" target="_blank">Bulletin</a></li>
+    <li><a href="http://radar.oreilly.com" class="level_two" target="_blank">O'Reilly Radar</a></li>
+  </ul>
+</li>
+
+
+  <li><a href="/strata2011/user/account" class="level_one">Your Account</a>
+    <ul class="level_two">
+    <li><a href="/strata2011/user/account" class="level_two">Your Account</a></li>
+    <li><a href="/strata2011/public/content/attendee-directory" class="level_two">Attendee Directory</a></li>
+  </ul>
+</li>
+
+  </ul>
+</div>
+
+
+
+<div class="slideshow">
+
+
+ <div class="grouping">
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_crowd_1.jpg" width="910" height="241" alt="StrataConf 2011" />
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_crowd_1-2.jpg" width="910" height="241" alt="StrataConf 2011" />
+  </div>
+  <div class="grouping">
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_grocery_1.jpg" width="910" height="241" alt="StrataConf 2011" />
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_grocery_1-2.jpg" width="910" height="241" alt="StrataConf 2011" />
+  </div>
+  <div class="grouping">
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_traffic_1.jpg" width="910" height="241" alt="StrataConf 2011" />
+    <img src="http://assets.en.oreilly.com/1/event/55/strata2011__header_traffic_1-2.jpg" width="910" height="241" alt="StrataConf 2011" />
+  </div>
+
+
+</div>
+
+</div><!-- // en_header -->
+
+
+<div id="en_menubar">
+
+
+</div><!-- en_menubar -->
+
+
+
+<div id="en_main">
+	<div id="mid">
+
+	
+	
+
+
+
+<div class="en_article">
+   
+
+  <div class="en_article_body">
+    
+<iframe src ="http://assets.en.oreilly.com/1/event/55/strata2011_speakers_frame.htm?011011" id="cheeseboard" frameborder="0" width="448" height="140" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true" style="position:absolute;left: 450px;top: 262px;"></iframe>
+
+
+
+<div id="widgets">
+
+
+
+  <div id="call">
+    <a href="/strata2011/public/register">
+      <img src="http://assets.en.oreilly.com/1/eventprovider/1/cta_global_register.png" style="margin:10px 0;" width="300" height="38" alt="Register Now for Strata" />
+    </a>
+    <a href="http://www.oreillynet.com/cs/nl/home#conferences" style="margin-top:0;">
+      <img src="http://assets.en.oreilly.com/1/event/55/strata2011__cta_bulletin.png" width="300" height="20" alt="Sign Up for the Strata Newsletter" />
+    </a>
+  </div><!-- /call -->
+
+
+  <div class="live_module_set">
+    <div class="subset">
+
+    
+
+
+
+
+
+
+      <div class="live_module selected">
+        <div class="toggle"><a href="">Strata: The Future at Work</a></div>	
+        <div class="content">
+          <div class="fla_video" title="http://www.youtube.com/p/EF277D84FE2A28D5|280|187"></div>	  
+          <div class="more">
+            <a href="http://www.youtube.com/view_play_list?p=EF277D84FE2A28D5" title="More Strata video" target="_blank" style="vertical-align:middle;">More Strata video</a>
+          </div>
+        </div><!-- /content -->
+      </div><!-- /live_module -->
+
+
+      <div class="live_module selected">
+        <div class="toggle"><a href=""><span style="font-size: 0.8em;float:right;margin-right:20px;line-height:2.5em;">(Official Tag: <strong>#strataconf</strong>)</span>Twitter </a></div>
+        <div class="content">
+          <div class="get_twitter"  title="http://search.twitter.com/search.json?q=strataconf+OR+from%3Astrataconf|2">
+            <img src="http://assets.en.oreilly.com/1/eventprovider/1/hex777777_load_spinner.gif" width="16" height="16" alt="Loading Strata Conference related Tweets" style="float:right;" />
+            Pulling in content from <a href="http://search.twitter.com/search?q=strataconf+OR+from%3Astrataconf" target="_blank">Twitter</a>
+          </div>                      
+            <div class="more">
+              <a href="http://twitter.com/strataconf" title="Follow Strata Conference on Twitter" target="_blank" style="vertical-align:middle;">Follow Strata Conference on Twitter</a>
+            </div>
+            <div class="more">
+              <a href="http://search.twitter.com/search?q=strataconf+OR+from%3Astrataconf" target="_blank">More Strata Conference on Twitter</a>
+          </div>
+        </div><!-- /content -->
+      </div><!-- /live_module -->
+     
+
+      
+
+
+
+
+
+
+      <div class="live_module selected">
+        <div class="toggle"><a href="">Strata Related Resources</a></div>
+        <div class="content related">
+          <div style="margin: 0pt 0pt 10px;min-height:50px;" class="clearBoth">
+            <a href="http://oreilly.com/catalog/9780596157128/" target="_blank">
+              <span class="imgWrap"><img src="http://covers.oreilly.com/images/9780596157128/thumb.gif" alt="Beautiful Data" width="40" height="50" style="float:left;margin-right:6px;" /></span>
+              <span class="title strong">Beautiful Data</span>
+            </a><br />
+            <span class="author small">Toby Segaran, Jeff Hammerbacher</span>
+          </div>
+          <div style="margin: 0 0 10px;min-height:50px;" class="clearBoth">
+            <a href="http://oreilly.com/catalog/0636920000617/" target="_blank">
+              <span class="imgWrap"><img src="http://covers.oreilly.com/images/0636920000617/thumb.gif" alt="Beautiful Visualization" width="40" height="50" style="float:left;margin-right:6px;" /></span>
+              <span class="title strong">Beautiful Visualization</span>
+            </a><br />
+            <span class="author small">Julie Steele, Noah Iliinsky</span>
+          </div>
+          <div style="margin: 0pt 0pt 10px;min-height:50px;" class="clearBoth">
+            <a href="http://oreilly.com/catalog/9780596802363/" target="_blank">
+              <span class="imgWrap"><img src="http://covers.oreilly.com/images/9780596802363/thumb.gif" alt="Data Analysis with Open Source Tools" width="40" height="50" style="float:left;margin-right:6px;" /></span>
+              <span class="title strong">Data Analysis with Open Source Tools</span>
+            </a><br />
+            <span class="author small">Philipp K Janert</span>
+          </div>
+          <div class="more">
+            <a href="/strata2011/public/content/related">More Strata Related Resources</a>
+          </div>
+        </div><!-- /content -->
+      </div><!-- /live_module -->
+
+
+      <div class="live_module selected">
+        <div class="toggle"><a href="">What is data science?</a></div>
+        <div class="content whatis">
+          <a href="http://assets.en.oreilly.com/1/event/55/strata2011_what-is-data-science_pdf.pdf" target="_blank">
+            <img src="http://assets.en.oreilly.com/1/event/55/strata2011_what-is-data-science_logo.png" width="100" height="108" alt="What is data science?" class="left" />
+          </a>
+         <div>
+           <p class="strong">An O'Reilly Radar Report</p>
+           <p style="font-style: italic;">The future belongs to the companies and people that turn data into products</p>
+         </div>
+          <p class="strong">
+            <a href="http://assets.en.oreilly.com/1/event/55/strata2011_what-is-data-science_pdf.pdf" target="_blank">Download the free PDF</a>
+          </p>
+        </div><!-- /content -->
+      </div><!-- /live_module -->
+
+
+
+      <div class="live_module selected">
+        <div class="toggle"><a href="">Strata Recent Blog Posts</a></div>
+        <div class="content blog">
+          
+
+<ul class="posts">
+
+  <li>
+    <a href="/strata2011/public/content/2011/01/11-wikileaks">Who Owns the Wikileaks Data?</a>
+    <p>If we live in an information age, then whoever owns the information wins. But information wants to be free: when I share a phone number, it becomes more valuable, not less so. The Wikileaks controversy has pushed data ownership to the front of public discourse: to whom do the cables belong?</p>
+  </li>
+
+  <li>
+    <a href="/strata2011/public/content/2010/12/17-algorithm">What if an Algorithm Could Transform Your Startup?</a>
+    <p>A decade ago, Google's PageRank algorithm transformed the face of the web, moving us from directories to relevance. Today, dozens of tech leaders are finding that Big Data is the key to their success</p>
+  </li>
+
+</ul>
+          <div class="more">
+            <a href="/strata2011/blog">More from the Strata Conference Blog</a>
+          </div>
+        </div><!-- /content -->
+      </div><!-- /live_module -->
+      
+
+
+      
+
+
+
+
+
+
+
+  
+
+    </div><!-- /subset -->
+  </div><!-- /live_module_set -->
+
+
+
+
+
+</div><!-- /widgets -->
+
+
+<h1 style="margin-bottom:2px;">O'Reilly Strata Conference<br /><span style="font-size: 0.7em;">Turn data into decisions</span></h1>
+
+<p class="clearLeft">Big Data is here, and it changes everything. From startups to the Fortune 500, smart companies are betting on data-driven insight. Get control of the new data opportunity at Strata—immerse yourself in three full days of hands-on training, information-rich sessions, and a sponsor pavilion filled with the key players and products. This new O’Reilly conference brings together the people, tools, and technologies you need to make data work.</p>
+
+  <div class="item highlights">
+    <h3>Conference Highlights</h3>
+    <ul class="left">
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/stype/Tutorial">Tutorials</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/stype/keynote">Keynotes</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/detail/17165">Executive Summit</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/detail/17840">Strata Science Fair</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/cfp/148">Startup Showcase</a></li>
+    </ul>
+    <ul class="left">
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/grid">Schedule</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/content/all-access">All Access Pass</a></li>	  
+	  <li><a href="http://www.youtube.com/view_play_list?p=EF277D84FE2A28D5" target="_blank">Video Interviews</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/stype/Event">Events</a></li>
+	  <li><a href="http://strataconf.com/strata2011/public/schedule/detail/17818">Big Data Camp</a></li>
+    </ul>
+    <div class="clearLeft"></div>
+</div>
+
+<!--div style="border: 1px solid #ccc; background: transparent; padding: 4px 10px; margin: 20px 0pt 20px 20px; max-width: 390px;"-->
+<!--
+<div style="background-color:#fff; padding: 4px 10px 4px 20px; margin: 20px 0pt 20px 0;border:1px solid #ddd;border-width:1px 0;">
+<h3 style="font-weight:bold;margin:4px 0;padding:0;line-height:1.3em">Join us for a Free Strata Webcast: <a href="http://oreillynet.com/pub/e/1808" target="_blank">How to Decrease the Pain in Building Distributed Systems</a><br /><span style="font-size:.75em;">
+<span style="font-weight:normal;">Presented by: Bradford Stephens, Drawn to Scale<br />
+Wednesday, January 12 at 10:00 am PT<br /></span>
+<span style="font-weight:normal;">Sponsored by: Thomson Reuters<br /></span>
+  </span>
+</h3>
+<a href="https://oreilly.connectsolutions.com/scalability_best_practices/event/registration.html"><img src="http://oreilly.com/images/oreilly/register-now-gold.gif" height="26" width="108" alt="Register Now" /></a>
+</div>
+-->
+
+<p>At Strata, you'll find intensely practical sessions for both business users and hardcore technologists; success stories (and cautionary tales) from startups that are making data their business and also established companies that are saving millions and creating new revenue streams; great networking opportunities; and keynotes that snap the big picture into focus.</p>
+
+<h3>Key Topics</h3>
+
+<ul>
+  <li>Becoming a data-driven organization</li>
+  <li>Data's evolution from research to product</li>
+  <li>Applications, case studies, and cautionary tales</li>
+  <li>Distributed data processing, Hadoop ecosystem</li>
+  <li>Data acquisition, crowdsourcing, cleaning, distribution and markets</li>
+  <li>Machine learning</li>
+  <li>Real-time data processing and analytics</li>
+  <li>Data science best practice</li>
+  <li>Visualization and design principles</li>
+  <li>Augmented reality and immersive interfaces</li>
+  <li>Data protection, privacy, and policy</li>
+  <li>Training and recruitment of data scientists</li>
+</ul>
+
+<h3>Who Should Attend</h3>
+
+<p>Strata is for data-driven decision makers, managers, and data practitioners, including:</p>
+
+<ul>
+  <li>VPs or directors of marketing, analytics, or data warehousing</li>
+  <li>CIOs, CTOs, CFOs</li>
+  <li>Enterprise architects</li>
+  <li>Founders and key executives from data startups</li>
+  <li>Market researchers and marketing analysts</li>
+  <li>Data scientists</li>
+  <li>Analysts</li>
+  <li>Developers</li>
+  <li>Database Designers</li>
+  <li>Product managers</li>
+  <li>Researchers and academics</li>
+  <li>Data-driven designers</li>
+  <li>VCs</li>
+</ul>
+
+<p>The inaugural O'Reilly Strata Conference takes place February 1-3, 2011 at the Hyatt Regency Santa Clara and  Santa Clara Convention Center. <a href="https://en.oreilly.com/strata2011/public/register" class="strong">Join us at Strata</a>, the defining conference for the layered world of tomorrow.</p>
+
+<p>
+<img class="left" style="margin:0 20px 10px 0;border:1px solid #999;" src="http://assets.en.oreilly.com/1/event/55/strata2011_jason-hoffman.jpg" alt="Jason Hoffman" />
+
+<em><strong>&quot;My gut feeling is that we're going to look back at the upcoming Strata Conference like we do at the Web 2.0 Conference in 2004/2005.&quot;</strong></em><br /><span style="display:block;text-align:right;" class="small">&#8212;Jason Hoffman, CTO/Founder, Joyent, Inc.</span><span style="display:block;" class="clearLeft"></span></p>
+
+<!--h3>Important Dates</h3>
+
+<ul>
+  <li>Early registration discount ends January 9, 2011</li>
+</ul-->
+  </div>
+
+  
+
+
+
+  <div class="en_article_metadata">
+    <a href="/strata2011/public/content/home">Link</a> | 01/24/2011 11:18am PST
+    
+  </div>
+
+  
+
+</div>
+
+
+</div> <!-- /mid -->
+</div><!-- en_main -->
+
+
+
+<div id="right_col" style="position:relative;">
+
+  <div id="sponsors">
+  <h2>Sponsors</h2>
+
+
+<div class="sponsor_list_heading">Premier Diamond Sponsor</div><ul class="plain sponsorList"><li><a href="http://www.thomsonreuters.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/thomson_reuters3.gif"  alt="Thomson Reuters" title="Thomson Reuters"  height="62" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+<div class="sponsor_list_heading">Diamond Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.emc.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/emc.gif"  alt="EMC Data Computing Division" title="EMC Data Computing Division"  height="45" width="120" border="0" /></a></li><li><a href="http://www.enterprisedb.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/enterprise_db_blue.gif"  alt="EnterpriseDB" title="EnterpriseDB"  height="35" width="120" border="0" /></a></li><li><a href="https://datamarket.azure.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/microsoft_logo2.gif"  alt="Microsoft" title="Microsoft"  height="21" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+
+<div class="sponsor_list_heading">Platinum Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.gnip.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/gnip.gif"  alt="Gnip" title="Gnip"  height="81" width="120" border="0" /></a></li><li><a href="http://www.rackspace.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/rackspace_hosting.gif"  alt="Rackspace Hosting" title="Rackspace Hosting"  height="34" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+<div class="sponsor_list_heading">Gold Sponsor</div><ul class="plain sponsorList"><li><a href="http://www.ibm.com/jstart" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/ibm.gif"  alt="IBM" title="IBM"  height="44" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sponsor_list_heading">Silver Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.mturk.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/amazon_mechanical_turk.gif"  alt="Amazon Mechanical Turk" title="Amazon Mechanical Turk"  height="15" width="120" border="0" /></a></li><li><a href="http://aws.amazon.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/amazonwebservices.gif"  alt="Amazon Web Services" title="Amazon Web Services"  height="44" width="120" border="0" /></a></li><li><a href="http://www.asterdata.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/aster_data.gif"  alt="Aster Data" title="Aster Data"  height="32" width="120" border="0" /></a></li><li><a href="http://www.cloudera.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/cloudera.gif"  alt="Cloudera" title="Cloudera"  height="26" width="120" border="0" /></a></li><li><a href="http://www.clustrix.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/clustrix.gif"  alt="Clustrix" title="Clustrix"  height="28" width="120" border="0" /></a></li><li><a href="http://www.datastax.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/datastax_2.gif"  alt="DataStax, Inc. (formerly Riptano, Inc.)" title="DataStax, Inc. (formerly Riptano, Inc.)"  height="51" width="120" border="0" /></a></li><li><a href="http://www.digitalreasoning.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/digital_reasoning.gif"  alt="Digital Reasoning Systems" title="Digital Reasoning Systems"  height="55" width="120" border="0" /></a></li><li><a href="http://www.theheritagehealthprize.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/heritage-provider-network.gif"  alt="Heritage Provider Network" title="Heritage Provider Network"  height="17" width="120" border="0" /></a></li><li><a href="http://www.impetus.com/large_data_analytics" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/impetus_3.gif"  alt="Impetus" title="Impetus"  height="49" width="120" border="0" /></a></li><li><a href="http://www.jaspersoft.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/jaspersoft.gif"  alt="JasperSoft" title="JasperSoft"  height="23" width="120" border="0" /></a></li><li><a href="http://www.karmasphere.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/karmasphere.gif"  alt="Karmasphere" title="Karmasphere"  height="30" width="120" border="0" /></a></li><li><a href="http://www.linkedin.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/linkedIn.gif"  alt="LinkedIn" title="LinkedIn"  height="29" width="120" border="0" /></a></li><li><a href="http://www.marklogic.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/marklogic.gif"  alt="MarkLogic" title="MarkLogic"  height="24" width="120" border="0" /></a></li><li><a href="http://www.pentaho.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/pentaho-1.gif"  alt="Pentaho" title="Pentaho"  height="35" width="120" border="0" /></a></li><li><a href="http://www.pervasive.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/pervasive.gif"  alt="Pervasive" title="Pervasive"  height="30" width="120" border="0" /></a></li><li><a href="http://www.revolutionanalytics.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/revolution-analytics.gif"  alt="Revolution Analytics" title="Revolution Analytics"  height="24" width="120" border="0" /></a></li><li><a href="http://www.splunk.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/splunk-1.gif"  alt="Splunk" title="Splunk"  height="36" width="120" border="0" /></a></li><li><a href="http://urbanmapping.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/urban_mapping.gif"  alt="Urban Mapping" title="Urban Mapping"  height="16" width="120" border="0" /></a></li><li><a href="http://www.wolframalpha.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/wolfram-alpha.gif"  alt="Wolfram|Alpha" title="Wolfram|Alpha"  height="19" width="120" border="0" /></a></li></ul>
+
+
+
+
+<div class="sponsor_list_heading">Bronze Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.paraccel.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/paraccel.gif"  alt="ParAccel" title="ParAccel"  height="31" width="120" border="0" /></a></li><li><a href="http://www.tableausoftware.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/tableau-software.gif"  alt="Tableau Software" title="Tableau Software"  height="24" width="120" border="0" /></a></li></ul>
+
+
+
+
+<!-- // sponsors -->
+
+
+    <h3>Sponsorship Opportunities</h3>
+
+    <p>For information on exhibition and sponsorship opportunities at the conference, contact Susan Young at <a href="mailto:syoung@oreilly.com">syoung@oreilly.com</a></p>
+
+    <p>Download the <a href="http://strataconf.com/go/strata2011_prospectus" target="_blank" title="Opens link in a new browser window.">Strata Sponsor/Exhibitor Prospectus</a></p>
+
+
+
+    <h3>Contact Us</h3>
+
+    <p>View a complete list of <a href="/strata2011/public/content/contact">Strata Contacts</a></p>
+  </div>
+</div><!-- /#right_col -->
+
+<div id="en_footerwrap">
+<div id="en_footer"><!-- content/footer -->
+  
+    
+      <div class="content">
+<div id="banner_ad">
+  <a href="http://conferences.oreilly.com/" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/oreilly_conferences_banner.gif" id="banner1" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="http://oreilly.com/go/conference-ug" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/banner_oreilly_ug.gif" id="banner2" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="/strata2011/go/strata2011_oreilly_data" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_oreily_data.jpg" id="banner3" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="/strata2011/go/strata2011_gnip" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_oreily_gnip.jpg" id="banner4" alt="GNIP" style="display:none;" /></a>
+  <a href="http://strataconf.com/strata2011/go/strata2011_thomsonreuters" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_thomson-reuters.gif" id="banner5" alt="Thomson Reuters" style="display:none;" /></a>
+  <a href="http://strataconf.com/strata2011/go/strata2011_acmqueue" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_ACMQueue.gif" id="banner6" alt="ACMQueue" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_windowsazure" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_windows-azure.jpg" id="banner7" alt="Windows Azure" style="display:none;" /></a>
+  
+  <a href="/strata2011/go/strata2011_rackspace" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_rackspace.gif" id="banner8" alt="Rackspace" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_splunk" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_splunk.gif" id="banner9" alt="Splunk" style="display:none;" /></a>
+
+
+</div> <!-- /banner ad -->
+
+<div id="footer_logo">
+<a href="http://oreilly.com/"><img height="35" border="0" width="155" src="http://assets.en.oreilly.com/1/eventprovider/1/oreilly-logo-footer.gif" alt="O'Reilly Media" /></a>
+<br /><br />
+&copy;2011, O'Reilly Media, Inc.<br />(707) 827-7000 / (800) 998-9938<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com">conf-webmaster@oreilly.com</a>
+
+</div> 
+
+<div class="footercol">
+<ul>
+  <li><strong>Strata</strong></li>
+  <li><a href="/strata2011/public/content/about">About</a></li>
+  <li><a href="/strata2011/public/register">Register</a></li>
+  <li><a href="/strata2011/public/schedule/grid" target="_blank">Schedule</a></li>
+  <li><a href="/strata2011/public/schedule/speakers" target="_blank">Speakers</a></li>
+
+  <li><a href="/strata2011/public/content/exhibitors" target="_blank">Sponsor Pavillion</a></li>
+  <li><a href="http://conferences.oreilly.com/diversity.csp" target="_blank">Diversity</a></li>
+  <li><a href="/strata2011/public/content/sitemap">Sitemap</a></li>
+  <li><a href="http://www.oreillynet.com/pub/a/mediakit/privacy.html" target="_blank">Privacy Policy</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/strata2011/public/content/contact">Contact Us</a></li>
+  <li><a href="http://elists.oreilly.com/#conferences" target="_blank">Strata Bulletin</a></li>
+  <li><a href="http://twitter.com/strataconf" target="_blank">Twitter</a></li>
+  <li><a href="http://strataconf.com/go/strata_fb" target="_blank">Facebook</a></li>
+  <li><a href="http://strataconf.com/go/strata_li" target="_blank">LinkedIn</a></li>
+
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://answers.oreilly.com/" target="_blank">O'Reilly Answers</a></li>
+  <li><a href="http://oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://makezine.com/" target="_blank">MAKE</a></li>
+</ul>
+</div>	
+</div><!-- //content -->
+    
+  
+</div><!-- en_footer -->
+</div><!-- en_footerwrap -->
+
+<div id="page_bot"></div>
+
+
+</div><!-- en_main_parts -->
+
+
+</div><!-- en_content -->
+
+
+  <div id="sidetabs">
+  <a href="/strata2011/public/schedule/speakers" title="Strata Speakers" class="speaker">Speakers</a>
+  <a href="/strata2011/public/content/video" title="Strata Video" class="video">Video</a>
+  <a href="/strata2011/public/content/social" title="Strata Social Media" class="social">Social</a>
+</div>
+
+
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/2011v1_common.js?110210" type="text/javascript"></script>
+<script src="http://assets.en.oreilly.com/1/event/55/strata2011_script.js?111810" type="text/javascript"></script>
+
+
+  <script type="text/javascript" language="javascript">
+/* <![CDATA[ */
+<!--
+
+var speakerList =  "\r\n<div>\r\n\r\n        \r\n\r\n<span firstname=\"Shevek\" lastname=\"-\" org=\"Karmasphere\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104029.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104029\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Zane\" lastname=\"Adam\" org=\"Microsoft Corp\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_107065.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/107065\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Joseph\" lastname=\"Adler\" org=\"LinkedIn\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_87848.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/87848\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Alasdair\" lastname=\"Allan\" org=\"University of Exeter\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_2216.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/2216\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Bruno\" lastname=\"Aziza\" org=\"Microsoft\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106940.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106940\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Matt\" lastname=\"Biddulph\" org=\"Nokia\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1307.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1307\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Lukas\" lastname=\"Biewald\" org=\"CrowdFlower\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_76062.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/76062\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Benjamin\" lastname=\"Black\" org=\"  - \" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_49894.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/49894\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ed\" lastname=\"Boyajian\" org=\"EnterpriseDB\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_31041.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/31041\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Jonathan\" lastname=\"Bruner\" org=\"Forbes Media\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_69265.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/69265\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Amber\" lastname=\"Case\" org=\"Geoloqi\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_100889.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/100889\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Pablo\" lastname=\"Castro\" org=\"Microsoft\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103529.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103529\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Patrick\" lastname=\"Chanezon\" org=\"Google\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_2657.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/2657\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Peter\" lastname=\"Clark\" org=\"Minnesota Population Center\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_96279.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/96279\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Drew\" lastname=\"Conway\" org=\"New York University\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104414.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104414\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Rod\" lastname=\"Cope\" org=\"OpenLogic, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1743.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1743\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Terence\" lastname=\"Craig\" org=\"PatternBuilders\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106616.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106616\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Alistair\" lastname=\"Croll\" org=\"Bitcurrent\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_17816.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/17816\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Bradford\" lastname=\"Cross\" org=\"Flightcaster\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_100890.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/100890\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Kenneth\" lastname=\"Cukier\" org=\"The Economist\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106399.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106399\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Eric\" lastname=\"Day\" org=\"Rackspace Cloud\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_24433.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/24433\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Barry\" lastname=\"Devlin\" org=\"9sight Consulting\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104454.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104454\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Michael\" lastname=\"Driscoll\" org=\"Metamarkets\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_33953.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/33953\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Edd\" lastname=\"Dumbill\" org=\"O'Reilly Media, Inc. \" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Roger\" lastname=\"Ehrenberg\" org=\"IA Ventures\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_252.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/252\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Tim\" lastname=\"Estes\" org=\"Digital Reasoning Systems, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1771.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1771\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Dylan\" lastname=\"Field\" org=\"Brown University\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_102558.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/102558\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Brian\" lastname=\"Fitzpatrick\" org=\"Google, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_17195.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/17195\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Pete\" lastname=\"Forde\" org=\"BuzzData\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_4314.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/4314\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Margaret\" lastname=\"Francis\" org=\"Lithium\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_21396.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/21396\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"John\" lastname=\"Fritz\" org=\"AMD\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_64156.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/64156\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Zach\" lastname=\"Gemignani\" org=\"Juice Analytics\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103940.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103940\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ben\" lastname=\"Gimpert\" org=\"Altos Research\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104038.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104038\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Nolan\" lastname=\"Goldberg\" org=\"\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104853.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104853\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Anthony\" lastname=\"Goldbloom\" org=\"Kaggle\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_101410.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/101410\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Jim\" lastname=\"Golden\" org=\"Accenture\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_107108.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/107108\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Stephen\" lastname=\"Guerin\" org=\"Santa Fe Complex\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104032.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104032\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Tim\" lastname=\"Guleri\" org=\"Sierra Ventures\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104993.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104993\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Sudhir\" lastname=\"Hasbe\" org=\"Microsoft\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106939.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106939\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Joe\" lastname=\"Hellerstein\" org=\"UC Berkeley\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_102993.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/102993\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ken\" lastname=\"Hilburn\" org=\"Juice Analytics\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103815.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103815\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Jake\" lastname=\"Hofman\" org=\"Yahoo!\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_95656.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/95656\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Alexander\" lastname=\"Howard\" org=\"O'Reilly Media\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_89224.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/89224\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Peter\" lastname=\"Jackson\" org=\"Thomson Reuters\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_33756.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/33756\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Clay\" lastname=\"Johnson\" org=\"InfoVegan.com\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_51017.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/51017\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Paul\" lastname=\"Kedrosky\" org=\"Kauffman Foundation\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_69417.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/69417\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Moe\" lastname=\"Khosravy\" org=\"Microsoft\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_50595.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/50595\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Dustin\" lastname=\"Kirk\" org=\"Neustar\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_102962.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/102962\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Philip\" lastname=\"Kromer\" org=\"Infochimps\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103998.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103998\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Mark\" lastname=\"Madsen\" org=\"Third Nature\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1305.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1305\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Peter\" lastname=\"Marney\" org=\"Thomson Reuters\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104234.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104234\" \/>\r\n\r\n\r\n        \r\n    \r\n<span firstname=\"Hilary\" lastname=\"Mason\" org=\"bit.ly\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_62617.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/62617\"priority=\"true\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Stefano\" lastname=\"Mazzocchi\" org=\"Google, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104155.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104155\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Carol\" lastname=\"McCall\" org=\"Tenzing Health\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_93217.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/93217\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Robert\" lastname=\"McGrew\" org=\"Palantir Technologies\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104619.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104619\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Abhishek\" lastname=\"Mehta\" org=\"Tresata\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_100891.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/100891\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Mike\" lastname=\"Olson\" org=\"Cloudera\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_5259.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/5259\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Bob\" lastname=\"Page\" org=\"eBay\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104035.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104035\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Marc\" lastname=\"Parrish\" org=\"Barnes &amp; Noble\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103997.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103997\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"DJ\" lastname=\"Patil\" org=\"LinkedIn\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_101103.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/101103\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Davin\" lastname=\"Potts\" org=\"Pervasive\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106479.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106479\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"James\" lastname=\"Powell\" org=\"Thomson Reuters\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_4926.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/4926\" \/>\r\n\r\n\r\n        \r\n    \r\n<span firstname=\"Kim\" lastname=\"Rees\" org=\"Periscopic\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103803.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103803\"priority=\"true\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Simon\" lastname=\"Rogers\" org=\"Guardian\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_102764.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/102764\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Matthew\" lastname=\"Russell\" org=\"Digital Reasoning Systems\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_6606.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/6606\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Johan\" lastname=\"Schleier-Smith\" org=\"Tagged.com\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_106784.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/106784\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Theo\" lastname=\"Schlossnagle\" org=\"OmniTI\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_4103.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/4103\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Toby\" lastname=\"Segaran\" org=\"Google\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_1956.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/1956\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Justin\" lastname=\"Sheehy\" org=\"Basho Technologies\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103839.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103839\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Peter\" lastname=\"Skomoroch\" org=\"LinkedIn\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_76203.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/76203\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Rod\" lastname=\"Smith\" org=\"IBM Emerging Internet Technologies \" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_10028.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/10028\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Pete\" lastname=\"Soderling\" org=\"Stratus Security\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_73022.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/73022\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Julie\" lastname=\"Steele\" org=\"O'Reilly Media, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_27740.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/27740\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"David\" lastname=\"Steier\" org=\"Deloitte\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104034.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104034\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ryan\" lastname=\"Strynatka\" org=\"Radian6\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_105026.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/105026\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Indu\" lastname=\"Subaiya\" org=\"Health 2.0\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_17828.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/17828\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Abe\" lastname=\"Taha\" org=\"Karmasphere\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104027.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104027\" \/>\r\n\r\n\r\n        \r\n    \r\n<span firstname=\"Jer\" lastname=\"Thorp\" org=\"The New York Times\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_105800.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/105800\"priority=\"true\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"J.J.\" lastname=\"Toothman\" org=\"NASA Ames Research Center\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_94167.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/94167\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Joseph\" lastname=\"Turian\" org=\"MetaOptimize\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_103771.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/103771\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Vineet\" lastname=\"Tyagi\" org=\"Impetus\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_107067.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/107067\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Jud\" lastname=\"Valeski\" org=\"Gnip\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_100878.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/100878\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"David\" lastname=\"Van Sickle\" org=\"Asthmapolis\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_105920.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/105920\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Jinesh\" lastname=\"Varia\" org=\"Amazon Web Services\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_32601.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/32601\" \/>\r\n\r\n\r\n        \r\n    \r\n<span firstname=\"Werner\" lastname=\"Vogels\" org=\"Amazon.com\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_11348.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/11348\"priority=\"true\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Kevin\" lastname=\"Weil\" org=\"Twitter, Inc.\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_75368.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/75368\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ben\" lastname=\"Werther\" org=\"DataStax (formerly Riptano)\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_107072.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/107072\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Ian\" lastname=\"White\" org=\"Urban Mapping, Inc\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_26.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/26\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Brian\" lastname=\"Wilson\" org=\"Thomson Reuters\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_104235.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/104235\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Dennis\" lastname=\"Yang\" org=\"Infochimps\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_107129.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/107129\" \/>\r\n\r\n\r\n        \r\n\r\n<span firstname=\"Scott\" lastname=\"Yara\" org=\"EMC\" org_url=\"\" img=\"http:\/\/assets.en.oreilly.com\/1\/eventprovider\/1\/_@user_67466.jpg\" url=\"\/strata2011\/public\/schedule\/speaker\/67466\" \/>\r\n<\/div>";
+
+
+//Script to make the cheeseboard work
+$(function () {
+  var itemsToLoad = new Array(), priorityArray = new Array(), sliding = false;
+  
+  //Load the speakers
+  loadSet(speakerList);	
+	
+  function loadSet(s) {
+		$(s).find('span').each(function(i) {
+			itemsToLoad[i] = new Array();
+			itemsToLoad[i][0] = $(this).attr('firstname');
+			itemsToLoad[i][1] = $(this).attr('lastname');
+			itemsToLoad[i][2] = $(this).attr('org');
+			itemsToLoad[i][3] = $(this).attr('img');
+			itemsToLoad[i][4] = $(this).attr('url');
+			itemsToLoad[i][5] = $(this).attr('priority');
+			itemsToLoad[i][6] = false; //Set to true when the image is loaded
+		});
+		
+		//Put the priority speakers in a separate array
+		for (var i = 0; i < itemsToLoad.length; i++) {
+			if (itemsToLoad[i][5] == 'true') {
+				priorityArray = priorityArray.concat(itemsToLoad.splice(i, 1));
+			}
+		}
+		priorityArray.sort(function randOrd(){return (Math.round(Math.random())-0.5); }); //randomize the priority array
+		itemsToLoad.sort(function randOrd(){return (Math.round(Math.random())-0.5); }); //randomize the items array
+		itemsToLoad = priorityArray.concat(itemsToLoad); //add the two arrays back together
+		
+
+		//Create and display the container for the speakers
+		if (itemsToLoad.length > 0) {
+			var speakerCol = '<div id="speaker_col"><div class="speaker_set"></div></div>';
+			
+			if (itemsToLoad.length > 3) {
+				speakerCol += '<div href="#" id="speaker_slider"><a href="#" class="handle"></a></div>';
+			}
+			
+			$('#speakers').append(speakerCol);
+		}
+	
+		//Create and display the containers for each speaker
+		for (var i = 0; i < itemsToLoad.length; i++) {
+			var speaker = $('<div class="speaker" id="speaker' + i + '"></div>');
+			$('#speaker_col > .speaker_set').append(speaker);
+		}
+		
+		//Load the first set of speaker photos
+		loadImage(0, 5);
+		//loadImage(0, itemsToLoad.length);
+		
+		if (itemsToLoad.length > 3) {
+			startSlider();
+		}
+	}
+
+	function startSlider() {
+		$('#speakers').each(function () {
+			var toSlide = $('#speaker_col > .speaker_set');
+			var speakerHeight = toSlide.innerHeight() - $('#speaker_col').outerHeight();
+			var slider = $('#speaker_slider > .handle');
+			var sliderHeight = $('#speaker_slider').outerHeight() - slider.outerHeight();
+			var sliderOffset = $('#speaker_slider').offset();
+			var slideRatio = speakerHeight / sliderHeight;
+
+			var handle = $('#speaker_slider > .handle').click(function(e) { e.preventDefault(); });
+
+			handle.draggable({
+				axis: 'y',
+				containment: 'parent',
+				drag: function(event, ui) {
+					var p = ui.position.top * slideRatio;
+					toSlide.css({top: '-' + p + 'px'});
+				},
+				stop: function(event, ui) {
+					var p = ui.position.top * slideRatio;
+					toSlide.animate({top: '-' + p + 'px'}, 100);
+				}
+			});
+
+			
+			$('#speaker_slider').mousedown(function(e) {
+				var p = e.clientY - sliderOffset.top - (handle.height() / 2);
+
+				if (p < 0) {
+					handle.animate( { top: 0 + 'px' }, { queue:false, duration:100, easing:'swing' } );
+					toSlide.animate({top: 0 + 'px'}, { queue:false, duration:100, easing:'swing' } );
+				}
+				else if (p > sliderHeight) {
+					handle.animate( { top: sliderHeight + 'px' }, { queue:false, duration:100, easing:'swing' } );
+					toSlide.animate({top: '-' + (sliderHeight * slideRatio) + 'px'}, { queue:false, duration:100, easing:'swing' } );
+				}
+				else {
+					handle.animate( { top: e.clientY - sliderOffset.top - (handle.height() / 2) + 'px' }, { queue:false, duration:100, easing:'swing' } );
+					toSlide.animate({top: '-' + (e.clientY - sliderOffset.top - (handle.height() / 2)) * slideRatio + 'px'}, { queue:false, duration:100, easing:'swing' } );
+				}
+			});
+		});
+	}
+	
+	
+	function loadImage(curImage, lastImage) {
+		if (curImage < lastImage) {
+			if (itemsToLoad[curImage] != undefined) {
+				if (itemsToLoad[curImage][6] == false) {
+					var img = new Image();
+					//image onload
+					$(img).load(function() {
+						
+						var aBlock = $('<a></a>').attr('href', itemsToLoad[curImage][4]);
+						var fadeBlock = $('<span></span>').attr('class', 'fade');
+						var photoBlock = $('<span></span>').attr('class', 'photo');
+						var borderBlock = $('<span></span>').attr('class', 'border');
+						var textBlock = $('<span></span>').attr('class', 'text');
+						
+						$('#speaker' + curImage).append(aBlock);
+						$('#speaker' + curImage + '> a').append(fadeBlock);
+						$('#speaker' + curImage + '> a > .fade').append(borderBlock);
+						$('#speaker' + curImage + '> a').append(textBlock);
+						$('#speaker' + curImage + '> a > .text').append("<span class='name'>" + itemsToLoad[curImage][0] + " " + itemsToLoad[curImage][1] + "</span><br />" + itemsToLoad[curImage][2]);
+						$('#speaker' + curImage + '> a > .fade .border').append(photoBlock);
+						$('#speaker' + curImage + '> a > .fade .photo').css('backgroundImage', 'url(' + itemsToLoad[curImage][3] + ')');
+						itemsToLoad[curImage][6] = true;
+						
+						$('#speaker' + curImage + '> a').hover(function() {
+							$(this).find('.photo').stop(true, false);
+							$(this).find('.photo').fadeTo(350, .7);
+						},
+						function() {
+							$(this).find('.photo').stop(true, false);
+							$(this).find('.photo').fadeTo(400, 1);
+						});
+						
+						// once the current loaded, trigger the next image
+						loadImage(curImage + 1, lastImage);
+						
+					}).error(function () {
+						// on error remove current
+						$('#speaker' + curImage).remove();
+						itemsToLoad[curImage][6] = true;
+						
+						// trigger the next image
+						loadImage(curImage + 1, lastImage);
+					}).attr({
+						src: itemsToLoad[curImage][3],
+						alt: itemsToLoad[curImage][0] + " " + itemsToLoad[curImage][1]
+					});
+				}
+				else {
+					loadImage(curImage + 1, lastImage);
+				}
+			}
+		}
+		else {
+			if (lastImage + 5 < itemsToLoad.length) {
+				loadImage(curImage, lastImage + 5);
+			}
+			else if (lastImage < itemsToLoad.length) {
+				loadImage(curImage, itemsToLoad.length);
+			}
+		}
+	}
+});
+//-->
+/* ]]> */
+</script>
+
+
+
+
+
+
+<!-- effects -->
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/scripts_functions.js" type="text/javascript"></script>
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/scripts_init.js" type="text/javascript"></script>
+
+
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var localScAcct = "ordata"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "assets.oreilly.com/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'assets.oreilly.com/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'assets.oreilly.com/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+myTitle       = "home" + myTitleAppend;
+mySection   = new Array(myChannel);
+mySeries = "strata";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+myEventPhase = "registration"; 
+
+var myEventStartDate = new Date ("February 01, 2011");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+ myPubDate = "02/01/2011"; 
+myEventTitle = "Strata 2011";
+myEvent      = "strata2011";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "home";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+
+
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">_uacct = "UA-3144621-33"; urchinTracker();</script>
+</body>
+</html>
