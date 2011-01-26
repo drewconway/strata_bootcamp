@@ -9,7 +9,12 @@ import matplotlib.image as image
 IM_WIDTH=16
 
 def read_digits(dir='digits'):
-
+    """
+    read all example digits return a matrix X, where each row is the
+    (flattened) pixels of an example digit and a vector y, where each
+    entry gives the digit as an integer
+    """
+    
     for d in range(10):
         fname = '%s/train.%d' % (dir, d)
 
