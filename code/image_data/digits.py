@@ -87,14 +87,18 @@ if __name__=='__main__':
     # number of example digits
     N = y.shape[0]
 
-    # save a random digit to sample_digit.png
+    # set seed so we all see the same random data
     sp.random.seed(20110201)
+
+    # save a random digit to sample_digit.png
     i = sp.random.randint(N)
+    print "saving sample_digit.png"
     save_digit(X, i, 'sample_digit.png')
 
     # save a montage of random digits to a sample_digits.png
     ndx = sp.random.randint(0, N, 2000)
     plot_digits(X, ndx)
+    print "saving sample_digits.png"
     plt.savefig('sample_digits.png')
 
     #plt.show()
