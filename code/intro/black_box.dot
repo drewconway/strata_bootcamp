@@ -1,0 +1,32 @@
+graph {
+    rankdir=LR;
+    subgraph cluster_0 {
+        node [label="Classification", shape=doublecircle]; class;
+        node [label="K-Means"]; km;
+        node [label="PCA"]; pca;
+        node [label="Topic Models"]; tm;
+        node [label="Visualization"]; viz;
+        class -- km;
+        class -- pca;
+        class -- tm;
+        km -- pca;
+        km -- tm;
+        pca -- tm;
+        viz -- tm;
+        viz -- pca;
+        viz -- km;
+        label="The data sciecne 'Black Box'";
+    }
+    node [label="Datas", style=filled, color=grey, shape=hexagon, fixedsize=true, width=2, height=2]; data;
+    node [label="Awesomeness", shape=ellipse, fixedsize=true, width=2, height=1] awesome;
+    data -- class;
+    data -- km;
+    data -- pca;
+    data -- tm;
+    data -- viz;
+    class -- awesome;
+    km -- awesome;
+    pca -- awesome;
+    tm -- awesome;
+    viz -- awesome;
+}
