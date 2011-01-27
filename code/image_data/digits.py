@@ -35,7 +35,7 @@ def read_digits(dir='digits'):
             X = Xd
             y = yd
             
-    return y, X
+    return X, y
 
 
 def reshape_digit(X, i, width=IM_WIDTH):
@@ -82,7 +82,7 @@ def plot_digits(X, ndx, ncol=50, width=IM_WIDTH, cmap=cm.gray):
 if __name__=='__main__':
 
     # read digits
-    y, X = read_digits()
+    X, y = read_digits()
 
     # number of example digits
     N = y.shape[0]

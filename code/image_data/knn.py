@@ -4,15 +4,23 @@ import scipy as sp
 import scipy.spatial as spat
 import matplotlib.pyplot as plt
 
-# todo: add_example(s)
 
 class KNN():
 
-    def __init__(self, y, X):
-        # memorize training data
-        self.y = y
-        self.X = X
+    def __init__(self, X=None, y=None):
+        if X and y:
+            # add training data if provided
+            self.add_examples(X, y)
 
+    def add_examples(self, X, y):
+        # memorize training data
+        try:
+            self.X = sp.vstack((self.X, X))
+            self.y = sp.vstack((self.y, y))
+        except AttributeError:
+            self.X = X
+            self.y = y
+            
     def train(self):
         # do nothing
         return
@@ -39,11 +47,7 @@ class KNN():
 
         return yhat
 
-class KNNKDTree():
-
-    def __init__(self, y, X):
-        self.y = y
-        self.X = X
+class KNNKDTree(KNN):
 
     def train(self):
         # build kd-tree for quick lookup
@@ -74,6 +78,9 @@ if __name__=='__main__':
     N = 100
     D = 2
 
+    # set seed so we all see the same random data
+    sp.random.seed(20110201)
+
     # generate N examples from class "0" and
     # N examples from class "1"
     # from normal distributions with different means
@@ -89,12 +96,13 @@ if __name__=='__main__':
     plt.plot(X[ndx,0], X[ndx,1], 'bo', alpha=0.25)
 
     # build and train k-nearest neighbor classifier
-    classifier = KNNKDTree(y, X)
+    classifier = KNNKDTree()
+    classifier.add_examples(X, y)
     classifier.train()
 
     # generate two easy-to-classify test examples
-    Xtest = sp.array([[1.5, 1],
-                      [-1.5, -1]])
+    Xtest = sp.array([[0.75, 0.75],
+                      [-0.75, -0.75]])
     ytest = classifier.predict(Xtest, k=3)
 
     # plot test examples with predicted labels
