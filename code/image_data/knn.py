@@ -16,7 +16,7 @@ class KNN():
         # memorize training data
         try:
             self.X = sp.vstack((self.X, X))
-            self.y = sp.vstack((self.y, y))
+            self.y = sp.concatenate((self.y, y))
         except AttributeError:
             self.X = X
             self.y = y
@@ -65,7 +65,6 @@ class KNNKDTree(KNN):
         # use the kd-tree query function to quickly lookup nearest
         # neighbors
         D, ndx = self.kdtree.query(X, k=k)
-
         for i in range(N):
             # take a majority vote over the nearest points' labels
             yhat[i] = mode(self.y[ndx])[0]
@@ -84,19 +83,19 @@ if __name__=='__main__':
     # generate N examples from class "0" and
     # N examples from class "1"
     # from normal distributions with different means
-    y = sp.vstack( (sp.zeros((N,1)),
-                    sp.ones((N,1))) )
+    y = sp.concatenate( (sp.zeros(N),
+                         sp.ones(N)) )
     X = sp.vstack( (sp.random.randn(N,D) + [1, 1],
                     sp.random.randn(N,D) - [1, 1]) )
 
     # plot training data
-    ndx, ig = sp.where(y == 0)
+    ndx = sp.where(y == 0)
     plt.plot(X[ndx,0], X[ndx,1], 'rx', alpha=0.25)
-    ndx, ig = sp.where(y == 1)
+    ndx = sp.where(y == 1)
     plt.plot(X[ndx,0], X[ndx,1], 'bo', alpha=0.25)
 
     # build and train k-nearest neighbor classifier
-    classifier = KNNKDTree()
+    classifier = KNN()
     classifier.add_examples(X, y)
     classifier.train()
 
