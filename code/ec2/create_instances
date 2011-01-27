@@ -1,0 +1,48 @@
+#!/bin/bash
+
+ami=$1
+key=$2
+num=${3:-1}
+
+if [ $# -lt 2 ]
+then
+    echo "usage: $0 <ami> <key>"
+    exit 1
+fi
+
+echo creating $num instances
+pending=(`ec2-run-instances $ami -k $key -n $num | grep '^| i-' | awk '{print $2}'`)
+running=()
+
+while [ ${#pending[@]} -gt 0 ]
+do
+    echo pending: ${pending[@]}
+    echo running: ${running[@]}
+
+    for id in "${pending[@]}"
+    do
+	echo checking $id
+
+	if ec2-describe-instances | grep "$id.*running" &> /dev/null
+	then
+	    dnsname=`ec2-describe-instances | grep $id | tr '|' '\n' | grep 'amazonaws'`
+ 	    dnsname=${dnsname// /}
+
+	    echo "  " $id is up at $dnsname
+
+	    echo "  " running setup, see ${id}.log for more info
+	    cat setup | ssh -o StrictHostKeyChecking=no -i ~/.ec2/*-${key} ubuntu@$dnsname &> ${id}.log
+
+	    echo $id $dnsname >> instances
+
+	    running=("${running[@]}" $id)
+	    pending=(${pending[@]/$id/})
+	else
+	    echo "  " still pending
+	fi
+
+    done
+
+    sleep 5
+
+done

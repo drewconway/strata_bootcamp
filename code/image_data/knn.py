@@ -3,7 +3,7 @@
 import scipy as sp
 import scipy.spatial as spat
 import matplotlib.pyplot as plt
-
+from scipy.stats import mode
 
 class KNN():
 
@@ -42,16 +42,16 @@ class KNN():
             # grab the indices of the k closest points
             ndx = D[i,:].argsort()[:k]
 
-            # predict the mean of nearest points' labels
-            yhat[i] = self.y[ndx].mean()
-
+            # take a majority vote over the nearest points' labels
+            yhat[i] = mode(self.y[ndx])[0]
+            
         return yhat
 
 class KNNKDTree(KNN):
 
     def train(self):
         # build kd-tree for quick lookup
-        self.kdtree = spat.KDTree(X)
+        self.kdtree = spat.KDTree(self.X)
         
     def predict(self, X, k=1):
         # coerce test examples to be N-by-2 scipy array
@@ -67,8 +67,8 @@ class KNNKDTree(KNN):
         D, ndx = self.kdtree.query(X, k=k)
 
         for i in range(N):
-            # predict the mean of nearest points' labels
-            yhat[i] = self.y[ndx[i]].mean()
+            # take a majority vote over the nearest points' labels
+            yhat[i] = mode(self.y[ndx])[0]
 
         return yhat
 

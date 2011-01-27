@@ -24,12 +24,12 @@ def read_digits(dir='digits'):
         Xd = sp.loadtxt(fname, delimiter=',')
 
         # create vector of labels
-        yd = d*sp.ones((Xd.shape[0],1))
+        yd = d*sp.ones(Xd.shape[0])
 
         try:
             # append digits and labels to X and y, respectively
             X = sp.vstack((X, Xd))
-            y = sp.vstack((y, yd))
+            y = sp.concatenate((y, yd))
         except UnboundLocalError:
             # create X and y if they don't exist
             X = Xd
