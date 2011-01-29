@@ -4,7 +4,7 @@
 # Email:           drew.conway@nyu.edu                                      
 # Purpose:         Cluster companies at the tutorial based on attendee position
 # Data Used:       StrataBootcamp_Roster.csv
-# Packages Used:   tm, ggplot2
+# Packages Used:   tm, igraph
 # Output File:     
 # Data Output:     
 # Machine:         Drew Conway's MacBook Pro
@@ -14,7 +14,6 @@
 # All rights reserved.                                                         
 
 # Load libraries and data
-library(ggplot2)
 library(tm)
 library(igraph)
 
