@@ -80,6 +80,8 @@ if __name__=='__main__':
     # set seed so we all see the same random data
     sp.random.seed(20110201)
 
+    # todo: help functions for synthetic data
+
     # generate N examples from class "0" and
     # N examples from class "1"
     # from normal distributions with different means
