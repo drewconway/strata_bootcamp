@@ -43,25 +43,6 @@ class Gmail(object):
     def get_message(self, message_id):
         (resp, data) = self.m.fetch(message_id, "(RFC822)") # fetching the mail, "`(RFC822)`" means "get the whole stuff", but you can ask for headers only, etc
         return data[0][1]
-        # email_body = data[0][1] # getting the mail content
-        # mail = email.message_from_string(email_body) # parsing the mail content to get a mail object
-            
-        # # print mail
-        # for received in mail.get_all("Received"):
-        #     date_string = received.split(';').pop().strip()
-        #     # date_string = date_string.split('-')[0].strip()
-        #     # message_date = time.strptime(date_string, "%a, %d %b %Y %H:%M:%S")
-        #     message_date = email.utils.parsedate(date_string)
-        #     time_delta = time.mktime(time.localtime()) - time.mktime(message_date)
-        #     if time_delta >= self.nag_seconds:
-        #         to_nag.append(mail)
-        #     break # one per message
-        
-        # return to_nag
-
-    # def get_message_headers(self, message_id):
-    #     (resp, data) = self.m.fetch(message_id, "(BODY[HEADER.FIELDS (FROM TO CC DATE SUBJECT MESSAGE-ID)])")
-        
             
     def create_message(self, to_addr, from_addr, subject='', text=''):
         msg = email.Message.Message()

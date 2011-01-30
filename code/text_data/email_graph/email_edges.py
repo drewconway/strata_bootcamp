@@ -16,6 +16,8 @@ class email_edges(object):
     def __init__(self, username, password):
         g = Gmail(username, password)
         
+        graph_out = csv.writer(open('email_graph.csv', 'wb'))
+        
         viewed_messages = []
         for folder in g.list_folders(): # iterate through all folders in the account
             # print "%s: %s" % (folder, g.get_message_ids(folder)) # NOTE: uncomment this to see which ids are in each folder
@@ -32,13 +34,19 @@ class email_edges(object):
                             msg_to = line[3:].strip()
                         
                     try:
-                        print "%s, %s" % (msg_from, msg_to) # TODO: use csv?
+                        # print "%s, %s" % (msg_from, msg_to) # TODO: use csv?
+                        graph_out.writerow([msg_from, msg_to])
                     except UnboundLocalError:
                         pass
                         
         
 
 if __name__ == '__main__':
+    try:
+        filename = sys.argv[1]
+    except IndexError:
+        filename = "email_graph.csv"
+        
     username = 'ann9enigma@gmail.com'
     password = 'stratar0x'
 	
