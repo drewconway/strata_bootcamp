@@ -7,17 +7,24 @@ import simplejson as json
 YQL_PUBLIC = 'http://query.yahooapis.com/v1/public/yql'
 
 def yql_public(query):
+    # escape query
     query_str = urlencode({'q': query, 'format': 'json'})
 
+    # fetch results
     url = '%s?%s' % (YQL_PUBLIC, query_str)
-    print url
     result = urlopen(url)
 
+    # parse json and return
     return json.load(result)['query']['results']
 
 if __name__=='__main__':
 
     # get some cat photos
-    query = 'select * from flickr.photos.search where text="cat" limit 10'
+    query = 'select * from flickr.photos.search where tags="cat" and sort="interestingness-desc" limit 10'
 
-    print yql_public(query)
+    # make call to yql
+    results = yql_public(query)
+
+    print "some cat photos:"
+    for photo in results['photo']:
+        print 'http://www.flickr.com/photo.gne?id=%s' % photo['id']
