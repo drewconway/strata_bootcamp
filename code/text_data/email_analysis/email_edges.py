@@ -26,7 +26,7 @@ class email_edges(object):
                     # print "Processing %s" % message_id
                     msg = g.get_message(message_id)
                     
-                    for line in msg.split('\n'):
+                    for line in msg.split('\n'): # grab the from and to lines
                         line = line.strip()
                         if line[0:5] == "From:":
                             msg_from = line[5:].strip()
@@ -34,9 +34,9 @@ class email_edges(object):
                             msg_to = line[3:].strip()
                         
                     try:
-                        # print "%s, %s" % (msg_from, msg_to) # TODO: use csv?
-                        graph_out.writerow([msg_from, msg_to])
-                    except UnboundLocalError:
+                        # print "%s, %s" % (msg_from, msg_to) # DEBUG
+                        graph_out.writerow([msg_from, msg_to]) # output the from and to
+                    except UnboundLocalError: # ignore if we can't read the headers
                         pass
                         
         

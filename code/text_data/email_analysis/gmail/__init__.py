@@ -43,6 +43,13 @@ class Gmail(object):
     def get_message(self, message_id):
         (resp, data) = self.m.fetch(message_id, "(RFC822)") # fetching the mail, "`(RFC822)`" means "get the whole stuff", but you can ask for headers only, etc
         return data[0][1]
+        
+    def get_all_messages_from_folder(self, folder_name=None):        
+        message_data = []
+        for message_id in self.get_message_ids(folder_name):
+            message_data.append(self.get_message(message_id))
+            
+        return message_data
             
     def create_message(self, to_addr, from_addr, subject='', text=''):
         msg = email.Message.Message()
