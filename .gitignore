@@ -12,3 +12,6 @@
 
 # R file types
 .Rhistory
+
+# Python detritus
+*.pyc
