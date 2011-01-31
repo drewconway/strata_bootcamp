@@ -1,25 +1,31 @@
 #!/usr/bin/env python
 
+import sys
+import os.path
 import scipy as sp
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import scipy.cluster.vq as spvq
 import matplotlib.cm as cm
 from mpl_toolkits.mplot3d import Axes3D
-import os.path
 
 if __name__=='__main__':
-    # number of clusters
-    K = 7
+    if len(sys.argv) == 3:
+        # take image filename and number of clusters from command line
+        fname = sys.argv[1]
+        K = int(sys.argv[2])
+    else:
+        # default to picture of candy
+        fname = 'candy.jpg'
 
-    # default to picture of candy
-    fname = 'candy.jpg'
+        # number of clusters
+        K = 7
 
-    if not os.path.exists(fname):
-        # download the image from flickr if missing
-        from urllib import urlretrieve
-        print "downloading http://www.flickr.com/photos/minebilder/68826730/ to" , fname
-        urlretrieve('http://farm1.static.flickr.com/35/68826730_a6556f07cf_s_d.jpg', filename='candy.jpg')
+        if not os.path.exists(fname):
+            # download the image from flickr if missing
+            from urllib import urlretrieve
+            print "downloading http://www.flickr.com/photos/minebilder/68826730/ to" , fname
+            urlretrieve('http://farm1.static.flickr.com/35/68826730_a6556f07cf_s_d.jpg', filename='candy.jpg')
 
 
     # read image
