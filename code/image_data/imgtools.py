@@ -43,7 +43,7 @@ def imshow_hist(I, bins=256):
 if __name__=='__main__':
 
     if len(sys.argv) == 3:
-        # take yql query from first command line argument
+        # take image filename and number of bins from command line
         fname = sys.argv[1]
         bins = int(sys.argv[2])
     else:
