@@ -26,6 +26,7 @@ def rgb_hist(I, ax, bins=256):
     plt.axis('tight')
     ax.set_aspect(1./ax.get_data_ratio())
 
+
 def imshow_hist(I, bins=256):
 
     f = plt.figure()
@@ -39,6 +40,22 @@ def imshow_hist(I, bins=256):
     rgb_hist(I, ax, bins)
 
     return f
+
+
+def rgb_features(I, bins=10):
+
+    x = sp.array([])
+
+    # run over red, green, and blue channels
+    channels = ('r','g','b')
+    for i, color in enumerate(channels):
+        # get count pixel intensities for this channel
+        counts, bins = sp.histogram(I[:,:,i].flatten(), bins=bins)
+
+        x = sp.concatenate( (x, counts) )
+
+    return x
+
 
 if __name__=='__main__':
 
@@ -65,4 +82,6 @@ if __name__=='__main__':
 
     # save figure
     base, ext = os.path.splitext(fname)
-    plt.savefig('%s_%d.png' % (base, bins))
+    fname = '%s_%d.png' % (base, bins)
+    print "saving" , fname
+    plt.savefig(fname)

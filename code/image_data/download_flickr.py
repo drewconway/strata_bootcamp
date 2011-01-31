@@ -20,9 +20,9 @@ if __name__=='__main__':
         tags = sys.argv[1]
         n = int(sys.argv[2])
     else:
-        # default to picture of chairs
+        # default to 500 pictures tagged with 'vivid'
         tags = 'vivid'
-        n = 100
+        n = 500
 
     # grab the top-n most interesting photos tagged with 'tags'
     query = '''select * from flickr.photos.search(%d) where
