@@ -11,7 +11,7 @@ from mltools import *
 
 if __name__=='__main__':
 
-    # set seed so we all see the same random data
+    # set seed so we all see the same random numbers
     sp.random.seed(20110201)
 
     # read digit data
