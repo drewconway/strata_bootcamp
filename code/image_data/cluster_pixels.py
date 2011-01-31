@@ -19,7 +19,7 @@ if __name__=='__main__':
         # download the image from flickr if missing
         from urllib import urlretrieve
         print "downloading http://www.flickr.com/photos/minebilder/68826730/ to" , fname
-        urlretrieve('http://farm1.static.flickr.com/35/68826730_a6556f07cf_s.jpg', filename='candy.jpg')
+        urlretrieve('http://farm1.static.flickr.com/35/68826730_a6556f07cf_s_d.jpg', filename='candy.jpg')
 
 
     # read image
@@ -54,7 +54,7 @@ if __name__=='__main__':
 
     # plot compressed image on the right
     plt.subplot(133)
-    Icomp = sp.reshape(Z, (75,75,3), order='F')
+    Icomp = sp.reshape(Z, I.shape, order='F')
     plt.imshow(Icomp, interpolation='nearest', origin='lower')
 
     # redraw to fix bug in center panel
