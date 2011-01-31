@@ -20,6 +20,7 @@ def plot_montage(images, ndx, ncol=None):
     
     row = 0
     col = 0
+    tot_height = 0
     for i in range(N):
 
         I = sp.array(images[ndx[i]], dtype='float32')
@@ -33,9 +34,13 @@ def plot_montage(images, ndx, ncol=None):
         if col % ncol == 0:
             row += 1
             col = 0
+            tot_height += height
 
-    f.set_figheight(row*height/100)
-    f.set_figwidth(ncol*width/100)
+    tot_height += height
+    tot_width = width*ncol
+    
+    f.set_figheight(tot_height/100)
+    f.set_figwidth(tot_width/100)
 
     return f
 
