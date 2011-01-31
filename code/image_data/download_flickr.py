@@ -14,23 +14,20 @@ def photo_url(photo, size='s'):
     return url
 
 if __name__=='__main__':
-    # default to 500 pictures tagged with 'vivid'
-    tags = 'vivid'
-    n = 500
-    offset = 0
-    
-    # take tags, number of images, and offset from command line
-    try:
+
+    if len(sys.argv) == 3:
+        # take tags and number of images from command line
         tags = sys.argv[1]
         n = int(sys.argv[2])
-        offset = int(sys.argv[3])
-    except:
-        pass
+    else:
+        # default to 500 pictures tagged with 'vivid'
+        tags = 'vivid'
+        n = 500
 
     # grab the top-n most interesting photos tagged with 'tags'
-    query = '''select * from flickr.photos.search(%d,%d) where
+    query = '''select * from flickr.photos.search(%d) where
     tags="%s" and sort="interestingness-desc"
-    ''' % (offset, n, tags)
+    ''' % (n, tags)
 
     # make yql call
     print "fetching %d photos tagged with %s from flickr" % (n, tags)
@@ -43,6 +40,7 @@ if __name__=='__main__':
         os.mkdir(directory)
 
     # run over results
+    print "downloading %d results" % len(results['photo'])
     for photo in results['photo']:
         # build url of square image
         square_url = photo_url(photo)
