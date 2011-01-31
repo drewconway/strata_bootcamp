@@ -3,6 +3,7 @@
 from urllib import urlencode
 from urllib2 import urlopen
 import simplejson as json
+import sys
 
 YQL_PUBLIC = 'http://query.yahooapis.com/v1/public/yql'
 
@@ -19,12 +20,18 @@ def yql_public(query):
 
 if __name__=='__main__':
 
-    # get some cat photos
-    query = 'select * from flickr.photos.search where tags="cat" and sort="interestingness-desc" limit 10'
+    if len(sys.argv) == 2:
+        # take yql query from first command line argument
+        query = sys.argv[1]
+    else:
+        # default to pictures of kittens
+        query = 'select * from flickr.photos.search where tags="kittens" and sort="interestingness-desc" limit 10'
+
+    print query
 
     # make call to yql
     results = yql_public(query)
 
-    print "some cat photos:"
-    for photo in results['photo']:
-        print 'http://www.flickr.com/photo.gne?id=%s' % photo['id']
+    # pretty-print results
+    print json.dumps(results, indent=2)
+
