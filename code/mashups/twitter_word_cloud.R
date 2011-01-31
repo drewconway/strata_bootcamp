@@ -90,7 +90,6 @@ comparative.wordcloud<-function(hashtag1, hashtag2, file.path, n=100, add.stops=
     names(hash.df)<-c("hash1.freq", "hash2.freq")
     hash.df<-subset(hash.df, hash1.freq>0 & hash2.freq>0)
     hash.df<-transform(hash.df, freq.dif=hash1.freq-hash2.freq)
-    cat("Text analysis complete\n")
     
     ### 3) Set up data for visualization
     # Create separate data frames for each frequency type
@@ -140,7 +139,7 @@ comparative.wordcloud<-function(hashtag1, hashtag2, file.path, n=100, add.stops=
         scale_x_continuous(limits=c(x.min,x.max),breaks=c(x.break.min,0,x.break.max),labels=x.labs)+
         scale_y_continuous(breaks=c(0),labels=c(""))+xlab("")+ylab("")+theme_bw()+
         opts(panel.grid.major=theme_blank(),panel.grid.minor=theme_blank(), title=paste("Twitter Hashtag Word Cloud 2.0: #",hashtag1," vs. #",hashtag2,sep=""))
-    ggsave(plot=word.cloud,filename=file.path,width=13,height=7)
+    ggsave(plot=word.cloud,filename=file.path,width=15,height=9)
     cat(paste("Word cloud saved to:",file.path,"\n"))
     
     # Return data in list
@@ -148,7 +147,7 @@ comparative.wordcloud<-function(hashtag1, hashtag2, file.path, n=100, add.stops=
 }
 
 # Example with strataconf and 
-ht1<-"strataconf"   # Hash tags to compare
-ht2<-"rstats"
+ht1<-"oscars"   # Hash tags to compare
+ht2<-"sagawards"
 
 hash.data<-comparative.wordcloud(ht1, ht2, paste(ht1,"_",ht2,".png",sep=""), n=100)
