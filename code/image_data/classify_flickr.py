@@ -15,14 +15,14 @@ if __name__=='__main__':
 
     # default to classifying headshots vs landscapes
     bins = 16
-    K = 5
+    K = 9
     dirs = ['flickr_headshot','flickr_landscape']
     
     # take bins, number of neighbors, and image directories from command line
     try:
         bins = int(sys.argv[1])
         K = int(sys.argv[2])
-        dirs = sys.argv[2:]
+        dirs = sys.argv[3:]
     except:
         pass
 
@@ -57,27 +57,32 @@ if __name__=='__main__':
     Xtrain, ytrain, Xtest, ytest = train_test_split(X, y, 0.8)
     del X, y
 
-    # normalize features
+    # normalize training features
     Xtrain = whiten(Xtrain)
 
-    # build nearest-neighbors classifier on training data
-    print "training k-nearest neighbors classifier w/ k=%d" % K
+    # "build" k-nearest neighbors classifier on training data
+    print "building k-nearest neighbors classifier"
     classifier = KNN()
     classifier.add_examples(Xtrain, ytrain)
     classifier.train()
 
-    # normalize features
+    # normalize test features
     Xtest = whiten(Xtest)
 
-    # generate predictions for test data
-    print "classifying test examples"
-    ypred = classifier.predict(Xtest, K)
+    Ks = range(1,K+1,2)
+    accuracy = []
+    for k in Ks:
+        # generate predictions for test data
+        ypred = classifier.predict(Xtest, k)
 
-    # compute confusion matrix 
-    confmat = accumarray( ytest, ypred )
-    acc = confmat.diagonal().sum() / confmat.sum()
-    print "confusion matrix:"
-    print confmat
-    print "accuracy:" , acc
+        # compute confusion matrix 
+        confmat = accumarray( ytest, ypred )
+        acc = confmat.diagonal().sum() / confmat.sum()
+        print "k = %d, accuracy = %.4f" % (k,acc)
 
+        accuracy.append(acc)
 
+    plt.plot(Ks, accuracy, 'x--')
+    plt.show()
+    plt.xlabel('neighbors')
+    plt.ylabel('accuracy')
