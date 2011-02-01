@@ -8,6 +8,7 @@ Copyright (c) 2011 Hilary Mason. All rights reserved.
 """
 
 import sys, os
+import email
 from gmail import Gmail
 
 class emailTimestamps(object):
@@ -15,9 +16,9 @@ class emailTimestamps(object):
     def __init__(self, username, password):
 
         e = Gmail(username, password)
-        e.select_folder("waiting")
+        # e.select_folder("waiting")
         message_ids = e.get_message_ids()
-        self.process_messages(e, message_ids)        
+        self.get_date(e, message_ids)        
         
     def get_date(self, e, message_ids):
         
