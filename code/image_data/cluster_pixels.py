@@ -48,6 +48,11 @@ if __name__=='__main__':
     plt.subplot(131)
     plt.imshow(I, cmap=cm.gray, interpolation='nearest', origin='lower')
 
+
+    # NOTE: if you are using a version of matplotlib < 1.0 you will
+    # either need to upgrade to the newest version, or use the fix
+    # suggested here: http://stackoverflow.com/questions/3810865/need-help-with-matplotlib
+
     # plot clustered pixels in rgb space in the center
     ax = plt.subplot(132, projection='3d', aspect='equal')
     #ax.view_init(30, 135)
