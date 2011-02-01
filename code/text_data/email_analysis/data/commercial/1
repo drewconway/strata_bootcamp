@@ -1,0 +1,123 @@
+Delivered-To: ann9enigma@gmail.com
+Received: by 10.229.130.129 with SMTP id t1cs216277qcs;
+        Tue, 25 Jan 2011 00:30:10 -0800 (PST)
+Received: by 10.150.228.15 with SMTP id a15mr6011928ybh.305.1295944210210;
+        Tue, 25 Jan 2011 00:30:10 -0800 (PST)
+Return-Path: <noreply@noreply.woot.com>
+Received: from mail1.noreply.woot.com (mail1.noreply.woot.com [209.12.104.154])
+        by mx.google.com with ESMTP id w12si32374890ybe.46.2011.01.25.00.30.08;
+        Tue, 25 Jan 2011 00:30:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@noreply.woot.com designates 209.12.104.154 as permitted sender) client-ip=209.12.104.154;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of noreply@noreply.woot.com designates 209.12.104.154 as permitted sender) smtp.mail=noreply@noreply.woot.com; dkim=pass header.i=@noreply.woot.com
+Received: from vm_appsvr1 ([192.168.1.231])
+	by mail1.noreply.woot.com (StrongMail Enterprise 4.1.2.1(4.1.2.1-53345)); Tue, 25 Jan 2011 02:30:08 -0600
+X-VirtualServer: noreply, mail1.noreply.woot.com, 192.168.1.222
+X-MailingID: 00000::00000::00000::00000::::30664
+X-SMHeaderMap: mid="X-MailingID"
+X-Destination-ID: ann9enigma@gmail.com
+X-SMFBL: YW5uOWVuaWdtYUBnbWFpbC5jb20=
+DomainKey-Signature: a=rsa-sha1;
+ c=nofws;
+ s=sm;
+ d=noreply.woot.com;
+ q=dns;
+ b=Hj0dPrI0V0vLXGEJ7TdgwHUBaKxfllUpYvNxMp6gTqtxnjByh9HZB8PFBET8qLsSyLuSMHe1F6SJigjDNhxFGo0R6O+vswfsXOKI15uLQGgoXoKpdn/7vFfPPVYmm65bALAFVWe88L1gw3YCaUCxFjczmMVKdAc24woVwbse7hk=
+DKIM-Signature: v=1; a=rsa-sha1; c=simple; d=noreply.woot.com;
+	s=sm; i=@noreply.woot.com; h=Message-ID:Reply-To:
+	X-VirtualServerGroup:MIME-Version:From:To:Date:Subject:
+	Content-Type:Content-Transfer-Encoding; bh=tUIXdhqtsh6IMg2lGz0ww
+	bUrAhw=; b=WlqSIV8LPrXYg7AiXprr4PWcZcl/i6WQBQDQudptSKdcnJqtMfDpr
+	uRWM1wlX1MqwzND9kemvvxGk2x6cTVsFQMmePgrUl61sCY9Y+tr7KX9XoC+bqFL8
+	cq/mJ+xqMiSXdI7GXyKWmhFZHu3CwaBjv+tjW14IynHO+h2IOaTtgw=
+Message-ID: <1295944208.30665@noreply.woot.com>
+Reply-To: noreply@woot.com
+X-VirtualServerGroup: noreply
+MIME-Version: 1.0
+From: "Woot Tracking Bot" <noreply@noreply.woot.com>
+To: ann9enigma <ann9enigma@gmail.com>
+Date: 25 Jan 2011 02:30:14 -0600
+Subject: Welcome to Woot!
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+=0D=0ADear ann9enigma,=0D=0A<br /><br />=0D=0AWelcome to the warm embrace=
+ of Woot, the first, best, and most hygienic daily deal site! Sit still=
+ a <br />=0D=0Aminute because you need to know this stuff:=0D=0A=0D=0A<ul>=
+=0D=0A<li>=0D=0AYou're now a registered member of all four of our sites:=
+ woot.com, shirt.woot.com, <br />=0D=0Awine.woot.com and sellout.woot.com.=
+ Don't be alarmed. We'll explain more <br />=0D=0Alater.=0D=0A</li>=0D=0A<li>=
+=0D=0ATypical orders take up to 5 business days to ship from our warehouse=
+ (except for overnight <br />=0D=0At-shirt orders, which go out sooner,=
+ and wine orders, which take longer).  If you order an item <br />=0D=0Aduring=
+ peak times like a Woot-Off, it can take a little longer.  Once we ship=
+ it, delivery time to <br />=0D=0Ayour door depends on FedEx or SmartPost.=
+=0D=0A</li>=0D=0A<li>=0D=0AOnce the item ships out, you can access your=
+ tracking data by going to Your Account and<br />=0D=0Aclicking on the order=
+ number. If you have a problem receiving your order, or you receive the=
+ <br />=0D=0Awrong item, contact <a href=3D"service@woot.com">service@woot.com</a>.=
+=0D=0A</li>=0D=0A<li>=0D=0AIf you receive your item and it doesn't work,=
+ contact the manufacturer first. They made the junk. <br />=0D=0ALet them=
+ deal with it. If they turn out to be total tools, contact <a href=3D"service@woot.com">service@woot.com</a>=
+ and we'll <br />=0D=0Agrudgingly provide some further assistance.=0D=0A</li>=
+=0D=0A<li>=0D=0AIf you receive your item and decide you don't like it, take=
+ it to eBay or pawn it off on one of <br />=0D=0Ayour so-called friends.=
+ We don't want it, either.=0D=0A</li>=0D=0A</ul>=0D=0A=0D=0AThat goes for=
+ Woot.com and all of the sites in the Woot.com family. There's some specific=
+ stuff <br />=0D=0Ayou might want to know about each of the others. And=
+ here it comes now.=0D=0A<br /><br />=0D=0AShirt.woot - Check the size chart,=
+ check the size chart, check the size chart. It's at the bottom of the <br=
+ />=0D=0Aproduct description for each sale. If you order the wrong size,=
+ we won't take it back - your only option <br />=0D=0Ais to gain or lose=
+ weight so it fits, possibly including painful, costly cosmetic surgery.=
+ If you want your <br />=0D=0Aovernight order the next day, place it by=
+ noon Central time. International orders generally take about 3-<br />=0D=0A4=
+ weeks to arrive. Looking for an old shirt design? If you're lucky, it'll=
+ still be for sale via our<br />=0D=0AReckoning page. If you're somewhat=
+ less lucky, it might turn up as one of our weekly Shirt.Woot <br />=0D=0AClassics.=
+ If you think your one-year-old can design a better shirt, encourage your=
+ <br />=0D=0Aone-year-old to enter the Derby, our weekly design competition.=
+ That $1,000 prize can buy a lot of <br />=0D=0ABinkies.<br />=0D=0A<a href=3D"http://shirt.woot.com/derby/">http://shirt.woot.com/derby/</a><br=
+ />=0D=0A<a href=3D"http://shirt.woot.com/Blog/?cat=3Dreckoning">http://shirt.woot.com/Blog/?cat=3Dreckoning</a><br=
+ />=0D=0A<a href=3D"http://shirt.woot.com/Classics">http://shirt.woot.com/Classics</a><br=
+ />=0D=0A<a href=3D"http://shirt.woot.com/WhatIsWoot.aspx">http://shirt.woot.com/WhatIsWoot.aspx</a><br=
+ />=0D=0A<br /><br />=0D=0AWine.woot - First, don't get your hopes up: wine=
+ orders can only be shipped to certain states, so read <br />=0D=0Athe entire=
+ list of eligible states before you print up the invitations to your wine=
+ party and place your <br />=0D=0Aorder. Ineligible orders will be cancelled=
+ and refunded. If you do complete your order and receive the <br />=0D=0Atracking=
+ data, make sure you give it some time to update. It won't be uncommon for=
+ it to take a little <br />=0D=0Awhile for real, actual data to show up.=
+ You might call the data "late" - we prefer to think of it as "aged".<br=
+ />  =0D=0A<a href=3D"http://wine.woot.com/WhatIsWoot.aspx">http://wine.woot.com/WhatIsWoot.aspx</a>=
+=0D=0A<br /><br />=0D=0ASellout.woot - Don't be confused or disoriented=
+ by the redirect when you visit the site - we just have to <br />=0D=0Arun=
+ you through Yahoo! Shopping before you come back to Woot turf. It's perfectly=
+ normal. You should <br />=0D=0Aknow that we actually sell things here at=
+ times that could partner nicely with items from the regular <br />=0D=0AWoot=
+ website, giving you a chance to have your cake and eat it, and then take=
+ a bite of another guy's <br />=0D=0Acake when he's not looking, and mmmm...cake...is=
+ this email almost over? We're getting hungry.<br /> =0D=0A<a href=3D"http://sellout.woot.com/WhatIsWoot.aspx">http://sellout.woot.com/WhatIsWoot.aspx</a>=
+=0D=0A<br /><br />=0D=0AKids.woot - Keep in mind that Kids.Woot is a site=
+ that sells childrens' products, not necessarily a place <br />=0D=0Ayou'd=
+ want your kids hanging out. We make every effort to monitor the content=
+ and activity in our <br />=0D=0Amessage boards, but you should approach=
+ Kids.Woot with the same circumspection you'd bring to any <br />=0D=0Aother=
+ adult-oriented site. Well, not "adult-oriented" in the nasty sense. We=
+ just mean it's for mature <br />=0D=0Aaudiences only. But not "mature"=
+ as in- ah, forget it, you know what we mean.<br />=0D=0A<a href=3D"http://kids.woot.com/WhatIsWoot.aspx">http://kids.woot.com/WhatIsWoot.aspx</a>=
+=0D=0A<br /><br />=0D=0ABear with us a moment more and we can all get on=
+ with our lives. If you email <a href=3D"service@woot.com">service@woot.com</a>,=
+ <br />=0D=0A<b><u>make sure you include your order number and/or username</u></b>.=
+ We'd hate to have to track you down <br />=0D=0Athrough other, less savory=
+ means. And this last bit of information is critical: when you look at your=
+ <br />=0D=0Aorder history and panic because you don't see an order you=
+ placed, make sure you are logged into the <br />=0D=0AWoot site you purchased=
+ it from. Your Wine.Woot orders won't show up in your order history if you're=
+ <br />=0D=0Alooking at it on Shirt.Woot, and so on. And you'll be upset,=
+ and we'll be upset, and we'll each say things <br />=0D=0Awe don't mean,=
+ and even though we'll eventually work it all out, things will never be=
+ the same between <br />=0D=0Aus again.=0D=0A<br /><br />=0D=0ALast but=
+ certainly not least, happy Wooting!=0D=0A<br /><br />=0D=0AWoot Member=
+ Services=0D=0A
+
+

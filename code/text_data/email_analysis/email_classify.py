@@ -17,18 +17,18 @@ from gmail import Gmail
 
 class emailClassify(object):
 
-	def __init__(self, username, password, folders=['commercial','friends']):
-		g = Gmail(username, password)
-		
-		# gather data from our e-mail
-		msg_data = {}
-		for folder_name in folders:
-		    msg_data[folder_name] = g.get_all_messages_from_folder(folder_name)
+    def __init__(self, username, password, folders=['commercial','friends']):
+        g = Gmail(username, password)
+
+        # gather data from our e-mail
+        msg_data = {}
+        for folder_name in folders:
+            msg_data[folder_name] = g.get_all_messages_from_folder(folder_name)
 		    
-		nb = NaiveBayesClassifier()
-		nb.train_from_data(msg_data)
-		print nb.probability("elephant", 'friends')
-		print nb.probability("elephant", 'commercial')
+        nb = NaiveBayesClassifier()
+        nb.train_from_data(msg_data)
+        print nb.probability("elephant", 'friends')
+        print nb.probability("elephant", 'commercial')
 		    
 
 class NaiveBayesClassifier(object):

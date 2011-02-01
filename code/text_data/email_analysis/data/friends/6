@@ -1,0 +1,78 @@
+Delivered-To: ann9enigma@gmail.com
+Received: by 10.229.130.129 with SMTP id t1cs171025qcs;
+        Mon, 24 Jan 2011 09:43:26 -0800 (PST)
+Return-Path: <jeromecukier@gmail.com>
+Received-SPF: pass (google.com: domain of jeromecukier@gmail.com designates 10.224.67.141 as permitted sender) client-ip=10.224.67.141;
+Authentication-Results: mr.google.com; spf=pass (google.com: domain of jeromecukier@gmail.com designates 10.224.67.141 as permitted sender) smtp.mail=jeromecukier@gmail.com; dkim=pass header.i=jeromecukier@gmail.com
+Received: from mr.google.com ([10.224.67.141])
+        by 10.224.67.141 with SMTP id r13mr4362308qai.268.1295891005847 (num_hops = 1);
+        Mon, 24 Jan 2011 09:43:25 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:mime-version:from:date:message-id:subject:to
+         :content-type;
+        bh=AZDZGW4S8yAv6TdX6TqDTnJMeests/h0vbFtcNPX6Cs=;
+        b=r0kMaHr5UeVAwmFFt1h/RgJtzgE2Hm3E7oxVZhPBVGJWKqtnpVet+NaAe+OMpN6Q5q
+         Lbgu53IK8RKxXjHsIxkM2E40EWGVfFJxCAS6d32fCdoXSyeOLttOVInGRYkdHsLdNkjz
+         wUmr0Qvzyop0EyTJUw7uWRnJQmrOpoY/ZQ4jM=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=mime-version:from:date:message-id:subject:to:content-type;
+        b=WZn+/UcXJ2pP0LEXX2DkP2IkfFLHP0BL5GlszW0DRBk76JFX2W4+eufun9BoEWfxdQ
+         cixNEYZNI+eDc7+u8g4eNlseOf5ttD4g9Vpkh3YAt/hQTM+JDky9h/BYl16C82z95bZn
+         r8h0o8PiktfVLl77YRBMrNADpH0sFp2WLoF7c=
+Received: by 10.224.67.141 with SMTP id r13mr4362308qai.268.1295891005830;
+ Mon, 24 Jan 2011 09:43:25 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.220.198.203 with HTTP; Mon, 24 Jan 2011 09:43:05 -0800 (PST)
+From: =?ISO-8859-1?Q?J=E9r=F4me_Cukier?= <jeromecukier@gmail.com>
+Date: Mon, 24 Jan 2011 18:43:05 +0100
+Message-ID: <AANLkTimugg_ggjikPNrghrWbh450wo1BEeL3U5Gk=q=L@mail.gmail.com>
+Subject: dear ann9enigma,
+To: ann9enigma@gmail.com
+Content-Type: multipart/alternative; boundary=0015175cd45c11f848049a9b2356
+
+--0015175cd45c11f848049a9b2356
+Content-Type: text/plain; charset=ISO-8859-1
+
+today the weirdest thing happened to me.
+
+I had lunch with that girl
+about my age, but possibly
+younger.
+Very interesting person, very nice too
+but then she said something that rang a bell
+how could she know this and that
+I asked a question and was surprised by the answer,
+then the asked me something equally weird
+and
+we realized that we are cousins.
+our parents are not very good at PR so
+we only met once 20 years ago.
+and possibly once before that.
+or maybe not.
+we are both data people and
+we live a few blocks from each other so
+let's hope we can be good friends.
+
+--0015175cd45c11f848049a9b2356
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div>today the weirdest thing happened to me.</div><div><br></div><div>I ha=
+d lunch with that girl</div><div>about my age, but possibly</div><div>young=
+er.</div><div>Very interesting person, very nice too</div><div>but then she=
+ said something that rang a bell</div>
+
+<div>how could she know this and that</div><div>I asked a question and was =
+surprised by the answer,=A0</div><div>then the asked me something equally w=
+eird</div><div>and</div><div>we realized that we are cousins.</div><div>
+our parents are not very good at PR so=A0</div>
+<div>we only met once 20 years ago.=A0</div><div>and possibly once before t=
+hat.=A0</div><div>or maybe not.</div><div>we are both data people and</div>=
+<div>we live a few blocks from each other so</div><div>let&#39;s hope we ca=
+n be good friends.</div>
+
+<div><br></div><div><br></div><div><br></div><div><br></div>
+
+--0015175cd45c11f848049a9b2356--
