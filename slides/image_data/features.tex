@@ -1,8 +1,26 @@
 \begin{frame}
-  \frametitle{Image features}
+  \frametitle{Images as arrays}
 
   \begin{center}
-  \includegraphics[width=\textwidth]{../../code/image_data/chairs_64.png}
+    \only<1>{\includegraphics[height=0.5\textheight]{../../code/image_data/sample_digit.png}}
+    \only<2>{\includegraphics[height=0.5\textheight]{image_array.png}}
   \end{center}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Images as arrays}
+
+  \begin{center}
+  \includegraphics[width=\textwidth]{../../code/image_data/chairs.jpg}
+  %\includegraphics[width=\textwidth]{../../code/image_data/chairs_64.png}
+  \end{center}
+
+    \begin{block}{}
+        \begin{lstlisting}[language=python]
+import matplotlib.image as mpimg
+I = mpimg.imread(chairs.jpg')
+        \end{lstlisting}
+    \end{block}
 
 \end{frame}
