@@ -114,7 +114,6 @@ class NaiveBayesClassifier(object):
             
     def train(self, item, category):
         features = self.get_features(item)
-        print features # DEBUG
         
         for f in features:
             self.increment_feature(f, category)
