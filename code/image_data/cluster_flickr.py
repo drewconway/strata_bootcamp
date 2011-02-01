@@ -82,7 +82,7 @@ if __name__=='__main__':
         ndx = sp.where(assignments == k)
 
         # plot montage
-        f = plot_montage(images, ndx[0])
+        f = plot_montage(images, ndx[0], 20)
 
         # save figure
         fname = '%s_cluster_%d.png' % (directory, k)

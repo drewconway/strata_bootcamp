@@ -1,9 +1,9 @@
 \begin{frame}[fragile]
-  \frametitle{Screen scraping}
+  \frametitle{Simple screen scraping}
 
     \begin{block}{One-liner to scrape images from a webpage}
         \begin{lstlisting}[language=bash]
-> wget -O- http://bit.ly/gpCSQi | 
+ wget -O- http://bit.ly/gpCSQi | 
    tr ''\''"=' '\n' | 
    egrep '^http.*(png|jpg|gif)' | 
    xargs wget 
@@ -66,22 +66,41 @@
 
 
 \begin{frame}[fragile]
-  \frametitle{Screen scraping}
+  \frametitle{YQL + Python\footnote{See \url{http://python-yql.org/} for a more robust client}}
 
-    \begin{block}{One-liner to scrape images from a webpage}
-        \begin{lstlisting}[language=bash]
->YQL_PUBLIC = 'http://query.yahooapis.com/v1/public/yql'
+    \begin{block}{Python function for public YQL queries}
+        \begin{lstlisting}[language=python]
+YQL_PUBLIC = 'http://query.yahooapis.com/v1/public/yql'
 
 def yql_public(query):
-    # escape query
-    query_str = urlencode({'q': query, 'format': 'json'})
+  # escape query
+  query_str = urlencode({'q': query, 'format': 'json'})
 
-    # fetch results
-    url = '%s?%s' % (YQL_PUBLIC, query_str)
-    result = urlopen(url)
-    # parse json and return
-    return json.load(result)['query']['results']
+  # fetch results
+  url = '%s?%s' % (YQL_PUBLIC, query_str)
+  result = urlopen(url)
+
+  # parse json and return
+  return json.load(result)['query']['results']
 
         \end{lstlisting}
     \end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{YQL + Python + Flickr}
+
+    \begin{block}{Fetch info for ``interestingness'' photos}
+      \begin{lstlisting}[language=bash]
+ ./simpleyql.py ``select * from
+   flickr.photos.interestingness(100)''
+      \end{lstlisting}
+    \end{block}
+
+    \begin{block}{Download thumbnails for photos tagged with ``vivid''}
+      \begin{lstlisting}[language=bash]
+ ./download_flickr.py vivid 500
+      \end{lstlisting}
+    \end{block}
+
 \end{frame}

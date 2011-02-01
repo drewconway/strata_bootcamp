@@ -70,4 +70,4 @@ if __name__=='__main__':
     base, ext = os.path.splitext(fname)
     fname = '%s_clustered.png' % base
     print "saving" , fname
-    plt.savefig(fname)
+    plt.savefig(fname, bbox_inches='tight')
