@@ -33,7 +33,7 @@
 \end{verbatim}
     \vskip5pt
     \begin{center}
-        \includegraphics[width=0.8\textwidth]{speakers.png} \\
+        \includegraphics[width=0.775\textwidth]{speakers.png} \\
     \end{center}
 \end{frame}
 
@@ -127,6 +127,7 @@ git clone https://github.com/drewconway/strata_bootcamp
       \includegraphics[width=0.75\textwidth]{email_spam.png}
     \end{center}
 
+    % s/rules/experience/
     \begin{itemize}
       \pause
       \item How did you solve this problem?
@@ -136,7 +137,7 @@ git clone https://github.com/drewconway/strata_bootcamp
 \end{frame}
 
 \begin{frame}
-  \frametitle{Learning by example}
+  \frametitle{Learning by example}%s/rules/experience/}
 
     \begin{center}
       \includegraphics[width=0.25\textwidth]{obama1.png}
@@ -145,11 +146,8 @@ git clone https://github.com/drewconway/strata_bootcamp
     \end{center}
 
     \begin{itemize}
-      \pause
       \item We learn quickly from few, relatively unstructured examples
        ... but we don't understand {\it how} we accomplish this
-      \item \alert<2>{Can we develop algorithms that enable machines
-        to learn by example from large data sets?}
     \end{itemize}
 
 \end{frame}
@@ -158,7 +156,7 @@ git clone https://github.com/drewconway/strata_bootcamp
 
 
 \begin{frame}
-  \frametitle{Goals}
+  \frametitle{Everything old is new again\footnote{\url{http://cbcl.mit.edu/publications/theses/thesis-rifkin.pdf}}}
 
   \begin{itemize}
     \item Many fields ...
@@ -211,23 +209,24 @@ git clone https://github.com/drewconway/strata_bootcamp
 \end{frame}
 
 
+
 \begin{frame}
-  \frametitle{Framework}
+  \frametitle{Roadmap, take 2}
 
   \begin{columns}
     \begin{column}{0.6\textwidth}
       
   \begin{enumerate}
-    \item<1-> Get data
-    \item<2-> Visualize/perform sanity checks
-    \item<2-> Clean/filter observations
-    \item<2-> Choose features to represent data
-    \item<3-> Specify model
-    \item<3-> Specify loss function 
-    \item<4-> Develop algorithm to minimize loss 
-    \item<5-> Choose performance measure
-    \item<5-> ``Train'' to minimize loss
-    \item<5-> ``Test'' to evaluate generalization
+    \item Get data
+    \item Visualize/perform sanity checks
+    \item Clean/filter observations
+    \item Choose features to represent data
+    \item Specify model
+    \item Specify loss function 
+    \item Develop algorithm to minimize loss 
+    \item Choose performance measure
+    \item ``Train'' to minimize loss
+    \item ``Test'' to evaluate generalization
   \end{enumerate}
 
     \end{column}
@@ -236,8 +235,8 @@ git clone https://github.com/drewconway/strata_bootcamp
     \begin{center}
       \includegraphics[width=0.9\textwidth]{email_ham.png}
       \includegraphics[width=0.9\textwidth]{email_spam.png}
-      \uncover<2-> {\includegraphics[width=0.5\textwidth]{svm.png}}
-      \uncover<5-> {\includegraphics[width=0.9\textwidth]{complexity.png}}
+      \includegraphics[width=0.5\textwidth]{svm.png}
+      \includegraphics[width=0.9\textwidth]{complexity.png}
     \end{center}
 
     \end{column}
