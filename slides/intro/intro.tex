@@ -42,7 +42,7 @@
 \label{sec:motivation_for_bootcamp}
 
 \begin{frame}[fragile]
-    \frametitle{Play along at home}
+    \frametitle{Please \textit{do} try this at home}
     All of the materials from today's tutorial are available on Github:
     \vskip20pt
     \begin{block}{Clone the repository for data/code/slides}
@@ -54,27 +54,47 @@ git clone https://github.com/drewconway/strata_bootcamp
 
 
 \begin{frame}[fragile]
-  \frametitle{Hacking}
+  \frametitle{Disclaimer} % Disclaimer/Warning/Apologies
+  
+    You may be bored if you already know how to ...
 
-  \begin{itemize}
-    \item Scripting: Python, Ruby, Perl, bash, ...
-    \item Computing: R, SciPy/NumPy, MATLAB, ...
-    \item Wrangling: sed, awk, grep, tr, wc, cut, sort, uniq, ....
-  \end{itemize}
-
-  \begin{verbatim}
-    $ tr , '\t' < data.csv > data.tsv
-  \end{verbatim}
-
-  \begin{verbatim}
-    $ bzcat data.tsv.bz2 | awk -F'\t' 'NF != 16 {print}'
-  \end{verbatim}
+      \begin{itemize}
+        \item Acquire data from APIs
+        \item Clean/explore/visualize data
+        \item Classify and cluster image and text data
+        \item Work with large data sets
+        \item Build simple mashups
+        \item Work with Python, R, SciPy/NumPy, etc.
+        \item Work with unix tools on the command line, e.g.
+      \end{itemize}
 
   \begin{verbatim}
     $ sed -e 's/<[^>]*>//g' < page.html > page.txt
   \end{verbatim}
 
+
+%%   \begin{itemize}
+%%     \item Scripting: Python, Ruby, Perl, bash, ...
+%%     \item Computing: R, SciPy/NumPy, MATLAB, ...
+%%     \item Wrangling: sed, awk, grep, tr, wc, cut, sort, uniq, ....
+%%   \end{itemize}
+
+%%   \begin{verbatim}
+%%     $ tr , '\t' < data.csv > data.tsv
+%%   \end{verbatim}
+
+%%   \begin{verbatim}
+%%     $ bzcat data.tsv.bz2 | awk -F'\t' 'NF != 16 {print}'
+%%   \end{verbatim}
+
+%%   \begin{verbatim}
+%%     $ sed -e 's/<[^>]*>//g' < page.html > page.txt
+%%   \end{verbatim}
+
+
 \end{frame}
+
+
 
 
 
@@ -301,6 +321,16 @@ git clone https://github.com/drewconway/strata_bootcamp
     \begin{center}
       \includegraphics[width=0.9\textwidth]{netflix_faq.png}
       \includegraphics[width=0.9\textwidth]{netflix_cinematch.png}
+    \end{center}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Shipping = Feature}
+
+    \begin{center}
+      \includegraphics[width=0.8\textwidth]{netflix_solution.png}
     \end{center}
 
 \end{frame}
