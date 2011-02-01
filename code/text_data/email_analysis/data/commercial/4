@@ -1,0 +1,284 @@
+Delivered-To: ann9enigma@gmail.com
+Received: by 10.229.130.129 with SMTP id t1cs168262qcs;
+        Mon, 24 Jan 2011 08:54:33 -0800 (PST)
+Received: by 10.142.136.9 with SMTP id j9mr4018485wfd.396.1295888073191;
+        Mon, 24 Jan 2011 08:54:33 -0800 (PST)
+Return-Path: <custserv@bananarepublic.delivery.net>
+Received: from client-1-134.delivery.net (client-1-134.delivery.net [209.11.164.134])
+        by mx.google.com with ESMTP id y4si30056010wfd.21.2011.01.24.08.54.31;
+        Mon, 24 Jan 2011 08:54:32 -0800 (PST)
+Received-SPF: pass (google.com: domain of custserv@bananarepublic.delivery.net designates 209.11.164.134 as permitted sender) client-ip=209.11.164.134;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of custserv@bananarepublic.delivery.net designates 209.11.164.134 as permitted sender) smtp.mail=custserv@bananarepublic.delivery.net; dkim=pass header.i=@bananarepublic.delivery.net
+Return-Path: <custserv@bananarepublic.delivery.net>
+DomainKey-Signature: q=dns; a=rsa-sha1; c=nofws;
+	s=v1; d=bananarepublic.delivery.net;
+	h=DKIM-Signature:Received:Message-ID:Date:From:Reply-to:To:Subject:Errors-to:Mime-Version:Content-Type:X-eid:X-pid;
+	b=WM1Z0I7jNXxwKVMAfMclCvQ79eCOlFdMc3BdrqBVvhDUxm8wbSxBN3m3166oCvjE
+	wCiw2aK83Kq/FkUb2GVnOQ+4cljuPycfPITjiHZHm8nKl9w36m6Dzhg2mnf7P98D
+	N23H4LiIdUdvfzuqdsAvKF2/5rI9JCSYkFv00+izfPA=
+DKIM-Signature: v=1; a=rsa-sha1; d=bananarepublic.delivery.net; s=v1; c=simple/simple;
+	q=dns/txt; i=@bananarepublic.delivery.net; t=1295888071;
+	h=From;
+	bh=RtX9ph9EqW1dZMxyDKHvCRkRQfg=;
+	b=KK+WjY83i5XZomI9zEQaKBOy/6quAbLcOAz8jwTNtu5wspNn5Fw6nVl03U7KlEGx
+	Js4kvEbtKKThNRUcW9gzL8vgjsNcVQ7r/bRi1w6f23NqQ/U0hpKt5C99t2RIdpD7
+	SRgiQzMc2gPBPy0Br9jf8t2jP5cTe9D+ym+xt+o2ZYo=;
+Received: from [209.11.138.210] ([209.11.138.210:38849] helo=g1apiapp1.merchantmail.net)
+	by oms6.dc1.prod (envelope-from <custserv@bananarepublic.delivery.net>)
+	(ecelerity 2.2.2.36 r(26875/27517M)) with ESMTP
+	id 2E/4E-02539-7CEAD3D4; Mon, 24 Jan 2011 08:54:31 -0800
+Message-ID: <15635493206.1295888071606@m0.net>
+Date: Mon, 24 Jan 2011 08:54:31 -0800 (PST)
+From: "BananaRepublic.com" <custserv@bananarepublic.delivery.net>
+Reply-to: custserv@bananarepublic.delivery.net
+To: ann9enigma@gmail.com
+Subject: Welcome! Enjoy 15% off + FREE Shipping Every Day at BananaRepublic.com
+Errors-to: custserv@bananarepublic.delivery.net
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="---=_NEXT_12db8f2bb9c"
+X-eid: 2.5.17.2Vg.1itMF3.EZyh5M..N..2jsK.CNXUEQN0
+X-pid: 712084
+
+-----=_NEXT_12db8f2bb9c
+Content-Type: text/plain; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+WELCOME TO BANANAREPUBLIC.COM - You'll now receive updates about our=20
+new collections, upcoming sale events and more. As our welcome gift=20
+to you please enjoy 15% off your next online purchase. To redeem=20
+this special offer, enter the promo code below.*
+L9NWVYX8KNWB
+
+*Offer valid on Banana Republic merchandise purchased online only=20
+between January 24, 2011 at 12:00 AM ET until February 7, 2011=20
+at 11:59 PM ET in the U.S.(including Puerto Rico). Offer not valid=20
+on international shipments. Offer not valid at Banana Republic=20
+Factory Stores or Edition by Banana Republic. Qualifying amount=20
+applies to merchandise only not to Giftcards purchased, packaging,=20
+applicable taxes or shipping and handling charges. Offer is good=20
+for one-time use online. No adjustments on previous purchases. Not=20
+valid for cash or cash equivalent. Offer cannot be combined with=20
+Gap Inc. employee discount or any other offers or discounts. Not=20
+responsible for lost or stolen coupons. BananaRepublic.com=20
+values its customers and respects their privacy.=20
+
+Privacy Policy
+http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSM6.=
+2jsK.bW89MQ%5f%5fCULYFNR0
+
+Unsubscribe
+http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSM8.=
+2jsK.bW89MQ%5f%5fCUSMFNT0
+
+If you'd rather not receive email updates from Banana Republic, you=20
+can unsubscribe from our mailing list by clicking "Unsubscribe"=20
+above. If you have any questions about our privacy policy, contact=20
+our customer service center via email at custserv@gap.com or call us=20
+at 1-888-BRSTYLE (1-888-277-8953). You may also contact us by postal=20
+mail at Banana Republic Customer Services, 5900 North Meadows Drive,=20
+Grove City, OH 43123-8476.=20
+
+(c) 2001-2010 BananaRepublic.com
+
+
+
+
+-----=_NEXT_12db8f2bb9c
+Content-Type: text/html; charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML>
+
+<BODY>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"700">
+<tr>
+<td align=3D"right" colspan=3D"3" height=3D"55" valign=3D"top"><A HREF=3D"h=
+ttp://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSMA.2=
+jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9BdMOJHX0"><img alt=
+=3D"Everyday FREE shipping on any order over $50. No code. No hassle." bord=
+er=3D"0" height=3D"52" src=3D"http://img.delivery.net/cm50content/2426/1968=
+4/FrreShipStamp_Top.gif" width=3D"396"></A></td>
+</tr>
+<tr>
+<td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"700">
+<tr>
+<td width=3D"224"><img alt=3D"" border=3D"0" height=3D"28" src=3D"http://im=
+g.delivery.net/cm50content/2426/19684/Email_BRlogo.gif" style=3D"display:bl=
+ock;" usemap=3D"#imap_logo" width=3D"224"></td>
+<td align=3D"right" width=3D"476"><font color=3D"#000000" face=3D"Arial, He=
+lvetica, San serif" style=3D"font-size:11px;"><A HREF=3D"http://bananarepub=
+lic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSMC.2jsK.az1CV0xDMSZtc=
+DMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9BdYSJHZ0"><font color=3D"#000000" fa=
+ce=3D"arial, helvetica, sans-serif" originaltag=3D"yes" size=3D"1" style=3D=
+"font-size:11px;"><u>SHOP NOW</u></font></A> ></font><font color=3D"#9d9d9d=
+" face=3D"Arial, Helvetica, San serif" style=3D"font-size:11px;"><A HREF=3D=
+"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSME=
+.2jsK.cnNfa3k9MWl0TUYzJnJzX2VlPVlXNXVPV1Z1YVdkdFlVQm5iV0ZwYkM1amIyMF8mbW89M=
+SZyc19vYz1OJnJzX212PUgmcnNfYnY9SA%5f%5fBcWKNRP0"><font color=3D'#9d9d9d' si=
+ze=3D'1' style=3D'font-family: Arial,sans-serif; text-decoration: underline=
+; font-size: 11px;'> web browser</font></A> > </font></td>
+</tr></table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"700">
+<tr>
+<td colspan=3D"2"><img alt=3D"" border=3D"0" height=3D"28" src=3D"http://im=
+g.delivery.net/cm50content/2426/19684/Email_TopNav.gif" style=3D"display:bl=
+ock;" usemap=3D"#imap_topNav" width=3D"700"></td>
+</tr>
+<tr><td><img alt=3D"" border=3D"0" height=3D"4" src=3D"http://img.delivery.=
+net/cm50content/2426/19684/spacer.gif" style=3D"display:block;" width=3D"1"=
+></td></tr>
+</table></td>
+</tr>
+</table>
+<table background=3D"http://img.delivery.net/cm50content/2426/19684/bg.gif"=
+ bgcolor=3D"#f3e7d1" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"700">
+<tr>
+<td colspan=3D"4"><A HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.=
+17.2Vg.1itMF3.EZyh5M..N.LSMG.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9J=
+m1wMjM1NjU9BeQaJHd0"><img alt=3D"WELCOME TO BANANAREPUBLIC.COM You'll now r=
+eceive updates about our new collections, upcoming sale events and more. As=
+ our welcome gift to you please enjoy 15% off your next online purchase. To=
+ redeem this special offer, enter the promo code below.*" border=3D"0" heig=
+ht=3D"261" src=3D"http://img.delivery.net/cm50content/2426/19684/1101_Welco=
+meEmailOffer_top.jpg" usemap=3D"#primary1" width=3D"700"></A></td>
+</tr>
+<tr>
+<td valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tr>
+<td><A HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.=
+EZyh5M..N.LSMI.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9Bec=
+eJHf0"><img alt=3D"" border=3D"0" height=3D"28" src=3D"http://img.delivery.=
+net/cm50content/2426/19684/1101_WelcomeEmailOffer_left.jpg" usemap=3D"#seco=
+ndary" width=3D"238"></A></td>
+<td align=3D"center" valign=3D"middle" width=3D"126"><font color=3D"#000" f=
+ace=3D"Arial, Helvetica, San serif" size=3D"2"><strong>L9NWVYX8KNWB</strong=
+></font></td>
+<td align=3D"right"><A HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.=
+1.17.2Vg.1itMF3.EZyh5M..N.LSMK.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk=
+9Jm1wMjM1NjU9BfJCJIB0"><img alt=3D"" border=3D"0" height=3D"28" src=3D"http=
+://img.delivery.net/cm50content/2426/19684/1101_WelcomeEmailOffer_right.jpg=
+" usemap=3D"#secondary" width=3D"336"></A></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan=3D"3"><img alt=3D"To receive emails about categories that inter=
+est you, please click here." border=3D"0" height=3D"180" src=3D"http://img.=
+delivery.net/cm50content/2426/19684/1101_WelcomeEmailOffer_bottom.jpg" usem=
+ap=3D"#tertiary" width=3D"700"></td>
+</tr>
+<tr>
+<td bgcolor=3D"#FFFFFF" height=3D"63" valign=3D"top"><A HREF=3D"http://bana=
+narepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZyh5M..N.LSMM.2jsK.az1CV0=
+xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9BfVGJID0"><img alt=3D"Everyda=
+y FREE shipping on any order over $50. No code. No hassle." border=3D"0" he=
+ight=3D"60" src=3D"http://img.delivery.net/cm50content/2426/19684/free_ship=
+_bottom.gif" style=3D"display:block;" width=3D"700"></A></td>
+</tr>
+</table>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"700">
+<tr><td style=3D"padding:10px"><font face=3D"arial, helvetica, sans-serif" =
+originaltag=3D"yes" size=3D"1">*Offer valid on Banana Republic merchandise =
+purchased online only between January 24, 2011 at 12:00 AM ET until Februar=
+y 7, 2011 at 11:59 PM ET in the U.S.(including Puerto Rico). Offer not vali=
+d on international shipments. Offer not valid at Banana Republic Factory St=
+ores or Edition by Banana Republic. Qualifying amount applies to merchandis=
+e only not to Giftcards purchased, packaging, applicable taxes or shipping =
+and handling charges. Offer is good for one-time use online. No adjustments=
+ on previous purchases. Not valid for cash or cash equivalent. Offer cannot=
+ be combined with Gap Inc. employee discount or any other offers or discoun=
+ts. Not responsible for lost or stolen coupons.<BR>
+<BR>
+
+Everyday Free Shipping is valid in the U.S. only (including Puerto Rico) on=
+ purchases of $50 or more in the same order. Gift cards, packaging, taxes a=
+nd prior purchases do not qualify toward the minimum purchase requirement a=
+nd offer cannot be applied to such items. Eligible customers must select th=
+is option during checkout in order to receive free shipping. Offer is good =
+for the order's first &quot;ship-to&quot; address anywhere in the U.S. (inc=
+luding Puerto Rico). If you choose another shipping option, additional char=
+ges will apply. No adjustments on previous purchases. Offer is non-transfer=
+able and subject to change without notice. Not valid on international shipm=
+ents.<BR>
+<BR>
+
+BananaRepublic.com values its customers and respects their privacy. For mor=
+e information about our privacy policy, please click on the following link:=
+ <A HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.EZy=
+h5M..N.LSMO.2jsK.bW89MQ%5f%5fCWeSFOK0"><font color=3D"#666666" face=3D"aria=
+l, helvetica, sans-serif" originaltag=3D"yes" size=3D"1">http://www.bananar=
+epublic.com/customerService/info.do?cid=3D1330</font></A>=20
+<BR>
+<BR>
+
+<A HREF=3D"http://bananarepublic.p.delivery.net/m/p/bna/new/p.asp?e=3Dann9e=
+nigma%40gmail.com&mid=3D1826448323&cid=3D15635493206"><font color=3D"#66666=
+6" face=3D"arial, helvetica, sans-serif" originaltag=3D"yes" size=3D"1">Cli=
+ck here</font></A> to remove your email address from our list or write to u=
+s at BananaRepublic.com Customer Services, 5900 North Meadows Drive, Grove =
+City, OH 43123-8476. </font></td></tr></table>
+<table>
+</table>
+<map id=3D"tertiary" name=3D"tertiary">
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMQ.2jsK.az1CV0xDMSZtcDI0Mjc5PSZtbz0xJm1wMjM1NjU9CJAeIED0" ALT=3D=
+"To receive emails about categories that interest you, please click here" C=
+OORDS=3D"105,34,281,83"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMS.2jsK.az1CV0xDMSZtcDI0Mjc5PSZtbz0xJm1wMjM1NjU9CJLSIEF0" ALT=3D=
+"Shop Now >" COORDS=3D"511,86,693,156"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMU.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CBFW=
+JIL0" COORDS=3D"5,8,5,172,93,172,92,8" SHAPE=3D"poly"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMW.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CBRa=
+JIN0" COORDS=3D"99,30,689,35,692,8,96,7,102,169" SHAPE=3D"poly"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMY.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CBde=
+JIP0" COORDS=3D"291,40,289,77,279,95,109,96,113,167,496,168,505,74,684,76,6=
+84,33" SHAPE=3D"poly"/>
+</map>=20
+<map id=3D"imap_logo" name=3D"imap_logo">
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMa.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CDOO=
+JIX0" ALT=3D"Shop BananaRepublic.com" COORDS=3D"2,1,220,20"/>
+</map>=20
+<map id=3D"imap_topNav" name=3D"imap_topNav">
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMc.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CDaS=
+JIZ0" ALT=3D"men" COORDS=3D"0,1,45,25"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMe.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CEGW=
+JIb0" ALT=3D"men's big & tall" COORDS=3D"49,1,165,27"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMg.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CESa=
+JId0" ALT=3D"women" COORDS=3D"169,2,238,26"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMi.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CEee=
+JIf0" ALT=3D"petites" COORDS=3D"242,1,310,27"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMk.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CFLC=
+JJB0" ALT=3D"women's tall" COORDS=3D"315,1,412,26"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMm.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CFXG=
+JJD0" ALT=3D"shoes & handbags" COORDS=3D"414,2,548,26"/>
+<AREA HREF=3D"http://bananarepublic1.r.delivery.net/r/r?2.1.17.2Vg.1itMF3.E=
+Zyh5M..N.LSMo.2jsK.az1CV0xDMSZtcDMwMTg4PSZtbz0xJm1wMjQyNzk9Jm1wMjM1NjU9CGDK=
+JJF0" ALT=3D"jewelry & accessories" COORDS=3D"555,2,699,26"/>
+</map>=20
+
+<BR>
+<BR>
+<BR>
+<font color=3D"#666666" face=3D"Verdana,Helvetica" originaltag=3D"yes" size=
+=3D"1"></font><BR>
+<img width=3D"1" height=3D"1" src=3D"http://open.delivery.net/o?2.2.17.2Vg.=
+1itMF3.EZyh5M..N..2jsK.ZD0tMSZtbz0xDAKUFRe0" alt=3D" ">
+</BODY>
+</HTML>
+
+-----=_NEXT_12db8f2bb9c--
+

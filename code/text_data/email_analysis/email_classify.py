@@ -8,6 +8,8 @@ Copyright (c) 2011 Hilary Mason. All rights reserved.
 """
 
 import sys, os
+import re
+import string
 
 from nltk import FreqDist
 from nltk.tokenize import word_tokenize
@@ -17,18 +19,18 @@ from gmail import Gmail
 
 class emailClassify(object):
 
-	def __init__(self, username, password, folders=['commercial','friends']):
-		g = Gmail(username, password)
-		
-		# gather data from our e-mail
-		msg_data = {}
-		for folder_name in folders:
-		    msg_data[folder_name] = g.get_all_messages_from_folder(folder_name)
+    def __init__(self, username, password, folders=['commercial','friends']):
+        g = Gmail(username, password)
+
+        # gather data from our e-mail
+        msg_data = {}
+        for folder_name in folders:
+            msg_data[folder_name] = g.get_all_messages_from_folder(folder_name)
 		    
-		nb = NaiveBayesClassifier()
-		nb.train_from_data(msg_data)
-		print nb.probability("elephant", 'friends')
-		print nb.probability("elephant", 'commercial')
+        nb = NaiveBayesClassifier()
+        nb.train_from_data(msg_data)
+        print nb.probability("elephant", 'friends')
+        print nb.probability("elephant", 'commercial')
 		    
 
 class NaiveBayesClassifier(object):
@@ -61,15 +63,19 @@ class NaiveBayesClassifier(object):
         
     def get_features(self, document):
         all_words = word_tokenize(document)
-        
         all_words_freq = FreqDist(all_words)
         
+        # print sorted(all_words_freq.items(), key=lambda(w,c):(-c, w))
         return all_words_freq
         
-    def get_features(self, document):
-        print document
-        
-        return hi
+    # def get_features(self, document):
+    #     document = re.sub('[%s]' % re.escape(string.punctuation), '', document)
+    #     document = document.lower()
+    #     all_words = [w for w in word_tokenize(document) if len(w) > 3 and len(w) < 16]
+    #     all_words_freq = FreqDist(all_words)
+    #     
+    #     # print sorted(all_words_freq.items(), key=lambda(w,c):(-c, w))
+    #     return all_words_freq
         
     def increment_feature(self, feature, category):
         self.feature_count.setdefault(feature,{})

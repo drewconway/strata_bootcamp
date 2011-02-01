@@ -1,0 +1,38 @@
+Delivered-To: ann9enigma@gmail.com
+Received: by 10.229.130.129 with SMTP id t1cs171691qcs;
+        Mon, 24 Jan 2011 09:54:21 -0800 (PST)
+Received: by 10.42.213.196 with SMTP id gx4mr5191938icb.444.1295891661357;
+        Mon, 24 Jan 2011 09:54:21 -0800 (PST)
+Return-Path: <ebellm@berkeley.edu>
+Received: from cm06fe.IST.Berkeley.EDU (cm06fe.IST.Berkeley.EDU [169.229.218.147])
+        by mx.google.com with ESMTPS id p10si31686515icj.116.2011.01.24.09.54.21
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Mon, 24 Jan 2011 09:54:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of ebellm@berkeley.edu designates 169.229.218.147 as permitted sender) client-ip=169.229.218.147;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of ebellm@berkeley.edu designates 169.229.218.147 as permitted sender) smtp.mail=ebellm@berkeley.edu
+Received: from cm04ws.ist.berkeley.edu ([169.229.218.166] helo=calmail.berkeley.edu)
+	by cm06fe.ist.berkeley.edu with esmtpsa (TLSv1:AES256-SHA:256)
+	(Exim 4.72)
+	(auth login:ebellm@berkeley.edu)
+	(envelope-from <ebellm@berkeley.edu>)
+	id 1PhQcN-00082L-Ll
+	for ann9enigma@gmail.com; Mon, 24 Jan 2011 09:54:20 -0800
+Received: from 128.32.13.98
+        (SquirrelMail authenticated user ebellm@berkeley.edu)
+        by calmail.berkeley.edu with HTTP;
+        Mon, 24 Jan 2011 09:54:19 -0800
+Message-ID: <5c59c6c96e5522d98e39896d240380a9.squirrel@calmail.berkeley.edu>
+Date: Mon, 24 Jan 2011 09:54:19 -0800
+Subject: Anscombe's quartet
+From: "Eric Bellm" <ebellm@berkeley.edu>
+To: ann9enigma@gmail.com
+Reply-To: ebellm@berkeley.edu
+User-Agent: SquirrelMail/1.4.21-2.berkeley
+MIME-Version: 1.0
+Content-Type: text/plain;charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+http://en.wikipedia.org/wiki/Anscombe%27s_quartet
+
