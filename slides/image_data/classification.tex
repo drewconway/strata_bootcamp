@@ -58,19 +58,61 @@
 
 \end{frame}
 
-
 \begin{frame}[fragile]
-  \frametitle{Classifying images}
+  \frametitle{k-nearest neighbors classification}
 
   \begin{center}
+    \begin{block}{A simple kNN implementation with SciPy}
+        \begin{lstlisting}[language=python]
+import scipy.spatial as spat
 
-    \begin{block}{Display sample images}
-        \begin{lstlisting}[language=bash]
- ./digits.py
+# use the cdist function to quickly compute distances
+# between all test and training examples
+D = spat.distance.cdist(X, self.X, 'euclidean')
+
+for i in range(N):
+    # grab the indices of the k closest points
+    ndx = D[i,:].argsort()[:k]
+
+    # take a majority vote over the nearest points'
+    # labels
+    yhat[i] = mode(self.y[ndx])[0]
         \end{lstlisting}
     \end{block}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Digit recognition}
+
+  \begin{center}
+    Determine which digit $\{0,1,\ldots,9\}$ is in depicted in each image
     \vskip10pt
     \includegraphics[width=0.65\textwidth]{../../code/image_data/sample_digits.png}
-  \end{center}
+    %\includegraphics[width=0.5\textwidth]{ocr.png} \\
+    %\Huge{$\downarrow$} \\
+    %\Huge{0 \hskip10pt 5 \hskip10pt 4 \hskip10pt 1 \hskip10pt 4 \hskip10pt 9}
+    %\vskip20pt
+    %\normalsize
+    \vskip10pt
+    Represent each image as a ``bag of pixels'', flattening the 2-d array
+    of pixels to a 1-d vector
 
+  \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Digit recognition}
+
+  \begin{center}
+    \begin{block}{Simple digit classifer with k=1 nearest neighbors}
+        \begin{lstlisting}[language=python]
+ ./classify_digits.py
+        \end{lstlisting}
+    \end{block}
+    \vskip20pt
+    \includegraphics[width=0.55\textwidth]{digits_confmat.png}
+  \end{center}
 \end{frame}
