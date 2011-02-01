@@ -1,0 +1,1280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://www.w3.org/2002/12/cal/hcal http://www.w3.org/2006/03/hcard">
+	<link href="/stylesheets/general.css?1295975290" media="screen" rel="Stylesheet" type="text/css" />
+	
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js">                                                                                                  
+	</script>
+		
+	
+	<script src="/javascripts/application.js?1295975290" type="text/javascript"></script>
+<script src="/javascripts/ui/minified/jquery.ui.all.min.js?1295975290" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.bgiframe.min.js?1295975290" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.stars.pack.js?1295975290" type="text/javascript"></script>
+<script src="/javascripts/ui-ext/ui.dimensions.js?1295975290" type="text/javascript"></script>
+<script src="/javascripts/ext/jquery.form.min.js?1295975290" type="text/javascript"></script>
+	
+	
+	<script type="text/javascript">
+<!--
+
+      $(document).ready(function () {
+        $('#en_openid_minilogin').hide(); $('#en_email_minilogin').show();
+        $('#en_minilogin_openid_go').click(function (){
+          $('#en_email_minilogin').fadeOut(function () {
+            $('#en_openid_minilogin').show();
+          });
+        });
+        $('#en_minilogin_email_go').click(function (){
+          $('#en_openid_minilogin').fadeOut(function () {
+            $('#en_email_minilogin').show();
+          });
+        });
+      });
+      function init_quick_grade_js(item) {
+        var propid = $(item).attr('id').replace('en_eval_grade_', '');
+        $(item).stars({
+          inputType: "select",
+          cancelValue: "-1",
+          callback: function(ui, type, value) {
+            $('form#en_eval_form_'+propid).ajaxSubmit({
+              success: function(data) {
+                if (data == 'error') {
+                  alert("Sorry, but you may only submit an evaluation if you are a registered attendee, and not a speaker or proposer of a session.");
+                  $(item).find('span.en_grade_select_label').html("Can't save grade");
+                } else {
+                  $('div#en_grade_block_'+propid).html(data)
+                    .find('div.en_grade_select').each(function() {
+                      init_quick_grade_js($(this));
+                    });
+                }
+              }
+            }).find('span.en_grade_select_label').html("Saving...");
+          }
+        }).find('input.en_grade_submit').hide();
+      }
+
+      $(document).ready(function() {
+        $('div.en_grade_select').each(function() {
+          init_quick_grade_js($(this));
+        });
+      });
+        $(document).ready(function() {
+          $("form.en_comment_form").each(function() {
+            var theform=$(this);
+            $(this).submit(function (){
+              var contents = $('textarea#comment_body').val();
+              if (contents.match( /^[\n\r\s]*$/ )) {
+                alert("Please enter text in the comment box before posting!");
+                return false;
+              }
+              $(theform).find("input.en_comment_form_submit").attr("disabled", "disabled");
+              var ov = $(theform).find("input.en_comment_form_submit").attr("value");
+              $(theform).find("input.en_comment_form_submit").attr("value", "Posting...");
+              if (false) {
+                // if we're not on page 1, don't bother with fanciness
+                return true;
+              }
+              $(this).ajaxSubmit({
+                success: function(data){
+                  if (data != 'FAIL') {
+                    $('div#comments').find('div.en_comments_all').prepend(data);
+                    $(theform)[0].reset();
+                    $(theform).find("input.en_comment_form_submit").attr("disabled", "");
+                    $(theform).find("input.en_comment_form_submit").attr("value", ov);
+                    $('div#comments').find('div.en_comment').eq(0).effect("highlight", {}, 2000);
+                  } else {
+                    alert("Sorry, your comment could not be posted.");
+                    window.location.reload(true);
+                  }
+                }
+              });
+              return false;
+            });
+          });
+        });
+
+//-->
+</script>	
+			<link href="/strata2011/public/template/css/220/1296162008"
+		 	media="screen" rel="Stylesheet" type="text/css" />
+	
+	
+			<script src="/strata2011/public/template/js/220/1296162008"
+			type="text/javascript"></script>
+	
+	<title>
+  
+  
+  
+  
+
+Data Bootcamp: Strata 2011 - O'Reilly Conferences, February 01 - 03, 2011, Santa Clara, CA
+</title>
+
+
+  
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="O'Reilly Conferences: Strata 2011" href="http://feeds2.feedburner.com/OreillyConferencesStrata" />
+
+<link href="http://assets.en.oreilly.com/1/eventprovider/1/2011v1_css.css?121710" media="screen" rel="Stylesheet" type="text/css" />
+<link href="http://assets.en.oreilly.com/1/event/55/strata2011_css_v2_new.css?1511" media="screen" rel="Stylesheet" type="text/css" />
+
+
+<link href="http://strataconf.com/strata2011/public/template/css/220/1294269914" media="screen" rel="Stylesheet" type="text/css" />
+
+<style type="text/css">
+#en_content.updated .live_module_set div.more a:before {content:" ";}
+</style>
+
+
+
+
+<!--[if IE 6]>
+<style type="text/css">
+#widgets .whatis img {display:none;}
+</style>
+<![endif]-->
+
+
+
+
+ 
+<script type="text/javascript">
+$(function() {
+
+
+
+  var $gSlideshow = $("#en_header .slideshow .grouping").eq(0).children();
+
+
+
+  $gSlideshow.eq(0).show();
+  $gSlideshow.eq(1).css({"opacity": 0, "z-index": 5, "display": "inline"});
+  setTimeout(function() {$gSlideshow.eq(1).fadeTo(3000, 1);}, 4000);
+
+});
+</script>
+
+
+
+  <!--[if lte IE 6]>
+  <script type="text/javascript" src="/javascripts/supersleight-min.js"></script>
+  <![endif]-->
+
+
+
+
+<link rel="apple-touch-icon" href="http://assets.en.oreilly.com/1/eventprovider/1/orm-iphone-icon.png" type="image/png" />
+<link href="http://assets.en.oreilly.com/1/eventprovider/1/print_css.css" media="print" rel="Stylesheet" type="text/css" />
+
+<meta name="description" content="This tutorial offers a basic introduction to practicing data science.
+We'll walk through several typical projects that range from
+conceptualization to acquiring data, to analyzing and visualizing it,
+to drawing conclusions." />
+<meta name="Category" content="Conferences" />
+
+
+<meta name="search_date" content="2011-02-01" />
+
+
+
+<meta name="author" content="Joseph Adler, Hilary Mason, Drew Conway, Jake Hofman" />
+
+
+<meta name="SubCategory" content="Program" />
+<meta name="SubCategory_Value" content="Practitioner" />
+
+
+
+<!--for Google Webmaster Tools -->
+<meta name="verify-v1" content = "ejKlkisc2aaHXLk+37fMPNCfcsC5GdJYO2qoBXRRM7g=" />
+
+<!--
+<link rel="image_src" href="http://oreilly.com/images/oreilly/oreilly_large.gif" />
+-->
+</head>
+<body class='en_c_schedule en_a_detail' id='en_schedule_detail'>
+<div id="en_content" class="updated">
+<div id="en_main_parts" class=" interior">
+<div id="en_header"><!-- -->
+
+
+    <div id="stay_connected">
+  <a href="#" class="title"></a>
+  <div class="content">
+    <div class="items">
+      <a href="http://twitter.com/strataconf" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-twitter-trans.png" width="29" height="18" alt="Strata on Twitter"/>Follow Us on Twitter</a>
+      <a href="http://strataconf.com/go/strata_fb" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-facebook-trans.png" width="29" height="18" alt="Strata on Facebook"/>Strata Facebook Group</a>  
+      <a href="http://strataconf.com/go/strata_li" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-linkedin-trans.png" alt="Strata LinkedIn Group"/>Strata LinkedIn Group</a> 
+      <a href="http://elists.oreilly.com/#conferences" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-newsletter-trans.png" width="29" height="18" alt="Sign up for the Strata Bulletin"/>Sign up for the Bulletin</a>
+      <a href="http://radar.oreilly.com/data/" class="external" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/icon-blog-trans.png" width="29" height="18" alt="Data on the O'Reilly Radar"/>Data on the O'Reilly Radar</a> 
+
+
+
+    </div><!-- /items -->
+  </div><!-- /content -->
+</div><!-- /stay_connected -->
+
+
+
+<div id="top_level_nav">
+  <ul id="nav">
+<li><a href="/strata2011" class="level_one">Home</a></li> 
+
+<li><a href="/strata2011/public/register" class="level_one">Register <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/register" class="level_two">Info &amp; Registration</a></li>
+    
+    <li><a href="/strata2011/public/content/hotel" class="level_two">Hotel &amp; Travel</a></li>
+    <li><a href="/strata2011/public/content/restaurants" class="level_two">Local Eats</a></li>
+   </ul>
+</li>
+
+<li><a href="/strata2011/public/schedule/grid" class="level_one">Program <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/schedule/grid" class="level_two">Schedule</a></li>
+    <li><a href="/strata2011/public/schedule/full" class="level_two">Sessions</a>
+      <ul class="level_three">
+        <li><a href="/strata2011/public/schedule/topic/The+Data+Business" class="level_two">The Data Business</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Disruption+&amp;+Opportunity" class="level_two">Disruption &amp; Opportunity</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Interfaces" class="level_two">Interfaces</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Practitioner" class="level_two">Practitioner</a></li>
+        <li><a href="/strata2011/public/schedule/topic/Real+World" class="level_two">Real World</a></li>
+      </ul>
+    </li>
+    <li><a href="/strata2011/public/schedule/stype/Tutorial" class="level_two">Tutorials</a></li>
+    <li><a href="/strata2011/public/schedule/stype/keynote" class="level_two">Keynotes</a></li>
+    <li><a href="http://strataconf.com/strata2011/public/schedule/detail/17165" class="level_two">Executive Summit</a></li>
+    <li><a href="/strata2011/public/schedule/speakers" class="level_two">Speakers</a></li>
+    <li><a href="/strata2011/public/schedule/stype/Event" class="level_two">Events</a></li>
+    <li><a href="/strata2011/public/cfp/148" class="level_two">Startup Showcase</a></li>
+    <li><a href="/strata2011/public/schedule/detail/17840" class="level_two">Science Fair</a></li>
+    
+    <li><a href="/strata2011/public/content/onsite" class="level_two">Onsite Information</a></li>
+  </ul>
+</li>
+
+
+<li><a href="/strata2011/public/content/about" class="level_one">About</a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/content/about" class="level_two">About O'Reilly Strata</a></li>
+    <li><a href="/strata2011/public/content/about#committee" class="level_two">Program Committee</a></li>
+    <li><a href="/strata2011/blog" class="level_two">Strata Blog</a></li>
+    <li><a href="/strata2011/public/content/related" class="level_two">Related Content</a></li>
+    <li><a href="/strata2011/public/content/attractions" class="level_two">Santa Clara Attractions</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://conferences.oreilly.com" class="level_two" target="_blank">O'Reilly Conferences</a></li>
+    <li><a href="http://www.oreilly.com" class="level_two" target="_blank">O'Reilly Media</a></li>
+    <li><a href="http://conferences.oreilly.com/diversity.csp" class="level_two" target="_blank">Conference Diversity</a></li>
+  </ul>
+</li>
+
+<li><a href="/strata2011/public/content/exhibitors" class="level_one">Sponsor Pavilion</a>
+  <ul class="level_two">
+    <li><a href="/strata2011/public/content/exhibitors" class="level_two">Exhibitors</a></li>
+    <li><a href="/strata2011/public/content/sponsors" class="level_two">Sponsors</a></li>
+    <li><a href="/strata2011/public/content/media-partners" class="level_two">Media Partners</a></li>
+   </ul>
+</li>
+
+<li><a href="/strata2011/public/content/contact" class="level_one">Connect <span class="sf-sub-indicator"></span></a>
+  <ul class="level_two bigger">
+    <li><a href="/strata2011/public/content/contact" class="level_two">Contact Us</a></li>
+    <li><a href="/strata2011/public/content/news-coverage" class="level_two">News &amp; Coverage</a></li>
+    <li><a href="/strata2011/public/content/promote" class="level_two">Promote Strata</a></li>
+    <li><a href="/strata2011/public/content/networking-tips" class="level_two">Networking Tips</a></li>
+    <li class="title"><a class="level_two title">External Links</a></li>
+    <li><a href="http://elists.oreilly.com/#conferences" class="level_two" target="_blank">Bulletin</a></li>
+    <li><a href="http://radar.oreilly.com" class="level_two" target="_blank">O'Reilly Radar</a></li>
+  </ul>
+</li>
+
+
+  <li><a href="/strata2011/user/account" class="level_one">Your Account</a>
+    <ul class="level_two">
+    <li><a href="/strata2011/user/account" class="level_two">Your Account</a></li>
+    <li><a href="/strata2011/public/content/attendee-directory" class="level_two">Attendee Directory</a></li>
+  </ul>
+</li>
+
+  </ul>
+</div>
+
+  <a href="/strata2011/" id="logo" title="StrataConf 2011"></a>
+
+
+</div><!-- // en_header -->
+
+
+<div id="en_menubar">
+
+
+</div><!-- en_menubar -->
+
+
+
+<div id="en_main">
+	<div id="mid">
+
+	
+	
+<div class="vevent en_session">
+	<div class="en_detail_tools">
+	
+	<div class="en_network_invite">
+	<img src="/images/network_icon.png" width="17" height="14" alt="Network" />
+	<div class="en_network_invite_label">
+		<a href="http://strataconf.com/strata2011/user/network">Join Attendee Network</a>
+	</div>
+	&nbsp;
+</div>
+	
+	
+	<div class="en_session_psched" id="psched17164">
+
+		<a href="/strata2011/public/schedule/add/17164" class="en_psched_add" title="Add to your personal schedule"><img src="/images/personal-schedule-icon.png" width="17" height="18" alt="Add to your personal schedule" /></a>
+	<div class="en_psched_add_label"><a href="/strata2011/public/schedule/add/17164" class="en_psched_add">Add to Your Schedule</a></div>&nbsp;
+
+
+</div>
+
+	
+        
+	<div id="jump_to_comment"><img src="http://assets.en.oreilly.com/1/eventprovider/1/comment_icon.png" width="17" height="13" alt="comment_icon" /><a href="#new_comment">Add Comment or Question
+</a></div>
+        
+	<!--br /-->
+</div>
+
+
+        
+  
+  
+
+
+
+  <div class="en_article_share">
+    <div class="twitter left" style="margin: 0pt 5px 1px 0pt;">
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://strataconf.com/strata2011/public/schedule/detail/17164" data-text="Data Bootcamp" data-related="strataconf">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div>
+    
+    <div class="facebook left">
+      <iframe src="http://www.facebook.com/plugins/like.php?href=http://strataconf.com/strata2011/public/schedule/detail/17164&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none;overflow:hidden;width:90px;height:21px;" allowTransparency="true"></iframe></div>
+  </div>
+	<h1 class="summary">Data Bootcamp</h1>
+	<div id="schedule_detail">
+		<div class="en_session_speakers">
+	
+		<a href="/strata2011/public/schedule/speaker/87848">Joseph Adler</a> (LinkedIn), 
+	
+		<a href="/strata2011/public/schedule/speaker/62617">Hilary Mason</a> (bit.ly), 
+	
+		<a href="/strata2011/public/schedule/speaker/104414">Drew Conway</a> (New York University), 
+	
+		<a href="/strata2011/public/schedule/speaker/95656">Jake Hofman</a> (Yahoo!)
+	
+
+
+
+    
+
+
+
+    
+
+</div>
+
+		
+			<div class="session_time">
+	
+	<a href="/strata2011/public/schedule/full#s2011-02-01-09:00">9:00am</a>
+	<a href="/strata2011/public/schedule/grid/2011-02-01">Tuesday, 02/01/2011</a>
+	
+</div>
+
+			
+
+
+<div class="en_session_roominfo">
+
+	
+	  <span class="en_session_topics category">
+		
+			<a href="/strata2011/public/schedule/topic/Practitioner">Practitioner</a><br />
+		
+	  </span>
+	
+
+
+	
+<span class="en_session_room">Location: <span class = "location">Mission City M</span></span>
+
+	<span class="uf_timing">
+		 <abbr class="dtstart dtstamp" title="20110201T0900"></abbr>
+		 <abbr class="dtend" title="20110201T1700"></abbr>
+	</span>
+	
+
+	
+
+</div>
+
+
+  
+    <div class="tags small">
+      <strong>Tags:</strong> 
+      <span class="taglist">
+  
+    <a href="/strata2011/public/schedule/tag/data_science">data_science</a></span></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		
+
+		
+
+		<div class="en_session_description description">
+		  <p>This tutorial offers a basic introduction to practicing data science.
+We&#8217;ll walk through several typical projects that range from
+conceptualization to acquiring data, to analyzing and visualizing it,
+to drawing conclusions.</p>
+
+
+	<p>We assume familiarity with the command line and the ability to use
+libraries and code.</p>
+
+
+	<p>Topics covered include:</p>
+
+
+	<ul>
+	<li>Data acquisition and cleaning</li>
+		<li>Building practical data storage, analysis, and production systems</li>
+		<li>Visualizing data for exploration and presentation</li>
+		<li>Learning from data</li>
+		<li>Building a data science team</li>
+		<li>Privacy and security issues</li>
+	</ul>
+
+
+	<p><strong>Tutorial outline</strong></p>
+
+
+	<ul>
+	<li>Introductions and admin 
+	<ul>
+	<li>Who we are, why we love data</li>
+		<li>Motivations for why now is the time to learn &#8220;data science&#8221; </li>
+	</ul>
+	</li>
+		<li>Working with image data
+	<ul>
+	<li>We will discuss examples of how to classify and cluster images based on color values and intensities, introduce the K-nearest neighbor approach to this classification, and show visualizations of image data histograms.</li>
+		<li>Primary concepts
+	<ul>
+	<li>Acquiring data from APIs</li>
+		<li>Feature space representations</li>
+		<li>Supervised learning: K-nearest neighbors classification</li>
+		<li>Unsupervised learning: K-means clustering</li>
+	</ul>
+	</li>
+		<li>Examples</li>
+		<li>Visualization
+	<ul>
+	<li>Color intensity histograms</li>
+		<li>k-nearest neighbor plots</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Working with text data
+	<ul>
+	<li>During this section we will cover acquiring and cleaning semi-structured e-mail and LinkedIn data (via <span class="caps">CSV</span> export).  We will explore both data sets at the command-line, merge the data and test some basic machine learning concepts on the data.  Throughout, various visualization techniques will be used to explore the data; particularly the social graph that arises from e-mail.</li>
+		<li>Primary concepts
+	<ul>
+	<li>Acquisition and cleaning of text data</li>
+		<li>Merges and joins</li>
+		<li>Classification via Naive Bayes, and why k-nearest does not work for text</li>
+	</ul>
+	</li>
+		<li>Data (email and LinkedIn contacts)</li>
+		<li>Visualizations
+	<ul>
+	<li>Time-series of emails (periodicity)</li>
+		<li>Frequent correspondents</li>
+		<li>Heat map for LinkedIn contacts in U.S.</li>
+		<li>E-mail graph</li>
+		<li>Geo-&gt;IP-&gt;Map plots</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Big Data
+	<ul>
+	<li>Data Storage
+	<ul>
+	<li>Flat files</li>
+		<li>Relational databases (SQL)</li>
+		<li>Other databases (NoSQL)</li>
+	</ul>
+	</li>
+		<li>Processing
+	<ul>
+	<li>Serial</li>
+		<li>Parallel (Hadoop, <span class="caps">MPI</span>, etc)</li>
+	</ul>
+	</li>
+		<li>Where to keep your data
+	<ul>
+	<li>Machines you own/control</li>
+		<li>The cloud</li>
+	</ul>
+	</li>
+		<li>Privacy and Security Considerations
+	<ul>
+	<li>Why you should care</li>
+		<li>Quick overview of applicable laws</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		<li>Data mashups</li>
+		<li>Concluding panel discussion
+	<ul>
+	<li>Building a data science team</li>
+		<li>General Q&#38;A</li>
+	</ul></li>
+	</ul>
+
+
+<h3 id="srequirements">Software Requirements</h3>
+
+<div style="padding: 10px 5px;width: auto;background-color:#eee;">For those Data Bootcamp participants that wish to follow along with the instructors there are several software tools that you will need to have pre-installed.  If you do not wish to practice during the session then it is not necessary to have these tools installed prior to bootcamp, but you will need them to replicate the methods described on your own.
+
+	<p>For those running a <span class="caps">UNIX</span> distribution or Mac <span class="caps">OS X</span> all of the base tools (bash, Python, and R) are already installed, so you will only need to make sure that you have the supporting packages listed below.  For Windows users you will need to install the tools separately from binaries, which you can download at the following sites:</p>
+
+
+	<pre><code>- To use these command-line tools we recommend you install <a href="http://www.cygwin.com/">Cygwin to emulate a UNIX-like environment</a>.
+- Python: <a href="http://www.python.org/download/windows/">http://www.python.org/download/windows/</a>
+- R: <a href="http://cran.r-project.org/bin/windows/base/">http://cran.r-project.org/bin/windows/base/</a></code></pre>
+
+
+	<ol>
+	<li><span class="caps">UNIX</span> bash ###</li>
+	</ol>
+
+
+	<p>A large part of analyzing data is dealing with structured and unstructured text.  As such, there are several command-line tools that allow for &#8220;quick and dirty&#8221; handling of this data.  For this tutorial we will rely on the following set, which come with any <span class="caps">UNIX</span>-like distribution:</p>
+
+
+	<pre><code>- sed
+- awk
+- grep</code></pre>
+
+
+	<ol>
+	<li>Python ###</li>
+	</ol>
+
+
+	<p>Python is a powerful high-level scripting language that is well suited for manipulating and analyzing data of all kinds.  There are a number of Python libraries for analyzing data, but for this tutorial we will focus on the following:</p>
+
+
+	<pre><code>- <a href="http://docs.python.org/library/email.parser.html">email</a>: For parsing email data
+- <a href="http://www.nltk.org/download">Natural Language Toolkit</a> (NLTK):  Powerful set of tools for performing natural language processing on text
+- <a href="http://numpy.scipy.org/">NumPy</a>, <a href="http://www.scipy.org/">SciPy</a>, <a href="http://matplotlib.sourceforge.net/">matplotlib</a>: A trio of scientific computing libraries in Python that provide data types and functions for numeric and statistical analysis, as well as visualization
+- <a href="http://pypi.python.org/pypi/PIL">Python Image Library</a> (PIL): For the statistical analysis of image data
+- <a href="http://networkx.lanl.gov/">NetworkX</a>: For the creation, manipulation, and study of the structure, dynamics, and functions of complex networks</code></pre>
+
+
+	<p>There are a few ways to install Python packages, but we recommend either of the following.  In you <a href="http://pypi.python.org/pypi/setuptools">Python setuptools</a> installed you can download and install all of the above libraries with the following command:</p>
+
+
+	<pre><code>$ easy_instal {package_name}</code></pre>
+
+
+	<p>For example, to install NetworkX simply type:</p>
+
+
+	<pre><code>$ easy_install networkx</code></pre>
+
+
+	<p>You can also install packages from source by downloading the source files at the sites referenced above.  Simply unarchive the source code, navigate to the folder where the source code is located, and use the following command:</p>
+
+
+	<pre><code>$ python setup.py install</code></pre>
+
+
+	<ol>
+	<li>R ###</li>
+	</ol>
+
+
+	<p>The R statistical programming language has become the de facto <strong>lingua franca</strong> for statistical analysis.  There are thousands of R packages available on <a href="http://cran.r-project.org/"><span class="caps">CRAN</span></a> to perform any number of analyses.  For the purposes of this tutorial we will use the extremely powerful <a href="http://had.co.nz/ggplot2/">ggplot2</a> package by Hadley Wickham for data visualization.</p>
+
+
+	<p>To install packages in R we use the ``install.packages`` command:</p>
+
+
+<blockquote>
+	<p>install.packages(&#8220;ggplot2&#8221;, dependencies=TRUE)</p>
+
+</blockquote>
+
+
+
+
+	<p>Note, ggplot2 requires several other packages, so if you are running a new R installation this may take a few minutes.</p>
+
+
+	<ol>
+	<li>Additional Software ###</li>
+	</ol>
+
+
+	<p>During the tutorial there will be opportunity to visualize network relationships.  A very useful tool for visualizing networks in <a href="http://gephi.org/">Gephi</a>, which is a standalone application.  If you wish to follow along with this portion of the tutorial please <a href="http://gephi.org/users/download/">download and install Gephi</a>.</div></p>
+		</div>
+	</div>
+
+
+
+
+
+
+        
+
+        
+
+
+</div>
+
+
+
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_87848.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Joseph Adler"
+				/>
+		</div>
+	
+		<h2 class="fn">Joseph Adler</h2>
+
+		<div id="en_schedule_speaker">
+			
+				<h4 class="org">LinkedIn</h4>
+			
+
+			<div class="en_speaker_bio note">
+				<p>Joseph Adler has many years of experience in data mining and data analysis at companies including DoubleClick, American Express, and VeriSign. He graduated from <span class="caps">MIT</span> with an B.Sc. and M.Eng in Computer Science and Electrical Engineering. He is the inventor of several patents for computer security and cryptography, and the author of &#8220;Baseball Hacks&#8221; and &#8220;R in a Nutshell&#8221;. Currently, he is a senior data scientist at LinkedIn.</p>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_62617.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Hilary Mason"
+				/>
+		</div>
+	
+		<h2 class="fn">Hilary Mason</h2>
+
+		<div id="en_schedule_speaker">
+			
+				<h4 class="org">bit.ly</h4>
+			
+
+			<div class="en_speaker_bio note">
+				<p>Hilary is the lead scientist at bit.ly, where she is finding sense in vast data sets. She is a former computer science professor with a background in machine learning and data mining, has published numerous academic papers, and regularly releases code on her personal site, <a href="http://www.hilarymason.com/">www.hilarymason.com</a>. She has discovered two new species, loves to bake cookies, and asks way too many questions.</p>
+				
+				<ul>
+				<li><a href="http://www.hilarymason.com/" class="url">Web site</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_104414.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Drew Conway"
+				/>
+		</div>
+	
+		<h2 class="fn">Drew Conway</h2>
+
+		<div id="en_schedule_speaker">
+			
+				<h4 class="org">New York University</h4>
+			
+
+			<div class="en_speaker_bio note">
+				<p>Drew Conway is a PhD student in political science at New York University. Drew studies terrorism and armed conflict; using tools from mathematics and computer science to gain a deeper understanding of these phenomena.</p>
+				
+				<ul>
+				<li><a href="http://www.drewconway.com/zia" class="url">Web site</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+
+
+	<div class="vcard en_schedule_session_speaker">
+	
+		<div class="en_user_photo">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_95656.jpg"
+				width="75"
+				height="100"
+				alt="Photo of Jake Hofman"
+				/>
+		</div>
+	
+		<h2 class="fn">Jake Hofman</h2>
+
+		<div id="en_schedule_speaker">
+			
+				<h4 class="org">Yahoo!</h4>
+			
+
+			<div class="en_speaker_bio note">
+				<p>Jake Hofman is a member of the Human Social Dynamics group at Yahoo! Research. His work involves data-driven modeling of social data, focusing on applications of machine learning and statistical inference to large-scale data. He holds a B.S. in Electrical Engineering from Boston University and a Ph.D. in Physics from Columbia University.</p>
+				
+				<ul>
+				<li><a href="http://jakehofman.com/" class="url">Web site</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="en_comment_block">
+	
+		
+<h3>Leave a Comment or Question</h3>
+			
+		
+        <p>Help us make this conference the best it can be <em>for you</em>. Have questions you'd like this speaker to address? Suggestions for issues that deserve extra attention? Feedback that you'd like to share with the speaker and other attendees?
+	    
+	    
+		<br /><br /><b><a href="http://strataconf.com/strata2011/public/schedule/add_proposal_comment/17164" name="new_comment" id="new_comment">Join the conversation here</a></b>
+				(requires login)
+		</p>
+	
+	
+	
+		<div id="comments" class="en_comments">
+	
+		<h3>Comments</h3>
+	
+	
+	<div class="en_comments_all">
+		
+			<div class="en_comment" id="comment_3122">
+	<div class="en_comment_header">
+		
+		<div class="en_comment_from">
+			
+				<a href="/strata2011/profile/5587">Charles Engelke</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/21/2011  7:16am PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>For Windows users, easy_install reports errors installing matplotlib and warnings installing scipy.  I went to their websites instead and used the binary installers for Windows, which seems to handle everything okay.  (For Python 2.7, you need to go to the beta version of SciPy to download a compatible binary.)</p>
+	</div>
+</div>
+		
+			<div class="en_comment" id="comment_3110">
+	<div class="en_comment_header">
+		
+		<div class="en_commenter_avatar">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_35818_hs.jpg"
+				width="38" 
+				height="50"
+				alt="Picture of Elisabeth Robson" />
+		</div>
+		
+		<div class="en_comment_from">
+			
+				<a href="/strata2011/profile/35818">Elisabeth Robson</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/11/2011  3:13pm PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>Thanks JB. I&#8217;ve installed (or attempted to install) all the libs, about half seem fine; half had errors. Hopefully we can sort out at the boot camp! Might be good to have a little pre-help session for those who might not have the libraries installed correctly.</p>
+	</div>
+</div>
+		
+			<div class="en_comment" id="comment_3109">
+	<div class="en_comment_header">
+		
+		<div class="en_commenter_avatar">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_27457_hs.jpg"
+				width="38" 
+				height="50"
+				alt="Picture of J.B. Wheatley" />
+		</div>
+		
+		<div class="en_comment_from">
+			
+				<a href="/strata2011/profile/27457">J.B. Wheatley</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/10/2011  5:09pm PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>Elisabeth, we&#8217;ve added Software Requirements to the session description above.  Let us know if you have any questions!</p>
+	</div>
+</div>
+		
+			<div class="en_comment" id="comment_3107">
+	<div class="en_comment_header">
+		
+		<div class="en_commenter_avatar">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_35818_hs.jpg"
+				width="38" 
+				height="50"
+				alt="Picture of Elisabeth Robson" />
+		</div>
+		
+		<div class="en_comment_from">
+			
+				<a href="/strata2011/profile/35818">Elisabeth Robson</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/06/2011 12:10pm PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>Should we have anything in particular installed on our machines?</p>
+	</div>
+</div>
+		
+			<div class="en_comment" id="comment_3106">
+	<div class="en_comment_header">
+		
+		<div class="en_commenter_avatar">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_104414_hs.jpg"
+				width="38" 
+				height="50"
+				alt="Picture of Drew Conway" />
+		</div>
+		
+		<div class="en_comment_from  en_commenter_speaker">
+			
+				<a href="/strata2011/profile/104414">Drew Conway</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/04/2011  9:55am PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>@Rob</p>
+
+
+	<p>Each of the sections involves the use of the command-line and writing and running code, but is not the entirety of what will be covered.  Active participation is completely up to you, and you are welcome to be involved in as much or as little as you like.</p>
+
+
+	<p>Also, all code examples will be made available on the day of the tutorial for you to take back with you and practice.</p>
+	</div>
+</div>
+		
+			<div class="en_comment" id="comment_3104">
+	<div class="en_comment_header">
+		
+		<div class="en_commenter_avatar">
+			<img src="http://assets.en.oreilly.com/1/eventprovider/1/_@user_106283_hs.jpg"
+				width="38" 
+				height="50"
+				alt="Picture of Rob Wiley" />
+		</div>
+		
+		<div class="en_comment_from">
+			
+				<a href="/strata2011/profile/106283">Rob Wiley</a>
+			
+		</div>
+		<div class="en_comment_when">
+			01/01/2011  4:07pm PST
+		</div>
+	</div>
+	<div class="en_comment_body">
+		<p>Can you provide a little more guidance as to how much &#8220;familiarity with the command line and the ability to use libraries and code&#8221; will be needed for the day to be beneficial?  I have experience in both and can easily follow examples, but I have been out of active coding for several years.  How much of the day will be active participation vs. examples with reference material for later?</p>
+	</div>
+</div>
+		
+	</div>
+	
+</div>
+
+	
+</div>
+
+
+
+
+<div id="en_grid_dates">
+	<h3>Schedule views</h3>
+<ul>
+	<li><a href="/strata2011/public/schedule/grid/2011-02-01">Tue 01 Feb</a></li><li><a href="/strata2011/public/schedule/grid/2011-02-02">Wed 02 Feb</a></li><li><a href="/strata2011/public/schedule/grid/2011-02-03">Thu 03 Feb</a></li><li><a href="/strata2011/public/schedule/full" id="en_in_full_link">Full listing</a></li><li><a href="/strata2011/public/schedule/personal" id="en_in_personal_link">Personal schedule</a></li>
+</ul>
+</div>
+
+
+
+
+</div> <!-- /mid -->
+</div><!-- en_main -->
+
+
+
+<div id="right_col" style="position:relative;">
+
+  <div id="sponsors">
+  <h2>Sponsors</h2>
+
+
+<div class="sponsor_list_heading">Premier Diamond Sponsor</div><ul class="plain sponsorList"><li><a href="http://www.thomsonreuters.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/thomson_reuters3.gif"  alt="Thomson Reuters" title="Thomson Reuters"  height="62" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+<div class="sponsor_list_heading">Diamond Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.emc.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/emc.gif"  alt="EMC Data Computing Division" title="EMC Data Computing Division"  height="45" width="120" border="0" /></a></li><li><a href="http://www.enterprisedb.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/enterprise_db_blue.gif"  alt="EnterpriseDB" title="EnterpriseDB"  height="35" width="120" border="0" /></a></li><li><a href="https://datamarket.azure.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/microsoft_logo2.gif"  alt="Microsoft" title="Microsoft"  height="21" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+
+<div class="sponsor_list_heading">Platinum Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.gnip.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/gnip.gif"  alt="Gnip" title="Gnip"  height="81" width="120" border="0" /></a></li><li><a href="http://www.rackspace.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/rackspace_hosting.gif"  alt="Rackspace Hosting" title="Rackspace Hosting"  height="34" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+<div class="sponsor_list_heading">Gold Sponsor</div><ul class="plain sponsorList"><li><a href="http://www.ibm.com/jstart" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/ibm.gif"  alt="IBM" title="IBM"  height="44" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sponsor_list_heading">Silver Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.mturk.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/amazon_mechanical_turk.gif"  alt="Amazon Mechanical Turk" title="Amazon Mechanical Turk"  height="15" width="120" border="0" /></a></li><li><a href="http://aws.amazon.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/amazonwebservices.gif"  alt="Amazon Web Services" title="Amazon Web Services"  height="44" width="120" border="0" /></a></li><li><a href="http://www.asterdata.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/aster_data.gif"  alt="Aster Data" title="Aster Data"  height="32" width="120" border="0" /></a></li><li><a href="http://www.cloudera.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/cloudera.gif"  alt="Cloudera" title="Cloudera"  height="26" width="120" border="0" /></a></li><li><a href="http://www.clustrix.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/clustrix.gif"  alt="Clustrix" title="Clustrix"  height="28" width="120" border="0" /></a></li><li><a href="http://www.datastax.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/datastax_2.gif"  alt="DataStax, Inc. (formerly Riptano, Inc.)" title="DataStax, Inc. (formerly Riptano, Inc.)"  height="51" width="120" border="0" /></a></li><li><a href="http://www.digitalreasoning.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/digital_reasoning.gif"  alt="Digital Reasoning Systems" title="Digital Reasoning Systems"  height="55" width="120" border="0" /></a></li><li><a href="http://www.theheritagehealthprize.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/heritage-provider-network.gif"  alt="Heritage Provider Network" title="Heritage Provider Network"  height="17" width="120" border="0" /></a></li><li><a href="http://www.impetus.com/large_data_analytics" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/impetus_3.gif"  alt="Impetus" title="Impetus"  height="49" width="120" border="0" /></a></li><li><a href="http://www.jaspersoft.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/jaspersoft.gif"  alt="Jaspersoft" title="Jaspersoft"  height="23" width="120" border="0" /></a></li><li><a href="http://www.karmasphere.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/karmasphere.gif"  alt="Karmasphere" title="Karmasphere"  height="30" width="120" border="0" /></a></li><li><a href="http://www.linkedin.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/linkedIn.gif"  alt="LinkedIn" title="LinkedIn"  height="29" width="120" border="0" /></a></li><li><a href="http://www.marklogic.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/marklogic.gif"  alt="MarkLogic" title="MarkLogic"  height="24" width="120" border="0" /></a></li><li><a href="http://www.pentaho.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/pentaho-1.gif"  alt="Pentaho" title="Pentaho"  height="35" width="120" border="0" /></a></li><li><a href="http://www.pervasive.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/pervasive.gif"  alt="Pervasive" title="Pervasive"  height="30" width="120" border="0" /></a></li><li><a href="http://www.revolutionanalytics.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/revolution-analytics.gif"  alt="Revolution Analytics" title="Revolution Analytics"  height="24" width="120" border="0" /></a></li><li><a href="http://www.splunk.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/splunk-1.gif"  alt="Splunk" title="Splunk"  height="36" width="120" border="0" /></a></li><li><a href="http://urbanmapping.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/urban_mapping.gif"  alt="Urban Mapping" title="Urban Mapping"  height="16" width="120" border="0" /></a></li><li><a href="http://www.wolframalpha.com/" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/wolfram-alpha.gif"  alt="Wolfram|Alpha" title="Wolfram|Alpha"  height="19" width="120" border="0" /></a></li></ul>
+
+
+
+
+
+<div class="sponsor_list_heading">Bronze Sponsors</div><ul class="plain sponsorList"><li><a href="http://www.esri.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/esri-1.gif"  alt="Esri" title="Esri"  height="42" width="120" border="0" /></a></li><li><a href="http://www.paraccel.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/paraccel.gif"  alt="ParAccel" title="ParAccel"  height="31" width="120" border="0" /></a></li><li><a href="http://www.tableausoftware.com" target="_blank"><img src="http://conferences.oreillynet.com/images/logos/tableau-software.gif"  alt="Tableau Software" title="Tableau Software"  height="24" width="120" border="0" /></a></li></ul>
+
+
+
+
+<!-- // sponsors -->
+
+
+    <h3>Sponsorship Opportunities</h3>
+
+    <p>For information on exhibition and sponsorship opportunities at the conference, contact Susan Young at <a href="mailto:syoung@oreilly.com">syoung@oreilly.com</a></p>
+
+    <p>Download the <a href="http://strataconf.com/go/strata2011_prospectus" target="_blank" title="Opens link in a new browser window.">Strata Sponsor/Exhibitor Prospectus</a></p>
+
+
+
+    <h3>Contact Us</h3>
+
+    <p>View a complete list of <a href="/strata2011/public/content/contact">Strata Contacts</a></p>
+  </div>
+</div><!-- /#right_col -->
+
+<div id="en_footerwrap">
+<div id="en_footer"><!-- content/footer -->
+  
+    
+      <div class="content">
+<div id="banner_ad">
+  <a href="http://conferences.oreilly.com/" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/oreilly_conferences_banner.gif" id="banner1" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="http://oreilly.com/go/conference-ug" target="_blank"><img src="http://assets.en.oreilly.com/1/eventprovider/1/banner_oreilly_ug.gif" id="banner2" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="/strata2011/go/strata2011_oreilly_data" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_oreily_data.jpg" id="banner3" alt="O'Reilly Conferences" style="display:none;" /></a>
+  <a href="/strata2011/go/strata2011_gnip" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_oreily_gnip.jpg" id="banner4" alt="GNIP" style="display:none;" /></a>
+  <a href="http://strataconf.com/strata2011/go/strata2011_thomsonreuters" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_thomson-reuters.gif" id="banner5" alt="Thomson Reuters" style="display:none;" /></a>
+  <a href="http://strataconf.com/strata2011/go/strata2011_acmqueue" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_ACMQueue.gif" id="banner6" alt="ACMQueue" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_windowsazure" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_windows-azure.jpg" id="banner7" alt="Windows Azure" style="display:none;" /></a>
+  
+  <a href="/strata2011/go/strata2011_rackspace" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_rackspace.gif" id="banner8" alt="Rackspace" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_splunk" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_splunk.gif" id="banner9" 
+alt="Splunk" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_visualizingdata" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_visualizingdata.jpg" id="banner10" alt="visualizingdata" style="display:none;" /></a>
+
+  <a href="/strata2011/go/strata2011_greenplum" target="_blank"><img src="http://assets.en.oreilly.com/1/event/55/strata2011_banner_greenplum.jpg" id="banner11" alt="greenplum" style="display:none;" /></a>
+
+</div> <!-- /banner ad -->
+
+<div id="footer_logo">
+<a href="http://oreilly.com/"><img height="35" border="0" width="155" src="http://assets.en.oreilly.com/1/eventprovider/1/oreilly-logo-footer.gif" alt="O'Reilly Media" /></a>
+<br /><br />
+&copy;2011, O'Reilly Media, Inc.<br />(707) 827-7000 / (800) 998-9938<br /> All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.<br />
+<a href="mailto:conf-webmaster@oreilly.com">conf-webmaster@oreilly.com</a>
+
+</div> 
+
+<div class="footercol">
+<ul>
+  <li><strong>Strata</strong></li>
+  <li><a href="/strata2011/public/content/about">About</a></li>
+  <li><a href="/strata2011/public/register">Register</a></li>
+  <li><a href="/strata2011/public/schedule/grid" target="_blank">Schedule</a></li>
+  <li><a href="/strata2011/public/schedule/speakers" target="_blank">Speakers</a></li>
+
+  <li><a href="/strata2011/public/content/exhibitors" target="_blank">Sponsor Pavillion</a></li>
+  <li><a href="http://conferences.oreilly.com/diversity.csp" target="_blank">Diversity</a></li>
+  <li><a href="/strata2011/public/content/sitemap">Sitemap</a></li>
+  <li><a href="http://www.oreillynet.com/pub/a/mediakit/privacy.html" target="_blank">Privacy Policy</a></li>
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+
+  <li><strong>Stay Connected</strong></li>
+  <li><a href="/strata2011/public/content/contact">Contact Us</a></li>
+  <li><a href="http://elists.oreilly.com/#conferences" target="_blank">Strata Bulletin</a></li>
+  <li><a href="http://twitter.com/strataconf" target="_blank">Twitter</a></li>
+  <li><a href="http://strataconf.com/go/strata_fb" target="_blank">Facebook</a></li>
+  <li><a href="http://strataconf.com/go/strata_li" target="_blank">LinkedIn</a></li>
+
+</ul>
+</div>
+
+<div class="footercol">
+<ul>
+  <li><strong>More O'Reilly Sites</strong></li>
+  <li><a href="http://conferences.oreilly.com" target="_blank">O'Reilly Conferences</a></li>
+  <li><a href="http://oreilly.com" target="_blank">oreilly.com</a></li>
+  <li><a href="http://radar.oreilly.com" target="_blank">O'Reilly Radar</a></li>
+
+  <li><a href="http://oreilly.com/videos/" target="_blank">O'Reilly Video</a></li>
+  <li><a href="http://answers.oreilly.com/" target="_blank">O'Reilly Answers</a></li>
+  <li><a href="http://oreilly.com/webcasts/" target="_blank">O'Reilly Webcasts</a></li>
+  <li><a href="http://oreillyschool.com/" target="_blank">School of Technology</a></li>
+  <li><a href="http://makezine.com/" target="_blank">MAKE</a></li>
+</ul>
+</div>	
+</div><!-- //content -->
+    
+  
+</div><!-- en_footer -->
+</div><!-- en_footerwrap -->
+
+<div id="page_bot"></div>
+
+
+</div><!-- en_main_parts -->
+
+
+</div><!-- en_content -->
+
+
+  <div id="sidetabs">
+  <a href="/strata2011/public/schedule/speakers" title="Strata Speakers" class="speaker">Speakers</a>
+  <a href="/strata2011/public/content/video" title="Strata Video" class="video">Video</a>
+  <a href="/strata2011/public/content/social" title="Strata Social Media" class="social">Social</a>
+</div>
+
+
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/2011v1_common.js?110210" type="text/javascript"></script>
+<script src="http://assets.en.oreilly.com/1/event/55/strata2011_script.js?111810" type="text/javascript"></script>
+
+
+
+
+
+
+
+<!-- effects -->
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/scripts_functions.js?012611" type="text/javascript"></script>
+<script src="http://assets.en.oreilly.com/1/eventprovider/1/scripts_init.js?012611" type="text/javascript"></script>
+
+
+
+<!-- site catalyst -->
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+var localScAcct = "ordata"; 
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--//
+ /* Specify the Report Suite ID(s) to track here */ 
+/* localScAcct is specified in content/scripts/sitecatalyst_cfg */
+//var globalScAcct = "ororeillyglobaldev";
+var globalScAcct = "orglobal";
+
+var s_account = localScAcct + "," + globalScAcct;
+/*s_code.js must be called via the current protocol to avoid mixed content warnings */
+var s_code_protocol;
+var s_code_url = "assets.oreilly.com/js/s_code.js";
+if (window.location.protocol == "https:"){
+document.write('<script id="s_code_script" type="text/javascript" src="https://' + 'assets.oreilly.com/js/s_code.js' + '"><' + '/script>');
+}else{
+document.write('<script id="s_code_script" type="text/javascript" src="http://' + 'assets.oreilly.com/js/s_code.js' + '"><' +'/script>');
+}
+//!-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var myChannel, myPageName, myTitle, mySeries, myEvent, myEventTitle, mySection, mySection2, mySection3, myLoggedStatus,myEventPhase,localScAcct,myPubDate,mySystemPageType;
+
+if(typeof(myTitleAppend) == 'undefined')
+var myTitleAppend = "";
+else myTitleAppend = ": " + myTitleAppend;
+
+myChannel = "confs";
+myTitle       = "data bootcamp" + myTitleAppend;
+mySection   = new Array(myChannel);
+mySeries = "strata";
+
+mySection.push(mySeries);
+mySection2 = mySection.slice(); 
+
+myEventPhase = "registration"; 
+
+var myEventStartDate = new Date ("February 01, 2011");
+var today            = new Date();
+if (today > myEventStartDate){
+     myEventPhase = "post-conference";
+}
+
+myPubDate = "02/01/2011";
+myEventTitle = "Strata 2011";
+myEvent      = "strata2011";
+mySection2.push(myEvent)
+
+mySection3 = mySection2.slice(); 
+mySystemPageType = "schedule";
+
+
+mySection3.push(mySystemPageType)
+myPageName   = myChannel + ":" + myEvent + " " + myTitle;
+mySection    = mySection.join(":");
+mySection2   = mySection2.join(":");
+mySection3   = mySection3.join(":");
+
+myLoggedStatus = "logged out";
+
+/* You may give each page an identifying name, server, and channel on
+the next lines..... */
+s.pageName = myPageName.toLowerCase(); 
+//s.server   = ""; OK TO DELETE THIS LINE?
+s.channel  = myChannel;
+//s.pageType = "";OK TO DELETE THIS LINE?
+s.prop1  = mySection;
+s.prop2  = mySection2;
+s.prop3  = mySection3;
+s.prop4  = mySystemPageType; //not using this currently
+s.prop5  = myTitle;
+s.prop7  = myPubDate;
+s.prop15 = s.eVar24 = myLoggedStatus;
+s.prop29 = myEventPhase;//this has more work to do.
+s.prop38 = myEventTitle;
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="";  // need way to distinguish amongst these
+s.products="";     // only put products on for purchases.
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://ororeillyglobaldev.122.2O7.net/b/ss/ororeillyglobaldev/1/H.20.2--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+
+
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">_uacct = "UA-3144621-33"; urchinTracker();</script>
+</body>
+</html>
