@@ -17,6 +17,9 @@ class Gmail(object):
         self.m.select()
         
     def list_folders(self):
+        """
+        list_folders: lists all folders in the e-mail account
+        """
         (status, folder_list) = self.m.list()
 
         folder_names = []
@@ -27,9 +30,15 @@ class Gmail(object):
         return folder_names
         
     def select_folder(self, folder_name=None):
+        """
+        select_folder: sets a particular folder as the current working folder. None=inbox
+        """
         self.m.select(folder_name)
         
     def get_message_ids(self, folder_name=None):
+        """
+        get_message_ids: get the list of message ids in the folder
+        """
         if folder_name:
             self.select_folder(folder_name)
         
@@ -41,10 +50,16 @@ class Gmail(object):
             return []
     
     def get_message(self, message_id):
+        """
+        get_message: retrieve a message from a folder by id
+        """
         (resp, data) = self.m.fetch(message_id, "(RFC822)") # fetching the mail, "`(RFC822)`" means "get the whole stuff", but you can ask for headers only, etc
         return data[0][1]
         
-    def get_all_messages_from_folder(self, folder_name=None):        
+    def get_all_messages_from_folder(self, folder_name=None):
+        """
+        get_all_messages_from_folder: convenience method to loop through and return all messages in a folder
+        """
         message_data = []
         for message_id in self.get_message_ids(folder_name):
             message_data.append(self.get_message(message_id))
@@ -52,6 +67,9 @@ class Gmail(object):
         return message_data
             
     def create_message(self, to_addr, from_addr, subject='', text=''):
+        """
+        create_message: create a new e-mail message
+        """
         msg = email.Message.Message()
         msg['To'] = to_addr
         msg['From'] = from_addr
