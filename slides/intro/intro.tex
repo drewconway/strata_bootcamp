@@ -211,7 +211,7 @@ git clone https://github.com/drewconway/strata_bootcamp
 
 
 \begin{frame}
-  \frametitle{Roadmap, take 2}
+  \frametitle{Roadmap, take 2\footnote{\url{http://www.dataists.com/2010/09/a-taxonomy-of-data-science/}}}
 
   \begin{columns}
     \begin{column}{0.6\textwidth}
@@ -251,6 +251,50 @@ git clone https://github.com/drewconway/strata_bootcamp
       \includegraphics[width=0.9\textwidth]{netflix_faq.png}
       \includegraphics[width=0.9\textwidth]{netflix_cinematch.png}
     \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Things we believe}
+
+
+ \begin{center}
+  \structure{
+    \only<1>{Data jeopardy}
+    \only<2-4>{Data hacking}
+    \only<5-6>{Data science}
+  }
+
+  \vskip20pt
+
+  \only<1> {
+    Regardless of scale, it's difficult to find the right
+    questions to ask of the data
+    }
+  \only<2>{
+    Cleaning and normalizing data is a substantial amount of the
+    work (and likely impacts results)
+  }
+  \only<3>{
+    The ability to iterate quickly, asking and answering many
+    questions, is crucial
+  }
+  \only<4>{
+    Hacks happen: sed/awk/grep are useful, and scale
+  }
+  \only<5>{
+    Simple methods (e.g., linear models) work surprisingly well, especially with lots of data
+    % Simple methods often work surprisingly well, especially for large problems
+  }
+  \only<6>{
+    It's easy to cover your tracks---things are often much more complicated than they appear
+    %and make things appear easier than they were
+  }
+
+ \end{center}
+
+
+
 \end{frame}
 
 %% \begin{frame}
@@ -302,16 +346,6 @@ git clone https://github.com/drewconway/strata_bootcamp
 %% \end{frame}
 
 \begin{frame}
-  \frametitle{Topics}
-
-  \begin{itemize}
-    \item Simple approaches often do surprisingly well for large problems
-  \end{itemize}
-
-\end{frame}
-
-
-\begin{frame}
   \frametitle{Got data?}
 
   \begin{itemize}
@@ -358,8 +392,19 @@ git clone https://github.com/drewconway/strata_bootcamp
     $ sed -e 's/<[^>]*>//g' < page.html > page.txt
   \end{verbatim}
 
-
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{References}
+
+    \begin{center}
+      \includegraphics[width=0.3\textwidth]{seagaran.png}
+      \includegraphics[width=0.3\textwidth]{hastie.jpg}
+      \includegraphics[width=0.3\textwidth]{bishop.jpg}
+    \end{center}
+\end{frame}
+
 
 % section motivation_for_bootcamp (end)
 
