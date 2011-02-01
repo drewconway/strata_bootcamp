@@ -8,6 +8,8 @@ Copyright (c) 2011 Hilary Mason. All rights reserved.
 """
 
 import sys, os
+import re
+import string
 
 from nltk import FreqDist
 from nltk.tokenize import word_tokenize
@@ -61,15 +63,19 @@ class NaiveBayesClassifier(object):
         
     def get_features(self, document):
         all_words = word_tokenize(document)
-        
         all_words_freq = FreqDist(all_words)
         
+        # print sorted(all_words_freq.items(), key=lambda(w,c):(-c, w))
         return all_words_freq
         
-    def get_features(self, document):
-        print document
-        
-        return hi
+    # def get_features(self, document):
+    #     document = re.sub('[%s]' % re.escape(string.punctuation), '', document)
+    #     document = document.lower()
+    #     all_words = [w for w in word_tokenize(document) if len(w) > 3 and len(w) < 16]
+    #     all_words_freq = FreqDist(all_words)
+    #     
+    #     # print sorted(all_words_freq.items(), key=lambda(w,c):(-c, w))
+    #     return all_words_freq
         
     def increment_feature(self, feature, category):
         self.feature_count.setdefault(feature,{})
