@@ -6,7 +6,7 @@
     look for structure in the data, grouping similar examples together
     \vskip20pt
     \only<1>{\includegraphics[height=0.25\textheight]{../../code/image_data/candy.jpg}}
-    \only<2>{\includegraphics[height=0.25\textheight]{../../code/image_data/flickr_vivid_cluster_0}}
+    \only<2>{\includegraphics[height=0.25\textheight]{../../code/image_data/flickr_vivid_sample}}
     \vskip20pt
     \only<1>{e.g., find groups of similar pixels within a single image}
     \only<2>{e.g., find groups of similar images across a collection of images}
@@ -104,9 +104,9 @@
 
   \begin{center}
     Find groups of similar images within a collection of images \\
-    (e.g. ``warm sunsets'')
+    (e.g. ``warm'' photos)
     \vskip20pt
-    \includegraphics[height=0.25\textheight]{../../code/image_data/flickr_vivid_cluster_0.png}
+    \includegraphics[height=0.25\textheight]{../../code/image_data/flickr_vivid_sample.png}
     %\includegraphics[width=\textwidth]{flickr_vivid_clusters.pdf}
     \vskip20pt
     Represent each image with a binned RGB intensity histogram
@@ -122,13 +122,14 @@
 
     \begin{block}{Group 'vivid' images into 3 clusters}
         \begin{lstlisting}[language=bash]
- ./cluster_flickr.py flickr_vivid 3 10
+ ./cluster_flickr.py flickr_vivid 7 10
         \end{lstlisting}
     \end{block}
     \vskip20pt
-    \includegraphics[height=0.2\textheight]{../../code/image_data/flickr_vivid_cluster_0.png}
-    \includegraphics[height=0.2\textheight]{../../code/image_data/flickr_vivid_cluster_1.png}
-    \includegraphics[height=0.2\textheight]{../../code/image_data/flickr_vivid_cluster_2.png}
+    \includegraphics[width=0.65\textwidth]{../../code/image_data/flickr_vivid_cluster_1.png}
+    \vskip10pt
+    \includegraphics[width=0.65\textwidth]{../../code/image_data/flickr_vivid_cluster_2.png}
+    \includegraphics[width=0.65\textwidth]{../../code/image_data/flickr_vivid_cluster_3.png}
 
   \end{center}
 

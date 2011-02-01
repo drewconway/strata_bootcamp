@@ -54,7 +54,7 @@ if __name__=='__main__':
     else:
         # default to pictures tagged with 'vivid', 3 clusters, 10 bins
         directory = 'flickr_vivid'
-        K = 3
+        K = 7
         bins = 10
     
     # read images
@@ -89,3 +89,10 @@ if __name__=='__main__':
         print "saving" , fname
         plt.savefig(fname)
         del(f)
+
+    # montage of random selection of images, for comparison
+    ndx = sp.random.randint(0, N, 80)
+    plot_montage(images, ndx, 20)
+    fname = '%s_sample.png' % directory
+    print "saving", fname
+    plt.savefig(fname)
