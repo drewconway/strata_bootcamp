@@ -1,5 +1,7 @@
 # README #
 
+**To download all the sides and code as a ZIP file go to**: [http://bit.ly/campyslides](http://bit.ly/campyslides)
+
 All code, slides and notes in support of "Data Bootcamp" tutorial at O'Reilly's Strata Conference 2011.
 
 For more information on the tutorial see, [http://strataconf.com/strata2011/public/schedule/detail/17164](http://strataconf.com/strata2011/public/schedule/detail/17164)
