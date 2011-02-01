@@ -49,7 +49,7 @@ Python is a powerful high-level scripting language that is well suited for manip
  
 There are a few ways to install Python packages, but we recommend either of the following.  In you [Python setuptools](http://pypi.python.org/pypi/setuptools) installed you can download and install all of the above libraries with the following command:
 
-    $ easy_instal {package_name}
+    $ easy_install {package_name}
     
 For example, to install NetworkX simply type:
 
