@@ -6,6 +6,8 @@
 %
 \documentclass[xcolor=dvipsnames, 9pt]{beamer}
 
+\usepackage{ulem}
+
 \input{../tex/workshop_style.tex}
 
 \title{Welcome to Data Bootcamp}
@@ -23,31 +25,99 @@
   Creative Commons Attribution-Share Alike 3.0
 \end{frame}
 
+
+\begin{frame}[fragile]
+    \frametitle{Speakers}
+\begin{verbatim}
+          @jadler, @hmason, @drewconway, @jakehofman
+\end{verbatim}
+    \vskip5pt
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{speakers.png} \\
+    \end{center}
+\end{frame}
+
+
 \section{Motivation for Bootcamp} % (fold)
 \label{sec:motivation_for_bootcamp}
 
 \begin{frame}[fragile]
-    \frametitle{Getting the code}
-    All of the slides, code and images from today's tutorial are available on Github:
-    \vspace{1cm}
-    \begin{center}
-        \LARGE{\url{https://github.com/drewconway/strata_bootcamp}}
-    \end{center}
-    \vspace{1cm}
-    \begin{block}{The play the home game}
+    \frametitle{Play along at home}
+    All of the materials from today's tutorial are available on Github:
+    \vskip20pt
+    \begin{block}{Clone the repository for data/code/slides}
         \begin{lstlisting}[language=bash]
-$ git clone https://github.com/drewconway/strata_bootcamp
+git clone https://github.com/drewconway/strata_bootcamp
         \end{lstlisting}
     \end{block}
 \end{frame}
 
-\begin{frame}[fragile]
-    \frametitle{The data science ``black box''}
+
+\begin{frame}
+  \frametitle{Data-dependent products}
+
     \begin{center}
-        \only<1>{\includegraphics[width=12cm]{black_box.pdf}}
-        \only<2>{\includegraphics[width=12cm]{black_box_reveal.pdf}}
+      \includegraphics[width=\textwidth]{big_lebowski.png}
     \end{center}
+
+    %\begin{itemize}
+    %  \item \$1M for a 10\% improvement in predicted rating
+    %\end{itemize}
+
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Data-dependent products}
+
+  \begin{itemize}
+    \item Effective/practical systems that learn from experience impact our daily lives, e.g.:
+      \begin{itemize}
+        \item Recommendation systems
+        \item Spam detection
+        \item Optical character recognition
+        \item Face recognition
+        \item Fraud detection
+        \item Machine translation
+        \item $\ldots$
+      \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Black\footnote{s/black/blue/g}-boxified?}
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{google_pred_api.png}
+    \end{center}
+    % http://decisionstats.files.wordpress.com/2010/05/screenshot-15.png
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Roadmap?}
+
+  \begin{columns}
+    \column{0.4\textwidth}
+
+
+    \column{0.3\textwidth}
+
+    \begin{center}
+      \Huge
+      \begin{enumerate}
+        \item[Step 1:] Have data
+        \item[Step 2:] \alert{???}
+        \item[Step 3:] Profit
+      \end{enumerate}
+    \end{center}
+
+    \column{0.3\textwidth}
+
+  \end{columns}
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Learning by example}
@@ -64,7 +134,6 @@ $ git clone https://github.com/drewconway/strata_bootcamp
     \end{itemize}
 
 \end{frame}
-
 
 \begin{frame}
   \frametitle{Learning by example}
@@ -85,39 +154,7 @@ $ git clone https://github.com/drewconway/strata_bootcamp
 
 \end{frame}
 
-\begin{frame}
-  \frametitle{Common applications}
 
-  \begin{itemize}
-    \item Effective/practical algorithms exist, and impact our daily lives
-    \item Entire industries built around these techniques, e.g.:
-      \begin{itemize}
-        \item Spam detection (Email)
-        \item Information retrieval (Search)
-        \item Recommendation Systems (``You might also like ...'')
-        \item Fraud detection (Identity theft)
-        \item Face recognition (Camera auto-focus)
-        \item Optical character recognition (Mail routing via ZIP codes)
-      \end{itemize}
-  \end{itemize}
-
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Netflix prize}
-
-    \begin{center}
-      \includegraphics[width=0.75\textwidth]{netflix.png}
-    \end{center}
-
-    \begin{itemize}
-      \item \$1M for a 10\% improvement in predicted rating
-      \item More than 1000 submissions over 2.5 years
-      \item Top two teams within 0.01\% of each other (winners announced soon)
-    \end{itemize}
-
-\end{frame}
 
 
 \begin{frame}
@@ -144,6 +181,17 @@ $ git clone https://github.com/drewconway/strata_bootcamp
 \end{frame}
 
 \begin{frame}
+  \frametitle{Statistics vs. machine learning\footnote{\url{http://anyall.org/blog/2008/12/statistics-vs-machine-learning-fight/}}}
+
+    \begin{center}
+      \includegraphics[height=0.825\textheight]{stat_vs_ml.pdf}
+    \end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
   \frametitle{Philosophy}
 
     \begin{itemize}
@@ -157,14 +205,6 @@ $ git clone https://github.com/drewconway/strata_bootcamp
     \begin{center}
       \includegraphics[width=0.5\textwidth]{regression.png}
     \end{center}
-
-
-      \pause
-      \item How can we quantify an ``optimal'' model
-        \begin{itemize}
-          \item What to optimize?
-          \item How to optimize it?
-        \end{itemize}
 
     \end{itemize}
 
@@ -202,18 +242,6 @@ $ git clone https://github.com/drewconway/strata_bootcamp
 
     \end{column}
   \end{columns}
-
-% x=linspace(1.5,5.5,10);
-% ytrain=x.^1.1-8*log(x);
-% ytest=x.^1.5-10*log(x)+1;
-% plot(x,ytrain,'r--','Linewidth',10)
-% hold on
-% plot(x,ytest,'k','Linewidth',5)
-% plot(3.5,-5,'go','Linewidth',10)
-% xlabel('model complexity')
-% ylabel('error')
-% legend('training','testing','optimal','location','best')
-
 \end{frame}
 
 \begin{frame}
@@ -272,6 +300,22 @@ $ git clone https://github.com/drewconway/strata_bootcamp
   \end{itemize}
 
 \end{frame}
+
+\begin{frame}
+  \frametitle{Netflix prize}
+
+    \begin{center}
+      \includegraphics[width=0.75\textwidth]{netflix.png}
+    \end{center}
+
+    \begin{itemize}
+      \item \$1M for a 10\% improvement in predicted rating
+      \item More than 1000 submissions over 2.5 years
+      \item Top two teams within 0.01\% of each other 
+    \end{itemize}
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Got data?}
