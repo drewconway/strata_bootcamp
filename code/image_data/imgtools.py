@@ -5,6 +5,7 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import sys
 import os.path
+import glob
 
 def rgb_hist(I, ax, bins=256):
 
@@ -57,6 +58,28 @@ def rgb_features(I, bins=10):
     return x
 
 
+def read_image_dir(directory, pattern='*.jpg'):
+    # glob for image files
+    fnames = glob.glob('%s/%s' % (directory, pattern))
+    N = len(fnames)
+
+    # read images 
+    print "reading %d image files from %s" % (N, directory)
+    images = []
+    for i, fname in enumerate(fnames):
+        try:
+            I = mpimg.imread(fname)
+            images.append(I)            
+        except IOError:
+            print "error reading" , fname
+
+        # show progress
+        if i % int(N/10) == 0:
+            print "%d/%d images read" % (i,N)
+
+    return images
+
+
 if __name__=='__main__':
 
     if len(sys.argv) == 3:
@@ -84,4 +107,4 @@ if __name__=='__main__':
     base, ext = os.path.splitext(fname)
     fname = '%s_%d.png' % (base, bins)
     print "saving" , fname
-    plt.savefig(fname)
+    plt.savefig(fname, bbox_inches='tight')

@@ -40,6 +40,7 @@ if __name__=='__main__':
         os.mkdir(directory)
 
     # run over results
+    print "downloading %d results" % len(results['photo'])
     for photo in results['photo']:
         # build url of square image
         square_url = photo_url(photo)

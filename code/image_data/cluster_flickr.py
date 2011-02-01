@@ -20,9 +20,10 @@ def plot_montage(images, ndx, ncol=None):
     
     row = 0
     col = 0
+    tot_height = 0
     for i in range(N):
 
-        I = sp.array(images[ndx[i]], dtype='float32')
+        I = sp.array(images[ndx[i]], dtype='float')
         I = I / I.max()
         
         height = I.shape[0]
@@ -33,57 +34,58 @@ def plot_montage(images, ndx, ncol=None):
         if col % ncol == 0:
             row += 1
             col = 0
+            tot_height += height
 
-    f.set_figheight(row*height/100)
-    f.set_figwidth(ncol*width/100)
+    tot_height += height
+    tot_width = width*ncol
+    
+    f.set_figheight(tot_height/100)
+    f.set_figwidth(tot_width/100)
 
     return f
 
 if __name__=='__main__':
 
-    directory = 'flickr_vivid'
-    bins = 10
-    K = 3
+    if len(sys.argv) == 4:
+        # take image directory, number of clusters, bins from command line
+        directory = sys.argv[1]
+        K = int(sys.argv[2])
+        bins = int(sys.argv[3])
+    else:
+        # default to pictures tagged with 'vivid', 3 clusters, 10 bins
+        directory = 'flickr_vivid'
+        K = 3
+        bins = 10
     
-    pattern = '%s/*.jpg' % directory
-    print pattern
-    fnames = glob.glob(pattern)
+    # read images
+    images = read_image_dir(directory, '*.jpg')
+    N = len(images)
 
-    N = len(fnames)
-    print "reading %d image files from %s" % (N, directory)
-    X = sp.zeros( (0,3*bins) )
-    images = []
-    for i, fname in enumerate(fnames):
-        try:
-            I = mpimg.imread(fname)
-
-            X = sp.vstack( (X, rgb_features(I, bins)) )
-            images.append(I)
-            
-        except IOError:
-            print "error reading" , fname
-
-        if i % int(N/10) == 0:
-            print "%d/%d images read" % (i,N)
-
-
+    # generate bag-of-pixels features
+    X = sp.zeros( (N,3*bins) )
+    for i, image in enumerate(images):
+        X[i,:] = rgb_features(image, bins)
+    # normalize features
     X = spvq.whiten(X)
 
+    # set seed so we all see the same random numbers
     sp.random.seed(20110201)
-    
-    centers, err = spvq.kmeans(X, K)
-    print err
 
+    # run k-means
+    centers, err = spvq.kmeans(X, K)
+    # get cluster assignments for each image
     assignments, err = spvq.vq(X, centers)
 
+    # plot images in each cluster
     for k in range(K):
+        # index of images in this cluster
         ndx = sp.where(assignments == k)
 
-        f = plot_montage(images, ndx[0])
+        # plot montage
+        f = plot_montage(images, ndx[0], 20)
 
+        # save figure
         fname = '%s_cluster_%d.png' % (directory, k)
         print "saving" , fname
-
         plt.savefig(fname)
-
         del(f)
