@@ -243,53 +243,53 @@ git clone https://github.com/drewconway/strata_bootcamp
   \end{columns}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Topics}
+%% \begin{frame}
+%%   \frametitle{Topics}
 
-  \begin{columns}[t]
-    \begin{column}{0.5\textwidth}
+%%   \begin{columns}[t]
+%%     \begin{column}{0.5\textwidth}
 
-      \begin{itemize}
-      \item Supervised
-        \begin{itemize}
-          \item Linear regression
-          \item Classification / regression trees
-          \item Logistic regression
-          \item Naive Bayes
-          \item k-nearest neighbors
-          \item Support vector machines
-          \item Boosting
-        \end{itemize}
-      \end{itemize}
+%%       \begin{itemize}
+%%       \item Supervised
+%%         \begin{itemize}
+%%           \item Linear regression
+%%           \item Classification / regression trees
+%%           \item Logistic regression
+%%           \item Naive Bayes
+%%           \item k-nearest neighbors
+%%           \item Support vector machines
+%%           \item Boosting
+%%         \end{itemize}
+%%       \end{itemize}
 
-    \end{column}
-    \begin{column}{0.5\textwidth}
+%%     \end{column}
+%%     \begin{column}{0.5\textwidth}
 
-      \begin{itemize}
-      \item Unsupervised
-        \begin{itemize}
-          \item K-means
-          \item Mixture models
-          \item Principal components analysis
-          \item Factor analysis
-          \item Topic models
-          \item Collaborative filtering
-        \end{itemize}
-      \end{itemize}
+%%       \begin{itemize}
+%%       \item Unsupervised
+%%         \begin{itemize}
+%%           \item K-means
+%%           \item Mixture models
+%%           \item Principal components analysis
+%%           \item Factor analysis
+%%           \item Topic models
+%%           \item Collaborative filtering
+%%         \end{itemize}
+%%       \end{itemize}
 
-    \end{column}
-  \end{columns}
+%%     \end{column}
+%%   \end{columns}
 
-  \pause
-  \begin{itemize}
-    \item Data representation: feature space, selection, normalization
-    \item Model assessment: complexity control, cross-validation, ROC curve, Bayesian Occam's razor, information-theoretic measures
-    \pause
-    \item Probabilistic inference: graphical models, variational methods, sampling
-    \item Large-scale learning (?)
-  \end{itemize}
+%%   \pause
+%%   \begin{itemize}
+%%     \item Data representation: feature space, selection, normalization
+%%     \item Model assessment: complexity control, cross-validation, ROC curve, Bayesian Occam's razor, information-theoretic measures
+%%     \pause
+%%     \item Probabilistic inference: graphical models, variational methods, sampling
+%%     \item Large-scale learning (?)
+%%   \end{itemize}
 
-\end{frame}
+%% \end{frame}
 
 \begin{frame}
   \frametitle{Topics}
@@ -343,7 +343,7 @@ git clone https://github.com/drewconway/strata_bootcamp
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{Coding}
+  \frametitle{Hacking}
 
   \begin{itemize}
     \item Scripting: Python, Ruby, Perl, bash, ...
@@ -351,17 +351,14 @@ git clone https://github.com/drewconway/strata_bootcamp
     \item Wrangling: sed, awk, grep, tr, wc, cut, sort, uniq, ....
   \end{itemize}
 
-  \pause
   \begin{verbatim}
     $ tr , '\t' < data.csv > data.tsv
   \end{verbatim}
 
-  \pause
   \begin{verbatim}
     $ bzcat data.tsv.bz2 | awk -F'\t' 'NF != 16 {print}'
   \end{verbatim}
 
-  \pause
   \begin{verbatim}
     $ sed -e 's/<[^>]*>//g' < page.html > page.txt
   \end{verbatim}
