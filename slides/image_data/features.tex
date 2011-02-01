@@ -37,7 +37,7 @@ I = mpimg.imread('chairs.jpg')
     Disregard all spatial information, simply count pixels by intensities \\
     (e.g. lots of bright green and dark blue pixels)
     \vskip20pt
-  \includegraphics[width=\textwidth]{../../code/image_data/chairs_64.png}
+  \includegraphics[width=\textwidth]{../../code/image_data/chairs_32.png}
   \end{center}
 
 \end{frame}
@@ -47,7 +47,12 @@ I = mpimg.imread('chairs.jpg')
   \frametitle{Intensity histograms}
 
   \begin{center}
-  \includegraphics[width=\textwidth]{chairs_hists.png}
+    How many bins for pixel intensities?
+    \vskip20pt
+    \includegraphics[width=0.75\textwidth]{chairs_hists.png}
+    \vskip20pt
+    \textbf{Too many} bins gives a noisy, \textbf{overly complex} representation of the data,\\
+    while using \textbf{too few} bins results in an \textbf{overly simple} one
   \end{center}
 
 \end{frame}
