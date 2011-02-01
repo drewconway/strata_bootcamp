@@ -147,7 +147,7 @@ comparative.wordcloud<-function(hashtag1, hashtag2, file.path, n=100, add.stops=
 }
 
 # Example with strataconf and 
-ht1<-"packers"   # Hash tags to compare
-ht2<-"steelers"
+ht1<-"strataconf"   # Hash tags to compare
+ht2<-"rstats"
 
 hash.data<-comparative.wordcloud(ht1, ht2, paste(ht1,"_",ht2,".png",sep=""), n=100)

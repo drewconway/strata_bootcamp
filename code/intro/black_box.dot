@@ -1,6 +1,7 @@
 graph {
     rankdir=LR;
     subgraph cluster_0 {
+        color=black;
         node [label="Classification", shape=doublecircle]; class;
         node [label="K-Means"]; km;
         node [label="PCA"]; pca;

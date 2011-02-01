@@ -1,4 +1,4 @@
- # File-Name:       company_similarity.R           
+# File-Name:       company_similarity.R           
 # Date:            2011-01-27                                
 # Author:          Drew Conway
 # Email:           drew.conway@nyu.edu                                      
