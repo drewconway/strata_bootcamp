@@ -27,8 +27,8 @@ class emailClassify(object):
 		    
 		nb = NaiveBayesClassifier()
 		nb.train_from_data(msg_data)
-		print nb.probability("Hi Drew", 'friends')
-		print nb.probability("Hi Drew", 'commercial')
+		print nb.probability("elephant", 'friends')
+		print nb.probability("elephant", 'commercial')
 		    
 
 class NaiveBayesClassifier(object):
@@ -65,6 +65,11 @@ class NaiveBayesClassifier(object):
         all_words_freq = FreqDist(all_words)
         
         return all_words_freq
+        
+    def get_features(self, document):
+        print document
+        
+        return hi
         
     def increment_feature(self, feature, category):
         self.feature_count.setdefault(feature,{})
@@ -103,6 +108,7 @@ class NaiveBayesClassifier(object):
             
     def train(self, item, category):
         features = self.get_features(item)
+        print features # DEBUG
         
         for f in features:
             self.increment_feature(f, category)

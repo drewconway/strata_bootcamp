@@ -35,11 +35,20 @@ def lattice_plot(component_list, file_path):
     else:
         num_cols=num_components/2
     
-    # Plot subgraphs
+    # Plot subgraphs, with centrality annotation
     plot_count=1
     for G in component_list:
+        # Find actor in each component with highest degree
+        in_cent=nx.degree(G)
+        in_cent=[(b,a) for (a,b) in in_cent.items()]
+        in_cent.sort()
+        in_cent.reverse()
+        high_in=in_cent[0][1]
+        
+        # Plot with annotation
         plt.subplot(2,num_cols,plot_count)
-        nx.draw_spring(G, node_size=35)
+        nx.draw_spring(G, node_size=35, with_labels=False)
+        plt.text( 0,-.1,"Highest degree: "+high_in, color="darkgreen")
         plot_count+=1
     
     plt.savefig(file_path)
@@ -51,11 +60,15 @@ def ego_plot(graph, n, file_path):
     ego=nx.ego_graph(graph,n) # Get ego graph for n
     
     # Draw graph
-    pos=nx.spring_layout(ego)
-    nx.draw(ego,pos,node_color='b',node_size=100)
+    pos=nx.spring_layout(ego, iterations=5000)
+    nx.draw_networkx_nodes(ego,pos,node_color='b',node_size=100)
+    nx.draw_networkx_edges(ego,pos)
+    # Create label offset
+    label_pos=dict([(a,[b[0],b[1]+0.03]) for (a,b) in pos.items()])
+    nx.draw_networkx_labels(ego, pos=label_pos,font_color="darkgreen")
     
     # Draw ego as large and red
-    nx.draw_networkx_nodes(ego,pos,nodelist=[n],node_size=300,node_color='r')
+    nx.draw_networkx_nodes(ego,pos,nodelist=[n],node_size=300,node_color='r', font_color="darkgreen")
     plt.savefig(file_path)
     
 
@@ -97,7 +110,7 @@ def graphFromCSV(file_path, create_using=nx.DiGraph()):
 
 def main():
     # Create a NetworkX graph object 
-    gmail_graph=graphFromCSV("email_graph.csv")
+    gmail_graph=graphFromCSV("../email_analysis/email_graph.csv")
 
     # Draw entire graph
     full_graph=plt.figure(figsize=(10,10))
