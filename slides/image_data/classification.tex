@@ -16,9 +16,11 @@
     }
 
     \only<2>{
-    \includegraphics[height=0.2\textheight]{landscape.jpg} $\rightarrow$ 'landscape' \\
-    
-    \includegraphics[height=0.2\textheight]{headshot.jpg} $\rightarrow$ 'headshot'
+      \begin{tabular}{cc}
+        \includegraphics[height=0.2\textheight]{landscape.jpg} & \includegraphics[height=0.2\textheight]{headshot.jpg} \\
+        $\downarrow$ & $\downarrow$ \\
+        'landscape' & 'headshot'
+      \end{tabular}
     \vskip20pt
     \normalsize
     e.g. determine if an image is a landscape or headshot
@@ -30,10 +32,45 @@
 
 
 \begin{frame}
+  \frametitle{k-nearest neighbors classification}
+
+  \begin{center}
+    k-nearest neighbors: memorize training examples, predict labels using labels of the k closest training points
+    \vskip20pt
+    \includegraphics[width=0.65\textwidth]{knn_schematic.png}
+    \vskip10pt
+    Intuition: nearby points have similar labels
+  \end{center}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{k-nearest neighbors classification}
+
+  \begin{center}
+    %\vskip20pt
+    \includegraphics[width=\textwidth]{knn_boundary.png}
+    \vskip10pt
+    \textbf{Small k} gives a \textbf{complex} boundary, \textbf{large
+      k} results in \textbf{coarse} averaging
+  \end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
   \frametitle{Classifying images}
 
   \begin{center}
-    \includegraphics[width=0.75\textwidth]{../../code/image_data/sample_digits.png}
+
+    \begin{block}{Display sample images}
+        \begin{lstlisting}[language=bash]
+ ./digits.py
+        \end{lstlisting}
+    \end{block}
+    \vskip10pt
+    \includegraphics[width=0.65\textwidth]{../../code/image_data/sample_digits.png}
   \end{center}
 
 \end{frame}
