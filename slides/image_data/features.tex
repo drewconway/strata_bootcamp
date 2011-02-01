@@ -2,6 +2,8 @@
   \frametitle{Images as arrays}
 
   \begin{center}
+    Grayscale images $\leftrightarrow$ 2-d arrays of $M \times N$ pixel intensities
+    \vskip20pt
     \only<1>{\includegraphics[height=0.5\textheight]{../../code/image_data/sample_digit.png}}
     \only<2>{\includegraphics[height=0.5\textheight]{image_array.png}}
   \end{center}
@@ -12,15 +14,41 @@
   \frametitle{Images as arrays}
 
   \begin{center}
-  \includegraphics[width=\textwidth]{../../code/image_data/chairs.jpg}
-  %\includegraphics[width=\textwidth]{../../code/image_data/chairs_64.png}
+    Color images $\leftrightarrow$ 3-d arrays of $M \times N \times 3$ RGB pixel intensities
+    \vskip20pt
+    \only<1>{\includegraphics[height=0.45\textwidth]{../../code/image_data/chairs.jpg}}
+    \only<2>{\includegraphics[height=0.5\textheight]{image_array_color.png}}
   \end{center}
 
     \begin{block}{}
         \begin{lstlisting}[language=python]
 import matplotlib.image as mpimg
-I = mpimg.imread(chairs.jpg')
+I = mpimg.imread('chairs.jpg')
         \end{lstlisting}
     \end{block}
 
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Intensity histograms}
+
+  \begin{center}
+    Disregard all spatial information, simply count pixels by intensities \\
+    (e.g. lots of bright green and dark blue pixels)
+    \vskip20pt
+  \includegraphics[width=\textwidth]{../../code/image_data/chairs_64.png}
+  \end{center}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Intensity histograms}
+
+  \begin{center}
+  \includegraphics[width=\textwidth]{chairs_hists.png}
+  \end{center}
+
+\end{frame}
+
