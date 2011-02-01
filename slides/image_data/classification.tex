@@ -108,11 +108,55 @@ for i in range(N):
 
   \begin{center}
     \begin{block}{Simple digit classifer with k=1 nearest neighbors}
-        \begin{lstlisting}[language=python]
+        \begin{lstlisting}[language=bash]
  ./classify_digits.py
         \end{lstlisting}
     \end{block}
     \vskip20pt
     \includegraphics[width=0.55\textwidth]{digits_confmat.png}
+  \end{center}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Image classification}
+
+  \begin{center}
+    Determine if an image is a landscape or headshot
+    \vskip20pt
+      \begin{tabular}{cc}
+        \includegraphics[height=0.2\textheight]{landscape.jpg} & \includegraphics[height=0.2\textheight]{headshot.jpg} \\
+        $\downarrow$ & $\downarrow$ \\
+        'landscape' & 'headshot'
+      \end{tabular}
+    \vskip20pt
+    Represent each image with a binned RGB intensity histogram
+
+  \end{center}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Image classification}
+
+  \begin{center}
+    \begin{block}{Classify}
+        \begin{lstlisting}[language=bash]
+ ./classify_flickr.py 16 9 
+    flickr_headshot flickr_landscape
+        \end{lstlisting}
+    \end{block}
+    \vskip20pt
+    \begin{block}{Change in performance with number of neighbors}
+        \begin{lstlisting}[language=bash]
+k = 1, accuracy = 0.7125
+k = 3, accuracy = 0.7425
+k = 5, accuracy = 0.7725
+k = 7, accuracy = 0.7650
+k = 9, accuracy = 0.7500
+        \end{lstlisting}
+    \end{block}
+    %\includegraphics[width=0.55\textwidth]{digits_confmat.png}
   \end{center}
 \end{frame}
